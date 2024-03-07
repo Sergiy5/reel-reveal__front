@@ -1,16 +1,19 @@
+import { Route, Routes } from "react-router-dom";
+import { MainWrapper } from "./style/MainWrapper.styled";
+import Layout from "./layout/Layout";
+
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
-    </div>
+     <MainWrapper>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          {/* <Route index element={<Home />} />
+          <Route path="catalog" element={<CatalogPage />} />
+          <Route path="favorite" element={<Favorite />} />
+
+          <Route path="*" element={<NotFound />} /> */}
+        </Route>
+      </Routes>
+    </MainWrapper>
   );
 };
