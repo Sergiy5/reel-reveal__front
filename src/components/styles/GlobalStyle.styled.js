@@ -1,12 +1,16 @@
 import 'modern-normalize';
 import { createGlobalStyle } from 'styled-components';
+import myCustomFont from '../../fonts/cera pro sv/Cera Pro Medium.otf'; // Path to your font file
 
 const GlobalStyle = createGlobalStyle`
 
+  @font-face {
+    font-family: 'MyCustomFont';
+    src: url(${myCustomFont}) format('otf');
+  }
 
 
 body{
-  margin: 0;
   font-family: 'ManropeMedium', 'InterMedium', 'ManropeRegular', 'MontserratRegular', 'MontserratSemiBold', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
   'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
   sans-serif;

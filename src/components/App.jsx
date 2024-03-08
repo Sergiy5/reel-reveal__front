@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router-dom";
-import { MainWrapper } from "./style/MainWrapper.styled";
+import { MainWrapper } from "./styles/MainWrapper.styled";
 import Layout from "./layout/Layout";
 
 export const App = () => {

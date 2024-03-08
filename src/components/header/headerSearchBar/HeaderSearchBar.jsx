@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import {HeaderSearchBarStyled, WrapperSearchBar} from './HeaderInput.styled' 
+import {HeaderSearchBarStyled, WrapperSearchBar} from './HeaderSearchBar.styled' 
 import { SearchBarIcon } from './SearchBarIcon'
 
 
@@ -7,7 +7,6 @@ const textPlaceHolder = 'search by movie, actor, genre, etc'
 
 export const HeaderSearchBar = () => {
     const [isFocus, setIsFocus] = useState(true)
-    console.log(isFocus)
     
   
     return (
