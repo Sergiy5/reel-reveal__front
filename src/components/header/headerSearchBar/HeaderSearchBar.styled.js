@@ -1,3 +1,4 @@
+import { colors } from 'assets/variables/variables';
 import { FiSearch } from 'react-icons/fi';
 import styled from 'styled-components';
 
@@ -15,17 +16,19 @@ export const HeaderSearchBarStyled = styled.input`
   height: 40px;
   padding-left: 21px;
   padding-right: 64px;
-  color: #ffffff;
-  background: #202432;
+  color: ${colors.textColor};
+  background: ${colors.inputColor};
   border: none;
   border-radius: 20px;
   border-right-style: hidden;
   outline: solid 2px transparent;
   transition: outline-color 400ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  &:hover,
+  &:hover {
+    outline-color: ${colors.accentColor};
+  }
   &:focus {
-    outline-color: #20e8da;
+    outline-color: ${colors.accentClickedColor};
   }
 `;
 
@@ -38,14 +41,11 @@ export const BtnSearchBarIcon = styled.button`
   right: -1px;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
-  outline-color: transparent;
-  background-color: ${props => (props.$focus ? '#202432' : '#20e8da')};
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  cursor: pointer;
 
-  &:hover {
-    transform: none;
-  }
+  background-color: ${props =>
+    props.$focus ? colors.inputColor : colors.accentColor};
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 `;
 
 export const FiSearchStyled = styled(FiSearch)`

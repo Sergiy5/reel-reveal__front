@@ -1,9 +1,11 @@
 
-import { MainLogoStyled } from "./MainLogo.styled"
+import { NavLinkStyled, SvgStyled } from "./MainLogo.styled"
 
 
 export const MainLogo = () => {
     return (
-        <MainLogoStyled/>
+        <NavLinkStyled>
+            <SvgStyled />
+            </NavLinkStyled>
     )
 }
