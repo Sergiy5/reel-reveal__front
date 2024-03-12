@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="154" height="160" fill="none" viewBox="0 0 154 160">
+  <path stroke="#fff" stroke-linecap="round" stroke-width="1.5" d="M54.431 78.43c0-4.678-9.514-4.834-9.514 0m39.303 0c0-4.678 9.514-4.834 9.514 0m-31.66 1.736c0 7.772 15.908 8.031 15.908 0"/>
+  <mask id="a" width="68" height="68" x="0" y="0" maskUnits="userSpaceOnUse" style="mask-type:alpha">
+    <circle cx="33.844" cy="33.844" r="33.844" fill="#976666"/>
+  </mask>
+  <g mask="url(#a)">
+    <circle cx="33.844" cy="33.845" r="33.094" stroke="#fff" stroke-width="1.5"/>
+    <circle cx="33.845" cy="33.844" r="10.635" stroke="#fff" stroke-width="1.5"/>
+    <circle cx="33.845" cy="3.587" r="10.635" stroke="#fff" stroke-width="1.5"/>
+    <circle cx="62.854" cy="24.174" r="10.635" stroke="#fff" stroke-width="1.5"/>
+    <circle cx="53.184" cy="56.615" r="10.635" stroke="#fff" stroke-width="1.5"/>
+    <circle cx="14.193" cy="57.239" r="10.635" stroke="#fff" stroke-width="1.5"/>
+    <circle cx="4.836" cy="24.174" r="10.635" stroke="#fff" stroke-width="1.5"/>
+  </g>
+  <mask id="b" width="69" height="68" x="67" y="0" maskUnits="userSpaceOnUse" style="mask-type:alpha">
+    <circle cx="101.532" cy="33.844" r="33.844" fill="#976666"/>
+  </mask>
+  <g mask="url(#b)">
+    <circle cx="101.532" cy="33.845" r="33.094" stroke="#fff" stroke-width="1.5"/>
+    <circle cx="101.532" cy="33.844" r="10.635" stroke="#fff" stroke-width="1.5"/>
+    <circle cx="101.532" cy="3.587" r="10.635" stroke="#fff" stroke-width="1.5"/>
+    <circle cx="130.541" cy="24.174" r="10.635" stroke="#fff" stroke-width="1.5"/>
+    <circle cx="120.872" cy="56.615" r="10.635" stroke="#fff" stroke-width="1.5"/>
+    <circle cx="81.88" cy="57.239" r="10.635" stroke="#fff" stroke-width="1.5"/>
+    <circle cx="72.522" cy="24.174" r="10.635" stroke="#fff" stroke-width="1.5"/>
+  </g>
+  <rect width="25.326" height="8.794" x="87.153" y="100.566" stroke="#fff" stroke-width="1.5" rx="2.993"/>
+  <path stroke="#fff" stroke-width="1.5" d="M12.165 58.954v45.229c0 8.614 6.983 15.597 15.596 15.597h80.477c8.614 0 15.597-6.983 15.597-15.597V58.798"/>
+  <circle cx="31.037" cy="104.963" r="5.644" stroke="#fff" stroke-width="1.5"/>
+  <circle cx="49.44" cy="104.963" r="5.644" stroke="#fff" stroke-width="1.5"/>
+  <path stroke="#fff" stroke-linecap="round" stroke-width="1.5" d="M47.101 119.937c-6.81 10.865-19.028 31.036-19.963 32.596-3.587 5.98 7.33 9.514 11.385 2.651l20.587-35.247m30.57.155c6.81 10.865 19.027 31.036 19.962 32.596 3.588 5.981-7.33 9.514-11.385 2.652L77.67 120.092m46.476-52.716h10.138v28.385h-10.138"/>
+  <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m134.441 67.221 10.568-6.217c3.535-2.079 7.992.47 7.992 4.571v32.692c0 4.217-4.684 6.747-8.21 4.435l-10.35-6.784"/>
+</svg>

@@ -1,41 +1,59 @@
 import 'modern-normalize';
 import { createGlobalStyle } from 'styled-components';
-import myMainFont from '../assets/fonts/cera pro sv/Cera Pro Medium.otf';
-import myMainBoldFont from '../assets/fonts/cera pro sv/Cera Pro Bold.otf';
-import myMainLightFont from '../assets/fonts/cera pro sv/Cera Pro Light.otf';
+import mainFont from '../assets/fonts/cera pro sv/CeraPro-Regular.woff';
+import mainBoldFont from '../assets/fonts/cera pro sv/CeraPro-Bold.woff';
+import mainLightFont from '../assets/fonts/cera pro sv/CeraPro-Light.woff';
+import fontH1 from '../assets/fonts/hind/Hind-Bold.woff2';
+import fontH2 from '../assets/fonts/hind/Hind-SemiBold.woff2';
+
 import { colors } from '../assets/variables/variables';
 
 const GlobalStyle = createGlobalStyle`
 
   @font-face {
-    font-family: 'MyCustomFont';
-    src: url(${myMainFont}) format('otf');
+    font-family: 'mainFont';
+    src: url(${mainFont}) format('woff');
     font-weight: normal;
     font-style: normal;
   }
 
   @font-face {
-    font-family: 'myMainBoldFont';
-    src: url(${myMainBoldFont}) format('otf');
+    font-family: 'mainBoldFont';
+    src: url(${mainBoldFont}) format('woff');
     font-weight: bold;
     font-style: normal;
   }
   
   @font-face {
-    font-family: 'myMainLightFont';
-    src: url(${myMainLightFont}) format('otf');
+    font-family: 'mainLightFont';
+    src: url(${mainLightFont}) format('woff');
     font-weight: lighter;
+    font-style: normal;
+  }
+   @font-face {
+    font-family: 'fontH1';
+    src: url(${fontH1}) format('woff2');
+    font-weight: bold;
+    font-style: normal;
+  }
+   @font-face {
+    font-family: 'fontH2';
+    src: url(${fontH2}) format('woff2');
+    font-weight: 600;
     font-style: normal;
   }
 
 
 body{
-  font-family: "myMainFont",'myMainLightFont','myMainBoldFont', Arial, Helvetica, sans-serif;
+  font-family: "mainFont", Arial, Helvetica, sans-serif;
   color: ${colors.textColor};
+  width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
  code {
-    font-family: 'myMainFont', monospace;
+    font-family: 'mainFont', monospace;
   }
 
 p {

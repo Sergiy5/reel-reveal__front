@@ -1,8 +1,11 @@
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
+import { ReactComponent as MySvg } from '../../../assets/images/user.svg';
 import { colors } from 'assets/variables/variables';
 
 export const WrapperNav = styled.div`
+  font-weight: 300;
+  font-size: 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -10,6 +13,17 @@ export const WrapperNav = styled.div`
   height: 40px;
 `;
 
+export const UserSvg = styled(MySvg)`
+  width: 24px;
+  height: 24px;
+  color: #fff;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    color: ${colors.accentColor};
+  }
+`;
 export const NavLinkStyled = styled(NavLink)`
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -30,17 +44,18 @@ export const QuizBtn = styled(NavLink)`
   border-radius: 20px;
   background-color: ${colors.textColor};
   color: ${colors.textActivColor};
-  filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, 0));
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
 
-  transition: filter 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover {
     color: ${colors.textActivColor};
     background-color: ${colors.accentColor};
-    filter: drop-shadow(0px 4px 4px rgba(32, 232, 217, 0.25));
+    box-shadow: 1px 2px 24px 0 rgba(32, 232, 218, 0.3);
   }
   &:focus {
     background-color: ${colors.accentClickedColor};
+    box-shadow: 1px 2px 24px 0 rgba(32, 232, 218, 0.5);
   }
 `;

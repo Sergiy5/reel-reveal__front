@@ -1,11 +1,11 @@
-
-import { NavLinkStyled, SvgStyled } from "./MainLogo.styled"
+import { NavLink } from 'react-router-dom';
+import { SvgStyled } from "./MainLogo.styled"
 
 
 export const MainLogo = () => {
     return (
-        <NavLinkStyled>
+        <NavLink to={''}>
             <SvgStyled />
-            </NavLinkStyled>
+        </NavLink>
     )
 }

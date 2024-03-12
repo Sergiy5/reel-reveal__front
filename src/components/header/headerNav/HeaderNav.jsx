@@ -1,6 +1,6 @@
-import { AiOutlineUser } from "react-icons/ai";
+// import { AiOutlineUser } from "react-icons/ai";
 import { GoHeart } from "react-icons/go";
-import { NavLinkStyled, QuizBtn, WrapperNav } from "./HeaderNav.styled";
+import { NavLinkStyled, QuizBtn, UserSvg, WrapperNav } from "./HeaderNav.styled";
 
 export const HeaderNav = () => {
     return (
@@ -10,7 +10,7 @@ export const HeaderNav = () => {
             <GoHeart size="24px" />
             </NavLinkStyled>
             <NavLinkStyled>
-            <AiOutlineUser size="24px" />
+                <UserSvg/>
             </NavLinkStyled>
             <QuizBtn>take quiz</QuizBtn>
 

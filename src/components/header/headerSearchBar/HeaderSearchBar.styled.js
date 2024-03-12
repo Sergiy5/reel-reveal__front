@@ -7,21 +7,23 @@ export const WrapperSearchBar = styled.div`
   display: flex;
   align-items: center;
   width: 405px;
-  height: 40px;
+  /* height: 40px; */
   border-radius: 20px;
 `;
 
 export const HeaderSearchBarStyled = styled.input`
-  width: 405px;
-  height: 40px;
+  width: 403px;
+  height: 38px;
   padding-left: 21px;
   padding-right: 64px;
+  font-weight: 300;
+  font-size: 20px;
   color: ${colors.textColor};
   background: ${colors.inputColor};
   border: none;
   border-radius: 20px;
   border-right-style: hidden;
-  outline: solid 2px transparent;
+  outline: solid 1px transparent;
   transition: outline-color 400ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover {
@@ -34,22 +36,21 @@ export const HeaderSearchBarStyled = styled.input`
 
 export const BtnSearchBarIcon = styled.button`
   position: absolute;
-  width: 43px;
-  height: 40px;
-  margin-right: 0.05rem;
-  padding: 8px 10px;
-  right: -1px;
+  width: 42px;
+  height: 38px;
+  padding-top: 3px;
+  right: 2px;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
-
   background-color: ${props =>
     props.$focus ? colors.inputColor : colors.accentColor};
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 450ms cubic-bezier(0.4, 0, 0.2, 1);
 `;
 
 export const FiSearchStyled = styled(FiSearch)`
-  opacity: 50%;
+  opacity: ${props => (props.$focus ? '50%' : '100%')};
   color: ${props => (props.$focus ? '#fff' : 'black')};
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 350ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 350ms cubic-bezier(0.4, 0, 0.2, 1);
 `;
