@@ -5,12 +5,13 @@ import { colors } from 'assets/variables/variables';
 export const FooterWrapper = styled.div`
   position: absolute;
   z-index: 1;
-  width: 100%;
-  padding: 80px 120px;
-  bottom: 0px;
   left:0;
+  bottom: 0px;
   display: block;
   text-align: start;
+  padding: 80px 120px;
+  width: 100%;
+  height: 383px;
   background-color: ${colors.bgColor};
 `;
 

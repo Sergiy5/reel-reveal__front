@@ -13,6 +13,8 @@ const GlobalStyle = createGlobalStyle`
   @font-face {
     font-family: 'mainFont';
     src: url(${mainFont}) format('woff');
+    font-size: 20px;
+    line-height: 30px;
     font-weight: normal;
     font-style: normal;
   }
@@ -20,14 +22,14 @@ const GlobalStyle = createGlobalStyle`
   @font-face {
     font-family: 'mainBoldFont';
     src: url(${mainBoldFont}) format('woff');
-    font-weight: bold;
+    font-weight: 700;
     font-style: normal;
   }
   
   @font-face {
     font-family: 'mainLightFont';
     src: url(${mainLightFont}) format('woff');
-    font-weight: lighter;
+    font-weight: normal;
     font-style: normal;
   }
    @font-face {
@@ -63,6 +65,33 @@ p {
 
 h1, h2, h3 {
   margin: 0px;
+}
+
+h1{
+  font-family: fontH1;
+  line-height: 60px;
+  font-size: 52px;
+}
+
+h2{
+  font-family: fontH2;
+  line-height: 60px;
+  font-size: 48px;
+}
+h3{
+  font-family: mainBoldFont;
+  line-height: 32px;
+  font-size: 30px;
+}
+h4{
+  font-family: mainFont;
+  line-height: 32px;
+  font-size: 28px;
+}
+h5{
+  font-family: mainFont;
+  line-height: 30px;
+  font-size: 20px;
 }
 
 ul,

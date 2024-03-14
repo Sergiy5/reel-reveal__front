@@ -1,20 +1,17 @@
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
-import { colors } from 'assets/variables/variables';
 import { ReactComponent as heroBGEllipse } from '../../assets/images/heroBGEllipse.svg';
-import heroImg from '../../assets/images/hero-image.webp';
+import { colors } from 'assets/variables/variables';
 
 export const HeroWrapper = styled.div`
   position: relative;
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  flex-direction: row;
-  gap: 20px;
   text-align: start;
-  padding-top: 56px;
-  padding-bottom: 120px;
-  height: 760px;
+  gap: 20px;
+  width: 100%;
+  height: 584px;
 `;
 
 export const HeroTextCTAWrapper = styled.div`
@@ -22,32 +19,28 @@ export const HeroTextCTAWrapper = styled.div`
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
-  width: 591px;
-  height: 316px;
+  width: 590px;
+  height: 584px;
   gap: 24px;
 `;
 
 export const HeroTitle = styled.h1`
   font-family: fontH1;
-  font-weight: 700;
   font-size: 52px;
   line-height: 115%;
 `;
 
 export const HeroText = styled.p`
   font-family: mainLightFont;
-  font-weight: 300;
   font-size: 20px;
-  line-height: 150%;
+  line-height: 30px;
 `;
 
 export const StartQuizBtn = styled(NavLink)`
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
   border-radius: 30px;
-  padding: 16px 48px;
   width: 285px;
   height: 40px;
   font-family: mainBoldFont;
@@ -71,16 +64,14 @@ export const StartQuizBtn = styled(NavLink)`
 export const HeroBGEllipse = styled(heroBGEllipse)`
   position: absolute;
   z-index: 1;
-  top: 0;
-  right: 0;
+  top: -24%;
+  right: -10%;
 `;
-export const HeroImgWrapper = styled.div`
+export const HeroImage = styled.img`
   position: absolute;
   z-index: 1;
-  top: 56px;
+  top: 0;
   right: 0;
   width: 590px;
   height: 584px;
-  background: transparent;
-  background-image: url(${heroImg});
 `;
