@@ -1,16 +1,19 @@
-export const quizList = {
-  quizPage1: {
-    title: 'Q1/7: How are you feeling today?',
+export const quizDataList = [
+  {
+    quiz: 'Q1/7',
+    title: ': How are you feeling today?',
     buttons: ['Happy', 'Sad', 'Adventurous', 'Mysteryous'],
     page: 1,
   },
-  quizPage2: {
-    title: 'Q2/7: Who are you watching the film with?',
+  {
+    quiz: 'Q2/7',
+    title: ': Who are you watching the film with?',
     buttons: ['Alone', 'Friends', 'Family', 'Significant other'],
     page: 2,
   },
-  quizPage3: {
-    title: 'Q3/7: Choose your favorite genre',
+  {
+    quiz: 'Q3/7',
+    title: ': Choose your favorite genre',
     buttons: [
       'Drama',
       'Comedy',
@@ -23,8 +26,9 @@ export const quizList = {
     ],
     page: 3,
   },
-  quizPage4: {
-    title: 'Q4/7: Something old or something new?',
+  {
+    quiz: 'Q4/7',
+    title: ': Something old or something new?',
     buttons: [
       'Classic (pre-1970s)',
       'Retro (1970s-1990s)',
@@ -33,8 +37,9 @@ export const quizList = {
     ],
     page: 4,
   },
-  quizPage5: {
-    title: 'Q5/7: Pick an iconic movie song',
+  {
+    quiz: 'Q5/7',
+    title: ': Pick an iconic movie song',
     buttons: [
       'Bohemian Rhapsody',
       'Let It Go',
@@ -43,8 +48,9 @@ export const quizList = {
     ],
     page: 5,
   },
-  quizPage6: {
-    title: 'Q6/7: What actor or actress  you would like to spend a day with?',
+  {
+    quiz: 'Q6/7',
+    title: ': What actor or actress  you would like to spend a day with?',
     buttons: [
       'Melissa McCarthy',
       'Harrison Ford',
@@ -53,9 +59,10 @@ export const quizList = {
     ],
     page: 6,
   },
-  quizPage7: {
-    title: 'Q7/7: Please select age rating if any',
+  {
+    quiz: 'Q7/7',
+    title: ': Please select age rating if any',
     buttons: ['Does not matter', 'Family friendly', 'PG 13+', 'R 18+'],
     page: 7,
   },
-};
+];
