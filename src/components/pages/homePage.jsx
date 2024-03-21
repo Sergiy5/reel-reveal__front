@@ -3,7 +3,7 @@ import { HowItWorks } from 'components/howItWork/HowItWorks';
 import { Quiz } from 'components/quiz/Quiz';
 import { UpcomingMovies } from 'components/upcomingMovies/UpcomingMovies';
 
-export const HomePage = () => {
+const HomePage = () => {
   return (
     <>
       <Hero />
@@ -13,3 +13,4 @@ export const HomePage = () => {
     </>
   );
 };
+export default HomePage

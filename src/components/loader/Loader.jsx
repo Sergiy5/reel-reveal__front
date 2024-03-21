@@ -3,7 +3,7 @@ import { LoaderWrapper } from './Loader.styled';
 
 export const Loader = () => {
   return (
-    <LoaderWrapper style={{ display: 'block', textAlign: 'center' }}>
+    <LoaderWrapper >
       <ColorRing
         visible={true}
         height="80"

@@ -3,13 +3,14 @@ import { useEffect, useState } from 'react';
 import { Container } from 'styles/Container.styled';
 import { ButtonNext, ButtonPrew } from './UpcomingMovies.styled';
 import { ListMovies } from 'components/listMovies/ListMovies';
+import { Loader } from 'components/loader/Loader';
 
 export const UpcomingMovies = () => {
   const [moviesAll, setMoviesAll] = useState([]);
   const [moviesOnPage, setMoviesOnPage] = useState([]);
   const [page, setPage] = useState(1);
 
-//   console.log(moviesOnPage);
+  //   console.log(moviesOnPage);
 
   const showMoviesPerPage = (arrMoies, page) => {
     const moviesPerPage = arrMoies.slice(page, page + 4);
