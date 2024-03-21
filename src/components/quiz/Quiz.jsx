@@ -16,22 +16,33 @@ import { ProgresBar } from './progresBar/ProgresBar';
 
 export const Quiz = () => {
   const [quizCard, setQuizCard] = useState(() => quizDataList[0]);
-  const [choicedButtons, setChoicedButtons] = useState([])
-console.log(choicedButtons);
+  const [currentPageForProgresBar, setCurrentPageForProgresBar] = useState(1);
+  const [quizData, setQuizData] = useState([]);
+console.log(quizData)
   const { quiz, title, page, buttons } = quizCard;
 
+  // Transition to the next page ================
   const handleQuizCard = (list, page) => {
-    if (page === 7) return;
-  const currentQuiz = list.filter((item) => item.page === page + 1)
-    return setQuizCard(...currentQuiz);
-  }
+    if (page < 8) {
+      const currentQuiz = list.filter(item => item.page === page + 1);
 
+      setQuizCard(...currentQuiz);
+    }
+  };
+
+  // Collect data from quiz ======================
   const handleChoiseBtn = (e) => {
-    if (page === 7) return; // Need to add logic =======================
 
-    setChoicedButtons(prev => [...prev, e]);
+    // Page for ProgresBar =======================
+    if (currentPageForProgresBar < 8) {
+      setCurrentPageForProgresBar(page + 1);
+      setQuizData(prev => [...prev, e]);
+    }
+
+    if (page === 7) return; // Need add logic =======================
+
     handleQuizCard(quizDataList, page);
-  }
+  };
 
   return (
     <QuizWrapper>
@@ -43,7 +54,7 @@ console.log(choicedButtons);
           {title}
         </TitleQuizStyled>
 
-        <ProgresBar page={page} />
+        <ProgresBar page={currentPageForProgresBar} />
       </TittleProgresWrapper>
 
       <BtnQuizWrapper>
