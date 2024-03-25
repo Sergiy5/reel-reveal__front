@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { colors } from 'assets/variables/variables';
+import { colors } from 'assets/variables/variablesColors';
 
 export const BarWrapper = styled.div`
   display: flex;

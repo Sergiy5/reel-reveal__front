@@ -1,7 +1,7 @@
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 import { ReactComponent as heroBGEllipse } from '../../assets/images/heroBGEllipse.svg';
-import { colors } from 'assets/variables/variables';
+import { colors } from 'assets/variables/variablesColors';
 
 export const HeroWrapper = styled.div`
   position: relative;

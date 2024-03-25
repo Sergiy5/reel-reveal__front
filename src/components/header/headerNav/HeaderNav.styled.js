@@ -1,7 +1,7 @@
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 import { ReactComponent as MySvg } from '../../../assets/images/user.svg';
-import { colors } from 'assets/variables/variables';
+import { colors } from 'assets/variables/variablesColors';
 
 export const WrapperNav = styled.div`
   font-weight: 300;

@@ -6,7 +6,7 @@ import mainLightFont from '../assets/fonts/cera pro sv/CeraPro-Light.woff';
 import fontH1 from '../assets/fonts/hind/Hind-Bold.woff2';
 import fontH2 from '../assets/fonts/hind/Hind-SemiBold.woff2';
 
-import { colors } from '../assets/variables/variables';
+import { colors } from '../assets/variables/variablesColors';
 
 const GlobalStyle = createGlobalStyle`
 

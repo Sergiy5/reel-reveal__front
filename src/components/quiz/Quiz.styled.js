@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { ReactComponent as Border } from '../../assets/images/quiz/borderSvg.svg';
-import { colors } from 'assets/variables/variables';
+import { colors } from 'assets/variables/variablesColors';
 
 export const QuizWrapper = styled.div`
   position: relative;

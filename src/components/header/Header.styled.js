@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { ReactComponent as headerElips } from '../../assets/images/ellipseHeader.svg';
-import { colors } from 'assets/variables/variables';
+import { colors } from 'assets/variables/variablesColors';
 
 export const WrapperHeader = styled.div`
   position: absolute;

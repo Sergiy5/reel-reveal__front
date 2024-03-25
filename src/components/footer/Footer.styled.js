@@ -1,11 +1,11 @@
 import styled from 'styled-components';
 import { ReactComponent as footerElips } from '../../assets/images/footerBGEllipse.svg';
-import { colors } from 'assets/variables/variables';
+import { colors } from 'assets/variables/variablesColors';
 
 export const FooterWrapper = styled.div`
   position: absolute;
   z-index: 1;
-  left:0;
+  left: 0;
   bottom: 0px;
   display: block;
   text-align: start;

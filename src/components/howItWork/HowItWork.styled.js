@@ -1,4 +1,4 @@
-import { colors } from 'assets/variables/variables';
+import { colors } from 'assets/variables/variablesColors';
 import styled from 'styled-components';
 import { ReactComponent as howItWorksBGEllipse } from '../../assets/images/howItWorks/howItWorksBGEllipse.svg';
 

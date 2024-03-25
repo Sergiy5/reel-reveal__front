@@ -1,4 +1,4 @@
-import { colors } from 'assets/variables/variables';
+import { colors } from 'assets/variables/variablesColors';
 import { FiSearch } from 'react-icons/fi';
 import styled from 'styled-components';
 

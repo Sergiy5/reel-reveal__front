@@ -1,38 +1,18 @@
-import axios from "axios";
+import axios from 'axios';
 
-const AUTH_TOKEN= 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI5OGU5MzBjMmZhNzRjYWVhNjRmMjAyNmNmNzBlYzQxMyIsInN1YiI6IjY0NmQwNWJhZDE4NTcyMDE4MDJlOGYyOSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.gvC078v2ZEDlsUKlhf6XJhVHnGo7gwYMbWV5S3NVSKY'
+const AUTH_TOKEN =
+  'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI5OGU5MzBjMmZhNzRjYWVhNjRmMjAyNmNmNzBlYzQxMyIsInN1YiI6IjY0NmQwNWJhZDE4NTcyMDE4MDJlOGYyOSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.gvC078v2ZEDlsUKlhf6XJhVHnGo7gwYMbWV5S3NVSKY';
 
-axios.defaults.baseURL = 'https://api.themoviedb.org/3/movie/'
-axios.defaults.headers.common['Authorization'] = AUTH_TOKEN; 
+axios.defaults.baseURL = 'https://api.themoviedb.org/3/movie/';
+axios.defaults.headers.common['Authorization'] = AUTH_TOKEN;
 
-
-export const getUpcomingMovies = async (page) => {
+export const getUpcomingMovies = async page => {
   try {
-    const res = await axios.get(`upcoming?language=en-US&${page}`);
-    return res.data.results
-     
+    const res = await axios.get(`upcoming?language=en-US&page=${page}`);
+    return res.data.results;
+    
   } catch (error) {
-    console.log(error.message)
+    console.log(error.message);
   }
- 
 };
 
-
-// const options = {
-//   method: 'GET',
-//   headers: {
-//     accept: 'application/json',
-//     Authorization:
-//       'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI5OGU5MzBjMmZhNzRjYWVhNjRmMjAyNmNmNzBlYzQxMyIsInN1YiI6IjY0NmQwNWJhZDE4NTcyMDE4MDJlOGYyOSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.gvC078v2ZEDlsUKlhf6XJhVHnGo7gwYMbWV5S3NVSKY',
-//   },
-// };
-
-// export const getUpcomingMovies = (page = 1) => {
-//     return fetch(
-//       `https://api.themoviedb.org/3/movie/upcoming?language=en-US&${page}`,
-//       options
-//     )
-//       .then(response => response.json())
-//       .then(response => console.log(response))
-//       .catch(err => console.error(err));
-// }

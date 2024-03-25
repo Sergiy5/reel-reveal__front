@@ -1,4 +1,4 @@
-import { colors } from 'assets/variables/variables';
+import { colors } from 'assets/variables/variablesColors';
 import styled from 'styled-components';
 
 export const ListMenuStyled = styled.ul`
@@ -19,4 +19,4 @@ export const ItemStyled = styled.li`
   &:hover {
     color: ${colors.accentColor};
   }
-  `
+`;

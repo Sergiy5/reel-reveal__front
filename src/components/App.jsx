@@ -5,7 +5,7 @@ import { MainWrapper } from "styles/MainWrapper.styled";
 // import { MovieSearchPage } from "./pages/movieSearchPage";
 // import  HomePage  from "./pages/homePage";
 
-const HomePage = React.lazy(() => import('./pages/homePage'));
+const HomePage = React.lazy(() => import('./pages/HomePage'));
 
 export const App = () => {
   return (
