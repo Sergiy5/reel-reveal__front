@@ -10,12 +10,12 @@ import { ListMovies } from 'components/listMovies/ListMovies';
 
 export const GetShowMovies = ({ title, getMovies }) => {
   const [allMovies, setAllMovies] = useState([]);
-  const [numberGetRequest, setNumberGetRequest] = useState(1);
   const [moviesForOnePage, setMoviesForOnePage] = useState([]);
-  const [isActivePrevBtn, setIsActivePrevBtn] = useState(true);
-  const [isActiveNextBtn, setIsActiveNextBtn] = useState(false);
+  const [isDisablePrevBtn, setIsActivePrevBtn] = useState(true);
+  const [isDisableNextBtn, setIsDisableNextBtn] = useState(false);
   const [page, setPage] = useState(1);
-
+  // const [numberGetRequest, setNumberGetRequest] = useState(1);
+  const numberGetRequest = 1;
   const islastPageMovies = (allMovies, page) => {
     const quantityMovies = allMovies.length;
     const isLastPage = quantityMovies / page === 4 ? true : false;
@@ -34,38 +34,46 @@ export const GetShowMovies = ({ title, getMovies }) => {
       }
     };
 
-    if (numberGetRequest === 1) getAllUpcomingMovies(numberGetRequest);
+    
+      getAllUpcomingMovies(numberGetRequest);
 
     // Get next requests movies =============================================
-    if (numberGetRequest > 1) {
-      const getNextAllUpcomingMovies = async quntityGet => {
-        try {
-          const response = await getMovies(quntityGet);
-          setAllMovies(prev => [...prev, ...response]);
-          if (response.length === 20) {
-            setIsActiveNextBtn(false);
-          }
-        } catch (error) {
-          console.log(error.message);
-        }
-      };
-      getNextAllUpcomingMovies(numberGetRequest);
-    }
+    // if (numberGetRequest > 1) {
+    //   const getNextAllUpcomingMovies = async numberGet => {
+    //     try {
+    //       const response = await getMovies(numberGet);
+    //       setAllMovies(prev => [...prev, ...response]);
+
+    //       if (response.length === 20) {
+    //         setIsActiveNextBtn(false);
+    //       }
+    //     } catch (error) {
+    //       console.log(error.message);
+    //     }
+    //   };
+    //   getNextAllUpcomingMovies(numberGetRequest);
+    // }
   }, [getMovies, numberGetRequest]);
 
   //====================================================================================================
   useEffect(() => {
     const isLastPage = islastPageMovies(allMovies, page);
 
-    if (isLastPage) {
-      setNumberGetRequest(get => get + 1);
-    }
-    const firstMovieForPage = firstMovieOnPage(page);
+    
+    //Set number get request    
+    // if (isLastPage) {
+      //   setNumberGetRequest(get => get + 1);
+      // }
+      const firstMovieForPage = firstMovieOnPage(page);
+      
+      // Menage next, prew buttons to active ===========================
+      if (firstMovieForPage === 0) setIsActivePrevBtn(true);
+      if (firstMovieForPage > 0) setIsActivePrevBtn(false);
+      
+    if (isLastPage) setIsDisableNextBtn(true);
+    if (!isLastPage) setIsDisableNextBtn(false);
 
-    // Menage next, prew buttons to active ===========================
-    if (firstMovieForPage === 0) setIsActivePrevBtn(true);
-    if (firstMovieForPage > 0) setIsActivePrevBtn(false);
-
+    
     //Slice movies for one page =======================================
     const moviesPerPage = sliceMoviesPerPage(allMovies, firstMovieForPage);
 
@@ -78,20 +86,23 @@ export const GetShowMovies = ({ title, getMovies }) => {
   return (
     <Container style={{ position: 'relative' }}>
       <h2>{title}</h2>
+
       <ButtonPrew
         type="button"
-        disabled={isActivePrevBtn}
+        disabled={isDisablePrevBtn}
         onClick={() => setPage(page - 1)}
       >
-        <SvgArrow $active={isActivePrevBtn} style={{ rotate: '-180deg' }} />{' '}
+          <SvgArrow $active={isDisablePrevBtn} style={{ rotate: '-180deg' }} />
       </ButtonPrew>
+
       <ListMovies movies={moviesForOnePage} />
+
       <ButtonNext
         type="button"
-        disabled={isActiveNextBtn}
+        disabled={isDisableNextBtn}
         onClick={() => setPage(page + 1)}
       >
-        <SvgArrow $active={isActiveNextBtn} />
+          <SvgArrow $active={isDisableNextBtn} />
       </ButtonNext>
     </Container>
   );

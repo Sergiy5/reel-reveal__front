@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import {
   ListSocialStyled,
   ItemSvg,
@@ -10,19 +9,33 @@ import { ReactComponent as MailIcon } from '../../../assets/images/mail.svg';
 export const ListSocial = () => {
     return (
       <ListSocialStyled>
-        <Link>
+        <a
+          href="https://www.facebook.com/?locale=uk_UA"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <ItemSvg>
             <FaceBookIcon />
           </ItemSvg>
-        </Link>
-        <Link>
+        </a>
+        <a
+          href="https://www.instagram.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <ItemSvg>
             <InstagramIcon />
           </ItemSvg>
-        </Link>
-        <Link>
-          <ItemSvg><MailIcon/></ItemSvg>
-        </Link>
+        </a>
+        <a
+          href="https://www.gmail.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <ItemSvg>
+            <MailIcon />
+          </ItemSvg>
+        </a>
       </ListSocialStyled>
     );
 };

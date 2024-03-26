@@ -3,7 +3,6 @@ import styled from 'styled-components';
 
 export const BtnQuiz = styled.button`
   display: block;
-  border-radius: 18px;
   width: 285px;
   height: 200px;
   font-weight: 400;
@@ -12,9 +11,25 @@ export const BtnQuiz = styled.button`
   text-align: center;
   color: inherit;
   padding: 55px 51px;
+  border-radius: 18px;
+  border: 1px solid ${colors.bgColor};
+
   background-image: radial-gradient(
     ellipse closest-side at center,
     rgb(32, 43, 61),
     ${colors.bgColor} 160%
   );
+
+  transition-property: border, color;
+  transition-duration: 350ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  
+  &:hover {
+    border: 1px solid ${colors.accentColor};
+    color: ${colors.accentColor};
+  }
+  &focus {
+    border: 1px solid ${colors.accentClickedColor};
+    color: ${colors.accentClickedColor};
+  }
 `;

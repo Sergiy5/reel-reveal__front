@@ -1,9 +1,9 @@
-import { getUpcomingMovies } from 'apiService/apiService';
 import { Hero } from 'components/hero/Hero';
 import { HowItWorks } from 'components/howItWork/HowItWorks';
 import { Quiz } from 'components/quiz/Quiz';
 import { GetShowMovies } from 'components/GetShowMovies/GetShowMovies';
 import { topRatedMOvies } from 'apiService/topRatedMovies';
+import { getUpcomingMovies } from 'apiService/getUpcomingMovies';
 
 const HomePage = () => {
   return (
@@ -12,13 +12,10 @@ const HomePage = () => {
       <HowItWorks />
       <Quiz />
       <GetShowMovies
-        title={'Upcoming movies in 2024'}
+        title={'Upcoming 20 movies in 2024'}
         getMovies={getUpcomingMovies}
       />
-      <GetShowMovies
-        title={'TOP rated movies'}
-        getMovies={topRatedMOvies}
-      />
+      <GetShowMovies title={'TOP 20 rated movies'} getMovies={topRatedMOvies} />
     </>
   );
 };
