@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/reel-reveal__front/static/css/main.cd2e038f.css",
-    "main.js": "/reel-reveal__front/static/js/main.178649c2.js",
-    "static/js/523.35b9563b.chunk.js": "/reel-reveal__front/static/js/523.35b9563b.chunk.js",
-    "static/js/520.1e47b96a.chunk.js": "/reel-reveal__front/static/js/520.1e47b96a.chunk.js",
+    "main.js": "/reel-reveal__front/static/js/main.1257e3a9.js",
+    "static/js/555.e48b669c.chunk.js": "/reel-reveal__front/static/js/555.e48b669c.chunk.js",
+    "static/js/399.17ceb1f1.chunk.js": "/reel-reveal__front/static/js/399.17ceb1f1.chunk.js",
     "static/media/Hind-SemiBold.woff2": "/reel-reveal__front/static/media/Hind-SemiBold.55c257f0bcd79cba9a3f.woff2",
     "static/media/Hind-Bold.woff2": "/reel-reveal__front/static/media/Hind-Bold.8f1745f2a9d28fcf1630.woff2",
     "static/media/CeraPro-Regular.woff": "/reel-reveal__front/static/media/CeraPro-Regular.a81f68b2a1331c71b4e4.woff",
@@ -25,12 +25,12 @@
     "static/media/ellipseHeader.svg": "/reel-reveal__front/static/media/ellipseHeader.053f4e517f6b82851bd814825a16637e.svg",
     "static/media/heroBGEllipse.svg": "/reel-reveal__front/static/media/heroBGEllipse.453e40ea1f78e562955daf6b6dd6a0d3.svg",
     "main.cd2e038f.css.map": "/reel-reveal__front/static/css/main.cd2e038f.css.map",
-    "main.178649c2.js.map": "/reel-reveal__front/static/js/main.178649c2.js.map",
-    "523.35b9563b.chunk.js.map": "/reel-reveal__front/static/js/523.35b9563b.chunk.js.map",
-    "520.1e47b96a.chunk.js.map": "/reel-reveal__front/static/js/520.1e47b96a.chunk.js.map"
+    "main.1257e3a9.js.map": "/reel-reveal__front/static/js/main.1257e3a9.js.map",
+    "555.e48b669c.chunk.js.map": "/reel-reveal__front/static/js/555.e48b669c.chunk.js.map",
+    "399.17ceb1f1.chunk.js.map": "/reel-reveal__front/static/js/399.17ceb1f1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.cd2e038f.css",
-    "static/js/main.178649c2.js"
+    "static/js/main.1257e3a9.js"
   ]
 }
