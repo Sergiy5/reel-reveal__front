@@ -3,7 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import Layout from "./layout/Layout";
 import { MainWrapper } from "styles/MainWrapper.styled";
 // import { MovieSearchPage } from "./pages/movieSearchPage";
-import  HomePage  from "./pages/HomePage";
+// import  HomePage  from "./pages/HomePage";
 
 // const HomePage = React.lazy(() => import('./pages/HomePage'));
 
@@ -12,7 +12,7 @@ export const App = () => {
     <MainWrapper>
       <Routes>
         <Route path="/" element={<Layout />}>
-          <Route index element={<HomePage />} />
+          {/* <Route index element={<HomePage />} /> */}
           {/* <Route path="/search" element={<MovieSearchPage />} /> */}
           {/* <Route index element={<Home />} />
           <Route path="catalog" element={<CatalogPage />} />
