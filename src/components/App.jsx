@@ -3,9 +3,9 @@ import { Route, Routes } from "react-router-dom";
 import Layout from "./layout/Layout";
 import { MainWrapper } from "styles/MainWrapper.styled";
 // import { MovieSearchPage } from "./pages/movieSearchPage";
-// import  HomePage  from "./pages/homePage";
+import  HomePage  from "./pages/HomePage";
 
-const HomePage = React.lazy(() => import('./pages/HomePage'));
+// const HomePage = React.lazy(() => import('./pages/HomePage'));
 
 export const App = () => {
   return (
