@@ -1,6 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
-import { ReactComponent as MySvg } from '../../../assets/images/user.svg';
+import { ReactComponent as SvgUser } from '../../../assets/images/user.svg';
 import { colors } from 'assets/variables/variablesColors';
 
 export const WrapperNav = styled.div`
@@ -13,7 +13,7 @@ export const WrapperNav = styled.div`
   height: 40px;
 `;
 
-export const UserSvg = styled(MySvg)`
+export const UserSvg = styled(SvgUser)`
   width: 24px;
   height: 24px;
   color: #fff;

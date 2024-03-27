@@ -9,7 +9,7 @@ import {
   TitleQuizStyled,
   TittleProgresWrapper,
 } from './Quiz.styled';
-import { quizDataList } from '../../assets/variables/quizDataList';
+import { quizDataList } from '../../assets/ststicData/quizDataList';
 import { ProgresBar } from './progresBar/ProgresBar';
 
 // const [page, title, ] = quizDataList;

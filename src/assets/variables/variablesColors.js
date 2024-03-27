@@ -11,4 +11,5 @@ export const colors = {
   disabledBgColor: 'rgb(0,0,0, 0.3)',
   enableBgColor: 'rgb(0,0,0, 0.6)',
   hoverBgColor: 'rgb(12, 52, 58, 0.8)',
+  accentClicked: 'rgb(32, 201, 188, 0.5)',
 };

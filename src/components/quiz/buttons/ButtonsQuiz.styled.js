@@ -10,7 +10,7 @@ export const BtnQuiz = styled.button`
   line-height: 114%;
   text-align: center;
   color: inherit;
-  padding: 55px 51px;
+  padding: 55px 50px;
   border-radius: 18px;
   border: 1px solid ${colors.bgColor};
 
@@ -19,17 +19,22 @@ export const BtnQuiz = styled.button`
     rgb(32, 43, 61),
     ${colors.bgColor} 160%
   );
-
-  transition-property: border, color;
+  transform: none;
+  transition-property: transform, border, color;
   transition-duration: 350ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  
+
   &:hover {
+    transform: scale(1.05);
+
     border: 1px solid ${colors.accentColor};
     color: ${colors.accentColor};
   }
-  &focus {
+  &:focus {
     border: 1px solid ${colors.accentClickedColor};
     color: ${colors.accentClickedColor};
+  }
+  &:active {
+    transform: scale(1);
   }
 `;
