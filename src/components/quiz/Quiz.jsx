@@ -20,7 +20,7 @@ export const Quiz = () => {
   const [quizData, setQuizData] = useState([]);
 
   if (quizData.length) console.log(quizData);
-  
+
   const { quiz, title, page, buttons } = quizCard;
 
   // Transition to the next page ================
@@ -33,8 +33,7 @@ export const Quiz = () => {
   };
 
   // Collect data from quiz ======================
-  const handleChoiseBtn = (e) => {
-
+  const handleChoiseBtn = e => {
     // Page for ProgresBar =======================
     if (currentPageForProgresBar < 8) {
       setCurrentPageForProgresBar(page + 1);
