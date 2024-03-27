@@ -5,7 +5,7 @@ import { MainWrapper } from "styles/MainWrapper.styled";
 // import { MovieSearchPage } from "./pages/movieSearchPage";
 // import  HomePage  from "./pages/HomePage";
 
-const HomePage = React.lazy(() => import('./pages/HomePage'));
+const HomePage = React.lazy(() => import('./pages/homePage'));
 
 export const App = () => {
   return (
@@ -14,7 +14,7 @@ export const App = () => {
         <Route path="/" element={<Layout />}>
           <Route index element={<HomePage />} />
           {/* <Route path="/search" element={<MovieSearchPage />} /> */}
-          {/* <Route index element={<Home />} />
+          {/* 
           <Route path="catalog" element={<CatalogPage />} />
           <Route path="favorite" element={<Favorite />} />
 
