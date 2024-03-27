@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/reel-reveal__front/static/css/main.cd2e038f.css",
+    "main.js": "/reel-reveal__front/static/js/main.4643bbc0.js",
+    "static/media/Hind-SemiBold.woff2": "/reel-reveal__front/static/media/Hind-SemiBold.55c257f0bcd79cba9a3f.woff2",
+    "static/media/Hind-Bold.woff2": "/reel-reveal__front/static/media/Hind-Bold.8f1745f2a9d28fcf1630.woff2",
+    "static/media/CeraPro-Regular.woff": "/reel-reveal__front/static/media/CeraPro-Regular.a81f68b2a1331c71b4e4.woff",
+    "static/media/CeraPro-Light.woff": "/reel-reveal__front/static/media/CeraPro-Light.98b5420ed7dadfd6bac8.woff",
+    "static/media/CeraPro-Bold.woff": "/reel-reveal__front/static/media/CeraPro-Bold.d5b3ad75d9323b167595.woff",
+    "static/media/mainlogo.svg": "/reel-reveal__front/static/media/mainlogo.f5f92dcc54f3eaf0682e42325192e8f0.svg",
+    "static/media/camera.svg": "/reel-reveal__front/static/media/camera.7595970a84699c2c7e87f3f612e06500.svg",
+    "static/media/face-book.svg": "/reel-reveal__front/static/media/face-book.40dd6d73b78c40bc86b38246ba9cd6c2.svg",
+    "static/media/instagram.svg": "/reel-reveal__front/static/media/instagram.d82eb6bc6e3ac60e2b07aa8dc1563115.svg",
+    "static/media/user.svg": "/reel-reveal__front/static/media/user.ad101f6d357e09a30c3197d469442e5a.svg",
+    "static/media/mail.svg": "/reel-reveal__front/static/media/mail.683497741e320f7c15b0d2f4853880ac.svg",
+    "index.html": "/reel-reveal__front/index.html",
+    "static/media/footerBGEllipse.svg": "/reel-reveal__front/static/media/footerBGEllipse.5d07630eadacacf4ff2af6467897bf03.svg",
+    "static/media/ellipseHeader.svg": "/reel-reveal__front/static/media/ellipseHeader.053f4e517f6b82851bd814825a16637e.svg",
+    "main.cd2e038f.css.map": "/reel-reveal__front/static/css/main.cd2e038f.css.map",
+    "main.4643bbc0.js.map": "/reel-reveal__front/static/js/main.4643bbc0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cd2e038f.css",
+    "static/js/main.4643bbc0.js"
+  ]
+}
