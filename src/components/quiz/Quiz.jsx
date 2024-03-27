@@ -18,7 +18,9 @@ export const Quiz = () => {
   const [quizCard, setQuizCard] = useState(() => quizDataList[0]);
   const [currentPageForProgresBar, setCurrentPageForProgresBar] = useState(1);
   const [quizData, setQuizData] = useState([]);
-console.log(quizData)
+
+  if (quizData.length) console.log(quizData);
+  
   const { quiz, title, page, buttons } = quizCard;
 
   // Transition to the next page ================
