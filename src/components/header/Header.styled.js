@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { ReactComponent as headerElips } from '../../assets/images/ellipseHeader.svg';
+import { ReactComponent as headerElips } from '../../assets/images/home/ellipseHeader.svg';
 import { colors } from 'assets/variables/variablesColors';
 
 export const WrapperHeader = styled.div`
