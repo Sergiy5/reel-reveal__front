@@ -1,6 +1,5 @@
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
-import { ReactComponent as SvgUser } from '../../../assets/images/user.svg';
 import { colors } from 'assets/variables/variablesColors';
 
 export const WrapperNav = styled.div`
@@ -13,17 +12,28 @@ export const WrapperNav = styled.div`
   height: 40px;
 `;
 
-export const UserSvg = styled(SvgUser)`
-  width: 24px;
-  height: 24px;
-  color: #fff;
+export const SvgUserStyled = styled.svg`
+   fill: #fff;
 
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover {
-    color: ${colors.accentColor};
+    fill: ${colors.accentColor};
   }
 `;
+
+export const SvgHeartStyled = styled.svg`
+  width: 18px;
+  height: 16px;
+  fill: #fff;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    fill: ${colors.accentColor};
+  }
+`;
+
 export const NavLinkStyled = styled(NavLink)`
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 

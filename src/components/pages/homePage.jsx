@@ -4,6 +4,8 @@ import { Quiz } from 'components/quiz/Quiz';
 import { GetShowMovies } from 'components/GetShowMovies/GetShowMovies';
 import { topRatedMOvies } from 'apiService/topRatedMovies';
 import { getUpcomingMovies } from 'apiService/getUpcomingMovies';
+import { ChoseGenre } from 'components/choseGenres/ChooseGenres';
+import SimpleSlider from 'components/stuckOnMovieChoices/StuckOnMovieChoices';
 
 const HomePage = () => {
   return (
@@ -16,6 +18,8 @@ const HomePage = () => {
         getMovies={getUpcomingMovies}
       />
       <GetShowMovies title={'TOP 20 rated movies'} getMovies={topRatedMOvies} />
+      <ChoseGenre />
+      <SimpleSlider />
     </>
   );
 };

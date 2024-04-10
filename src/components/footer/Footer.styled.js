@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { ReactComponent as footerElips } from '../../assets/images/footerBGEllipse.svg';
 import { colors } from 'assets/variables/variablesColors';
 
 export const FooterWrapper = styled.div`
@@ -22,9 +21,9 @@ export const MenuFooterWrapper = styled.div`
   height: fit-content;
 `;
 
-export const FooterBackgroundElips = styled(footerElips)`
+export const SvgBgStyled = styled.svg`
   position: absolute;
-  z-index: 1;
+  z-index: 0;
   bottom: 10px;
   left: 100px;
 `;

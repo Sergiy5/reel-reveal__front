@@ -8,7 +8,7 @@ export const MainWrapper = styled.div`
   justify-content: flex-start;
   flex-direction: column;
   gap: 120px;
-  padding: 144px 120px 443px 120px;
+  padding: 144px 0 443px 0;
   width: 1440px;
   background-color: ${colors.bgColor};
 `;

@@ -1,20 +1,39 @@
 import {
-  HeroBGEllipse,
   HeroImage,
   HeroText,
   HeroTextCTAWrapper,
-  HeroTitle,
-  HeroWrapper,
   StartQuizBtn,
+  SvgStyled,
 } from './HeroStyled';
-import heroImg from '../../assets/images/hero-image.webp';
+import heroImg from '../../assets/images/heroImage.webp';
+import { useEffect } from 'react';
+import Sprite from '../../assets/images/svgSprite/sprite.svg';
+import { Container } from 'styles/Container.styled';
 
 export const Hero = () => {
+  useEffect(() => {
+    /*Looking max number division without a remainder============*/
+    // const compairNumbers = (number1, numbe2) => {
+    //   for (let i = number1 - 1; i > 0; i--) {
+    //     if (number1 % i === 0) {
+    //       if (numbe2 % i === 0) {
+    //         // const largest = Math.max(i);
+    //         console.log('largest', i);
+    //         return i;
+    //       }
+    //     }
+    //   }
+    // };
+    // compairNumbers(5555200, 666125);
+  }, []);
+
   return (
-    <HeroWrapper>
-      <HeroBGEllipse />
+    <Container row>
+      <SvgStyled width="833" height="890">
+        <use xlinkHref={`${Sprite}#heroEllips`} />
+      </SvgStyled>
       <HeroTextCTAWrapper>
-        <HeroTitle>Discover Your Perfect Movie with ReelReveal!</HeroTitle>
+        <h1>Discover Your Perfect Movie with ReelReveal!</h1>
         <HeroText>
           Tired of endlessly scrolling through streaming platforms, unsure of
           what to watch? Look no further! Reel Reveal is your go-to service for
@@ -23,6 +42,6 @@ export const Hero = () => {
         <StartQuizBtn to={'/search'}>Start quiz</StartQuizBtn>
       </HeroTextCTAWrapper>
       <HeroImage src={heroImg} alt="Hero movies" />
-    </HeroWrapper>
+    </Container >
   );
 };

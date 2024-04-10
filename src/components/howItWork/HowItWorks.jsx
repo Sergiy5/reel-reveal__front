@@ -1,5 +1,4 @@
 import {
-  HowItWorksWrapper,
   HowItWorksAllCardsWrapper,
   HowItWorksOneCardWrapper,
   TextCardStyled,
@@ -7,12 +6,12 @@ import {
   SvgStyled,
   TitleH3styled,
 } from './HowItWork.styled';
-// import { ReactComponent as Svg } from '../../assets/images';
 import sprite from '../../assets/images/howItWorks/sprite.svg';
+import { Container } from 'styles/Container.styled';
 
 export const HowItWorks = () => {
   return (
-    <HowItWorksWrapper>
+    <Container>
       <HowItWorksBGSElips />
       <h2>How it works</h2>
       <HowItWorksAllCardsWrapper>
@@ -47,6 +46,6 @@ export const HowItWorks = () => {
           </TextCardStyled>
         </HowItWorksOneCardWrapper>
       </HowItWorksAllCardsWrapper>
-    </HowItWorksWrapper>
+    </Container>
   );
 };

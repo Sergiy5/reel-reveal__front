@@ -7,11 +7,10 @@ export const WrapperSearchBar = styled.div`
   display: flex;
   align-items: center;
   width: 405px;
-  /* height: 40px; */
   border-radius: 20px;
 `;
 
-export const HeaderSearchBarStyled = styled.input`
+export const HeaderInputStyled = styled.input`
   width: 403px;
   height: 38px;
   padding-left: 21px;

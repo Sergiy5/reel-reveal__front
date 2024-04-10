@@ -9,10 +9,16 @@ export const ListSocialStyled = styled.ul`
   gap: 16px;
 `;
 
-export const ItemSvg = styled.li`
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+export const Item = styled.li`
+  height: 34px;
+`;
+export const SvgStyled = styled.svg`
+  width: 34px;
+  height: 34px;
+  fill: ${colors.textColor};
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover {
-    color: ${colors.accentColor};
+    fill: ${colors.accentColor};
   }
 `;

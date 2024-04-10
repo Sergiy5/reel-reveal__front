@@ -1,41 +1,45 @@
-import {
-  ListSocialStyled,
-  ItemSvg,
-} from './ListSocial.styled';
-import { ReactComponent as FaceBookIcon } from '../../../assets/images/face-book.svg';
-import { ReactComponent as InstagramIcon } from "../../../assets/images/instagram.svg";
-import { ReactComponent as MailIcon } from '../../../assets/images/mail.svg';
+import { ListSocialStyled, Item, SvgStyled } from './ListSocial.styled';
+import Sprite from '../../../assets/images/svgSprite/sprite.svg';
 
 export const ListSocial = () => {
-    return (
-      <ListSocialStyled>
+  return (
+    <ListSocialStyled>
+      <Item>
         <a
           href="https://www.facebook.com/?locale=uk_UA"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <ItemSvg>
-            <FaceBookIcon />
-          </ItemSvg>
+          <SvgStyled >
+            <use xlinkHref={`${Sprite}#icon-facebook`} />
+          </SvgStyled>
+          {/* <FaceBookIcon /> */}
         </a>
+      </Item>
+      <Item>
         <a
           href="https://www.instagram.com"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <ItemSvg>
-            <InstagramIcon />
-          </ItemSvg>
+          <SvgStyled >
+            <use xlinkHref={`${Sprite}#icon-instagram`} />
+          </SvgStyled>
+          {/* <InstagramIcon /> */}
         </a>
+      </Item>
+      <Item>
         <a
           href="https://www.gmail.com"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <ItemSvg>
-            <MailIcon />
-          </ItemSvg>
+          <SvgStyled >
+            <use xlinkHref={`${Sprite}#icon-mail`} />
+          </SvgStyled>
+          {/* <MailIcon /> */}
         </a>
-      </ListSocialStyled>
-    );
+      </Item>
+    </ListSocialStyled>
+  );
 };

@@ -10,6 +10,12 @@ module.exports = {
         },
       },
     },
+    {
+      name: 'cleanupAttrs',
+      params: {
+        attrs: '(stroke|fill)',
+      },
+    },
     'cleanupEnableBackground',
     'cleanupAttrs',
     'removeDoctype',
@@ -41,11 +47,5 @@ module.exports = {
     'convertShapeToPath',
     'sortAttrs',
     'removeDimensions',
-    {
-      name: 'removeAttrs',
-      params: {
-        attrs: '(stroke|fill)',
-      },
-    },
   ],
 };

@@ -1,18 +1,22 @@
 import { MainLogo } from 'components/mainLogo/MainLogo';
-import { FooterBackgroundElips, FooterWrapper, MenuFooterWrapper } from './Footer.styled';
+import { SvgBgStyled, FooterWrapper, MenuFooterWrapper } from './Footer.styled';
 import { MenuFootr } from './menuFooter/MenuFooter';
 import { ListSocial } from './listSocial/ListSocial';
-import { ReactComponent as CameraIcon } from '../../assets/images/camera.svg';
+import Sprite from '../../assets/images/svgSprite/sprite.svg';
 
 export const Footer = () => {
   return (
     <>
-      <FooterBackgroundElips/>
+      {/* <SvgBgStyled width="1429" height="614">
+        <use xlinkHref={`${Sprite}#footerBgEllips`} />
+      </SvgBgStyled> */}
       <FooterWrapper>
         <MainLogo />
         <MenuFooterWrapper>
           <MenuFootr />
-          <CameraIcon />
+          <svg width="154" height="160">
+            <use xlinkHref={`${Sprite}#icon-camera`} />
+          </svg>
           <ListSocial />
         </MenuFooterWrapper>
       </FooterWrapper>

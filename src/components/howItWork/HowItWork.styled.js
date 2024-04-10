@@ -8,7 +8,7 @@ export const HowItWorksWrapper = styled.div`
   align-items: center;
   flex-direction: column;
   width: 100%;
-  height: 346px;
+  /* height: 346px; */
   gap: 48px;
 `;
 
@@ -51,5 +51,5 @@ export const TextCardStyled = styled.p`
 export const HowItWorksBGSElips = styled(howItWorksBGEllipse)`
   position: absolute;
   top: -54%;
-  left: -10%;
+  left: 0;
 `;

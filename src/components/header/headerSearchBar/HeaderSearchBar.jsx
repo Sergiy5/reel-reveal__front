@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import {HeaderSearchBarStyled, WrapperSearchBar} from './HeaderSearchBar.styled' 
+import {HeaderInputStyled, WrapperSearchBar} from './HeaderSearchBar.styled' 
 import { SearchBarIcon } from './SearchBarIcon'
 
 
@@ -11,12 +11,11 @@ export const HeaderSearchBar = () => {
   
     return (
         <WrapperSearchBar>
-            <HeaderSearchBarStyled type='text' onBlur={() => {
+            <HeaderInputStyled type='text' onBlur={() => {
                 setIsFocus(!isFocus)
       }} onFocus={() => {
                 setIsFocus(!isFocus)
                 }} placeholder={textPlaceHolder} />
-            {/* <FiSearch color='green'/> */}
             <SearchBarIcon color='green' $focus={isFocus} />
       </WrapperSearchBar>
     )

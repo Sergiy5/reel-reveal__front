@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { ReactComponent as ArrowSvg } from '../../assets/images/arrow.svg';
 import { colors } from 'assets/variables';
 
 export const SharedBtn = styled.button`
@@ -33,14 +32,14 @@ export const SharedBtn = styled.button`
 `;
 
 export const ButtonPrew = styled(SharedBtn)`
-  left: -3.5%;
+  left: 5.5%;
 `;
 
 export const ButtonNext = styled(SharedBtn)`
-  right: -3.5%;
+  right: 5.5%;
 `;
 
-export const SvgArrow = styled(ArrowSvg)`
+export const SvgArrowStyled = styled.svg`
   opacity: 1;
   width: 12px;
   height: 19px;

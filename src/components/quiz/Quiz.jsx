@@ -11,6 +11,8 @@ import {
 } from './Quiz.styled';
 import { quizDataList } from '../../assets/ststicData/quizDataList';
 import { ProgresBar } from './progresBar/ProgresBar';
+import Sprite from '../../assets/images/svgSprite/sprite.svg'
+import { Container } from 'styles/Container.styled';
 
 // const [page, title, ] = quizDataList;
 
@@ -46,23 +48,24 @@ export const Quiz = () => {
   };
 
   return (
-    <QuizWrapper>
-      <BorderTopSvg />
+    <Container>
+      <QuizWrapper>
+        <BorderTopSvg />
+        <TittleProgresWrapper>
+          <TitleQuizStyled>
+            <SpanTitle>{quiz}</SpanTitle>
+            {title}
+          </TitleQuizStyled>
 
-      <TittleProgresWrapper>
-        <TitleQuizStyled>
-          <SpanTitle>{quiz}</SpanTitle>
-          {title}
-        </TitleQuizStyled>
-
-        <ProgresBar page={currentPageForProgresBar} />
-      </TittleProgresWrapper>
-
-      <BtnQuizWrapper>
-        <ButtonsQuiz click={handleChoiseBtn} buttons={buttons} />
-      </BtnQuizWrapper>
-
-      <BorderBottomSvg />
-    </QuizWrapper>
+          <ProgresBar page={currentPageForProgresBar} />
+        </TittleProgresWrapper>
+        <BtnQuizWrapper>
+          <ButtonsQuiz click={handleChoiseBtn} buttons={buttons} />
+        </BtnQuizWrapper>
+        <BorderBottomSvg>
+          <use xlinkHref={`${Sprite}#`} />
+        </BorderBottomSvg>
+      </QuizWrapper>
+    </Container>
   );
 };

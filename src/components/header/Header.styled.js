@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { ReactComponent as headerElips } from '../../assets/images/home/ellipseHeader.svg';
 import { colors } from 'assets/variables/variablesColors';
 
 export const WrapperHeader = styled.div`
@@ -17,7 +16,7 @@ export const WrapperHeader = styled.div`
   background-color: ${colors.bgColor};
 `;
 
-export const HeaderBackgroundElips = styled(headerElips)`
+export const SvgStyled = styled.svg`
   position: absolute;
   z-index: 1;
   top: 10px;

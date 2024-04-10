@@ -1,18 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
-import { ReactComponent as heroBGEllipse } from '../../assets/images/heroBGEllipse.svg';
 import { colors } from 'assets/variables/variablesColors';
-
-export const HeroWrapper = styled.div`
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  text-align: start;
-  gap: 20px;
-  width: 100%;
-  height: 584px;
-`;
 
 export const HeroTextCTAWrapper = styled.div`
   display: flex;
@@ -22,12 +10,6 @@ export const HeroTextCTAWrapper = styled.div`
   width: 590px;
   height: 584px;
   gap: 24px;
-`;
-
-export const HeroTitle = styled.h1`
-  font-family: fontH1;
-  font-size: 52px;
-  line-height: 115%;
 `;
 
 export const HeroText = styled.p`
@@ -61,17 +43,19 @@ export const StartQuizBtn = styled(NavLink)`
     box-shadow: 1px 2px 24px 0 rgba(32, 232, 218, 0.5);
   }
 `;
-export const HeroBGEllipse = styled(heroBGEllipse)`
+
+export const SvgStyled = styled.svg`
   position: absolute;
   z-index: 1;
   top: -24%;
-  right: -10%;
+  right: 120px;
 `;
+
 export const HeroImage = styled.img`
   position: absolute;
   z-index: 1;
   top: 0;
-  right: 0;
+  right: 120px;
   width: 590px;
   height: 584px;
 `;
