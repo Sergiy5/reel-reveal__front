@@ -1,8 +1,9 @@
 import React from 'react';
 import { nanoid } from 'nanoid';
+import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import { ContainerSlider, ImgStyled, StyledSlider, SvgFrame, WrapperImage } from './stuckOnMovieChoices.styled';
+import { ContainerSlider, ImgStyled, SvgFrame, WrapperImage } from './stuckOnMovieChoices.styled';
 import { imageMovies } from './MovieItems';
 import { Container } from 'styles/Container.styled';
 
@@ -28,22 +29,27 @@ export default function PauseOnHover (){
       arrows: null,
     };
     return (
-      <Container padding>
+      <Container $padding>
         <h2>Stuck on Movie Choices?</h2>
-        <ContainerSlider>
+        <ContainerSlider key={nanoid()}>
           
-         <StyledSlider {...settings}>
+         <Slider {...settings}>
          {imageMovies.map(icon => {
              const title = getMovieTitleFromPath(icon);
 
              return (
-               <WrapperImage>
-                 <SvgFrame/>
-                 <ImgStyled key={nanoid()} src={icon} alt={title} />
-             </WrapperImage>
+               <WrapperImage key={nanoid()}>
+                 <SvgFrame key={nanoid()} />
+                 <ImgStyled
+                   key={nanoid()}
+                   src={icon}
+                   data-title={title}
+                   alt={title}
+                 />
+               </WrapperImage>
              );
            })}
-         </StyledSlider>
+         </Slider>
         </ContainerSlider>
       </Container>
     );

@@ -7,7 +7,7 @@ import {
   TitleH3styled,
 } from './HowItWork.styled';
 import sprite from '../../assets/images/howItWorks/sprite.svg';
-import { Container } from 'styles/Container.styled';
+import { Container } from 'styles';
 
 export const HowItWorks = () => {
   return (

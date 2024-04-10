@@ -12,7 +12,7 @@ import {
 import { quizDataList } from '../../assets/ststicData/quizDataList';
 import { ProgresBar } from './progresBar/ProgresBar';
 import Sprite from '../../assets/images/svgSprite/sprite.svg'
-import { Container } from 'styles/Container.styled';
+import { Container } from 'styles';
 
 // const [page, title, ] = quizDataList;
 

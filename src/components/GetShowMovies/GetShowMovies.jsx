@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Container } from 'styles/Container.styled';
+import { Container } from 'styles';
 import { firstMovieOnPage, sliceMoviesPerPage } from 'utils';
 import {
   ButtonNext,
@@ -23,7 +23,6 @@ export const GetShowMovies = ({ title, getMovies }) => {
     return isLastPage;
   };
 
-  //=====================================================================
   useEffect(() => {
     // Get first request movies =============================================
     const getAllUpcomingMovies = async quntityGet => {

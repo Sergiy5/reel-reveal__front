@@ -1,14 +1,15 @@
+import { useEffect } from 'react';
+import { NavLink } from 'react-router-dom';
 import {
   HeroImage,
   HeroText,
   HeroTextCTAWrapper,
-  StartQuizBtn,
   SvgStyled,
 } from './HeroStyled';
 import heroImg from '../../assets/images/heroImage.webp';
-import { useEffect } from 'react';
 import Sprite from '../../assets/images/svgSprite/sprite.svg';
-import { Container } from 'styles/Container.styled';
+import { Container } from 'styles';
+import { SharedStyledLinkBtn } from 'styles/SharedStyledLinkBtn.styled';
 
 export const Hero = () => {
   useEffect(() => {
@@ -28,7 +29,7 @@ export const Hero = () => {
   }, []);
 
   return (
-    <Container row>
+    <Container $row>
       <SvgStyled width="833" height="890">
         <use xlinkHref={`${Sprite}#heroEllips`} />
       </SvgStyled>
@@ -39,9 +40,11 @@ export const Hero = () => {
           what to watch? Look no further! Reel Reveal is your go-to service for
           finding the perfect movie match.
         </HeroText>
-        <StartQuizBtn to={'/search'}>Start quiz</StartQuizBtn>
+        <SharedStyledLinkBtn as={NavLink} to="#" $width="285px">
+          start quiz
+        </SharedStyledLinkBtn>
       </HeroTextCTAWrapper>
       <HeroImage src={heroImg} alt="Hero movies" />
-    </Container >
+    </Container>
   );
 };

@@ -2,7 +2,7 @@ import React from 'react';
 import { SvgBgEllips, WrapperIconsGenres } from './ChooseGenres.styled';
 import { IconGenre } from './IconGenre';
 import sprite from '../../assets/images/svgSprite/sprite-genres.svg'
-import { Container } from 'styles/Container.styled';
+import { Container } from 'styles';
  
 export const ChoseGenre = () => {
 
