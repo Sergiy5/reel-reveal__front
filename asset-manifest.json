@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/reel-reveal__front/static/css/main.cd2e038f.css",
-    "main.js": "/reel-reveal__front/static/js/main.02696d6e.js",
-    "static/css/773.0f149419.chunk.css": "/reel-reveal__front/static/css/773.0f149419.chunk.css",
-    "static/js/773.ff29c314.chunk.js": "/reel-reveal__front/static/js/773.ff29c314.chunk.js",
+    "main.js": "/reel-reveal__front/static/js/main.ed5aeb9f.js",
+    "static/css/902.55ea2fa4.chunk.css": "/reel-reveal__front/static/css/902.55ea2fa4.chunk.css",
+    "static/js/902.5bc4b3e4.chunk.js": "/reel-reveal__front/static/js/902.5bc4b3e4.chunk.js",
     "static/js/301.4b73a3c9.chunk.js": "/reel-reveal__front/static/js/301.4b73a3c9.chunk.js",
     "static/media/sprite-genres.svg": "/reel-reveal__front/static/media/sprite-genres.93af71d5e8c04cb2e774eaed2e5f1777.svg",
     "static/media/Hind-SemiBold.woff2": "/reel-reveal__front/static/media/Hind-SemiBold.55c257f0bcd79cba9a3f.woff2",
@@ -33,13 +33,13 @@
     "index.html": "/reel-reveal__front/index.html",
     "static/media/howItWorksBGEllipse.svg": "/reel-reveal__front/static/media/howItWorksBGEllipse.8026e1a0cd1e5f051b8fd715a6fa4ba7.svg",
     "main.cd2e038f.css.map": "/reel-reveal__front/static/css/main.cd2e038f.css.map",
-    "main.02696d6e.js.map": "/reel-reveal__front/static/js/main.02696d6e.js.map",
-    "773.0f149419.chunk.css.map": "/reel-reveal__front/static/css/773.0f149419.chunk.css.map",
-    "773.ff29c314.chunk.js.map": "/reel-reveal__front/static/js/773.ff29c314.chunk.js.map",
+    "main.ed5aeb9f.js.map": "/reel-reveal__front/static/js/main.ed5aeb9f.js.map",
+    "902.55ea2fa4.chunk.css.map": "/reel-reveal__front/static/css/902.55ea2fa4.chunk.css.map",
+    "902.5bc4b3e4.chunk.js.map": "/reel-reveal__front/static/js/902.5bc4b3e4.chunk.js.map",
     "301.4b73a3c9.chunk.js.map": "/reel-reveal__front/static/js/301.4b73a3c9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.cd2e038f.css",
-    "static/js/main.02696d6e.js"
+    "static/js/main.ed5aeb9f.js"
   ]
 }
