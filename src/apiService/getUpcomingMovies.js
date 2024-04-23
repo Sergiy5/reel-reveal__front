@@ -1,7 +1,9 @@
 import axios from 'axios';
+// import dotenv from 'dotenv';
 
-const AUTH_TOKEN =
-  'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI5OGU5MzBjMmZhNzRjYWVhNjRmMjAyNmNmNzBlYzQxMyIsInN1YiI6IjY0NmQwNWJhZDE4NTcyMDE4MDJlOGYyOSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.gvC078v2ZEDlsUKlhf6XJhVHnGo7gwYMbWV5S3NVSKY';
+// dotenv.config();
+
+const AUTH_TOKEN = process.env.REACT_APP_TMDB_API_KEY;
 
 axios.defaults.baseURL = 'https://api.themoviedb.org/3/movie/';
 axios.defaults.headers.common['Authorization'] = AUTH_TOKEN;

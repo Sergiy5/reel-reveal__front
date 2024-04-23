@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect} from 'react';
 import { NavLink } from 'react-router-dom';
 import {
   HeroImage,
@@ -11,8 +11,13 @@ import Sprite from '../../assets/images/svgSprite/sprite.svg';
 import { Container } from 'styles';
 import { SharedStyledLinkBtn } from 'styles/SharedStyledLinkBtn.styled';
 
+
 export const Hero = () => {
+
+
   useEffect(() => {
+    
+
     /*Looking max number division without a remainder============*/
     // const compairNumbers = (number1, numbe2) => {
     //   for (let i = number1 - 1; i > 0; i--) {

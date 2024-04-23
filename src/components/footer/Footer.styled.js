@@ -23,7 +23,6 @@ export const MenuFooterWrapper = styled.div`
 
 export const SvgBgStyled = styled.svg`
   position: absolute;
-  z-index: 0;
   bottom: 10px;
   left: 100px;
 `;

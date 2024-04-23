@@ -9,14 +9,15 @@ import {
 import { ListMovies } from 'components/listMovies/ListMovies';
 import Sprite from '../../assets/images/svgSprite/sprite.svg';
 
-export const GetShowMovies = ({ title, getMovies }) => {
+
+export const GetShowMovies = ({ title, getMovies, arrayMovies }) => {
   const [allMovies, setAllMovies] = useState([]);
   const [moviesForOnePage, setMoviesForOnePage] = useState([]);
   const [isDisablePrevBtn, setIsActivePrevBtn] = useState(true);
   const [isDisableNextBtn, setIsDisableNextBtn] = useState(false);
   const [page, setPage] = useState(1);
   // const [numberGetRequest, setNumberGetRequest] = useState(1);
-  const numberGetRequest = 1;
+
   const islastPageMovies = (allMovies, page) => {
     const quantityMovies = allMovies.length;
     const isLastPage = quantityMovies / page === 4 ? true : false;
@@ -25,16 +26,16 @@ export const GetShowMovies = ({ title, getMovies }) => {
 
   useEffect(() => {
     // Get first request movies =============================================
-    const getAllUpcomingMovies = async quntityGet => {
+    const getAllMovies = async (page = 1) => {
       try {
-        const response = await getMovies(quntityGet);
+        const response = await getMovies(page);
         setAllMovies(response);
       } catch (error) {
         console.log(error.message);
       }
     };
 
-    getAllUpcomingMovies(numberGetRequest);
+    getAllMovies();
 
     // Get next requests movies =============================================
     // if (numberGetRequest > 1) {
@@ -52,9 +53,9 @@ export const GetShowMovies = ({ title, getMovies }) => {
     //   };
     //   getNextAllUpcomingMovies(numberGetRequest);
     // }
-  }, [getMovies, numberGetRequest]);
+  }, [getMovies]);
 
-  //====================================================================================================
+  //Mange page for control active button =====================================
   useEffect(() => {
     const isLastPage = islastPageMovies(allMovies, page);
 
@@ -70,17 +71,16 @@ export const GetShowMovies = ({ title, getMovies }) => {
 
     if (isLastPage) setIsDisableNextBtn(true);
     if (!isLastPage) setIsDisableNextBtn(false);
-    
+
     // Slice movies for one page =======================================
     const moviesPerPage = sliceMoviesPerPage(allMovies, firstMovieForPage);
 
     // Set movies for one page ========================================
     setMoviesForOnePage(moviesPerPage);
-
   }, [allMovies, page]);
 
   return (
-    <Container >
+    <Container>
       <h2>{title}</h2>
 
       <ButtonPrew

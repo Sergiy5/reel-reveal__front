@@ -3,6 +3,7 @@ import { colors } from 'assets/variables';
 
 export const SharedBtn = styled.button`
   position: absolute;
+  z-index: 1;
   top: 52%;
   display: flex;
   align-items: center;

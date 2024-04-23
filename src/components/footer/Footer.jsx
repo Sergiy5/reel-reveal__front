@@ -7,9 +7,9 @@ import Sprite from '../../assets/images/svgSprite/sprite.svg';
 export const Footer = () => {
   return (
     <>
-      {/* <SvgBgStyled width="1429" height="614">
+      <SvgBgStyled width="1429" height="614">
         <use xlinkHref={`${Sprite}#footerBgEllips`} />
-      </SvgBgStyled> */}
+      </SvgBgStyled>
       <FooterWrapper>
         <MainLogo />
         <MenuFooterWrapper>

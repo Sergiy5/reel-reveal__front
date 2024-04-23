@@ -29,7 +29,7 @@ export default function PauseOnHover (){
       arrows: null,
     };
     return (
-      <Container $padding>
+      <Container $padding_zero>
         <h2>Stuck on Movie Choices?</h2>
         <ContainerSlider key={nanoid()}>
           

@@ -3,7 +3,6 @@ import { ReactComponent as Border } from '../../assets/images/quiz/borderSvg.svg
 import { colors } from 'assets/variables/variablesColors';
 
 export const QuizWrapper = styled.div`
-  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -13,15 +12,15 @@ export const QuizWrapper = styled.div`
   padding: 131px 0;
 `;
 
-export const BorderTopSvg = styled(Border)`
+export const SharedBorderSvg = styled(Border)`
   position: absolute;
-  top: 0;
-  right: -10%;
+  right: 0;
 `;
-export const BorderBottomSvg = styled(Border)`
-  position: absolute;
+export const BorderTopSvg = styled(SharedBorderSvg)`
+  top: 0;
+`;
+export const BorderBottomSvg = styled(SharedBorderSvg)`
   bottom: 0;
-  right: -10%;
   transform: rotate(180deg);
 `;
 

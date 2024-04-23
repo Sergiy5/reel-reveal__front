@@ -4,7 +4,7 @@ import { MovieImg } from './ListMovies.styled';
 
 export const ListMovies = ({ movies }) => {
   return (
-    <Container $row $gap={'20px'} $padding>
+    <Container $row $gap={'20px'} $padding_zero>
       {movies.map(movie => {
         const poster = movie.poster_path
           ? `https://image.tmdb.org/t/p/w500/${movie.poster_path}`
