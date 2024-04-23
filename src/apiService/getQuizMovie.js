@@ -8,17 +8,8 @@ const handleUrlWithSearchingMovie = movie => {
 const AUTH_TOKEN = process.env.REACT_APP_TMDB_API_KEY;
 axios.defaults.headers.common['Authorization'] = AUTH_TOKEN;
 
-export const getQuizMovies = async arrayMovies => {
-
-  const arrFromString = arr => {
-    const splited = arr.split(',');
-    const splitedArr = splited.slice(0);
-
-    return splitedArr;
-  };
-
-  let arrMovies = arrFromString(arrayMovies);
-
+export const getQuizMovies = async arrMovies => {
+console.log('TMBD', arrMovies);
   const res = (arrMovies = arrMovies.map(movie => {
     const response = axios.get(handleUrlWithSearchingMovie(movie));
 

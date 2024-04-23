@@ -1,35 +1,46 @@
 import { useEffect, useState } from 'react';
-import { ButtonsQuiz } from './buttons/ButtonsQuiz';
 import {
   BorderBottomSvg,
   BorderTopSvg,
-  BtnQuizWrapper,
   QuizWrapper,
-  SpanTitle,
-  TitleQuizStyled,
-  TittleProgresWrapper,
 } from './Quiz.styled';
-import { quizDataList } from '../../assets/ststicData/quizDataList';
-import { ProgresBar } from './progresBar/ProgresBar';
+
 import { Container } from 'styles';
-import { getOpenAiAPI, getQuizMovies } from 'apiService';
+import { getOpenAiAPI } from 'apiService';
+import { QuizQuestions } from './quizQuestions/QuizQuestions';
+import { QuizListMovies } from './quizListMovies/QuizListMovies';
+import { arrayFromString } from 'utils';
 
-export const Quiz = ({ getMovies }) => {
-  const [currentQuizCard, setCurrentQuizCard] = useState(() => quizDataList[0]);
-  const [currentPageForProgresBar, setCurrentPageForProgresBar] = useState(1);
-  const [quizData, setQuizData] = useState([]);
+export const Quiz = () => {
+ 
+  const [quizResult, setQuizResult] = useState([]);
   const [moviesFromOpenaiApi, setMoviesFromOpenaiApi] = useState([]);
+  const [isQuizActive, setIsQuizActive] = useState(true);
+  const [moviesForList, setMoviesForList] = useState([]);
 
-  // Result from openai API
+   const getQuizMovies = arrMovies => {
+     if (arrMovies.length) {
+       setIsQuizActive(false);
+       const arrForListMovies = arrMovies.map(movie => {
+         return movie.data.results[0];
+       });
+       return arrForListMovies;
+     }
+   };
+
+
+
+  // Result from TMdB
   useEffect(() => {
     if (!moviesFromOpenaiApi.length) return;
 
     const getMoviesFromQuizResult = async movies => {
       try {
-        const requests = await getQuizMovies(movies);
+        const requests = getQuizMovies(movies);
         const responses = await Promise.all(requests);
 
-        getMovies(responses);
+        setMoviesForList(responses);
+        setIsQuizActive(false);
       } catch (error) {
         console.log(error.message);
       }
@@ -37,65 +48,43 @@ export const Quiz = ({ getMovies }) => {
 
     getMoviesFromQuizResult(moviesFromOpenaiApi);
     // console.log('moviesFromOpenaiApi', moviesFromOpenaiApi);
-  }, [getMovies, moviesFromOpenaiApi]);
+  }, [moviesFromOpenaiApi]);
 
   // GET (POST) from openai API=====================
   useEffect(() => {
-    const openAiAPI = async () => {
+    const openAiAPI = async quizMovies => {
       try {
-        const respons = await getOpenAiAPI(quizData);
-        setMoviesFromOpenaiApi(respons);
+        const response = await getOpenAiAPI(quizMovies);
+        console.log('arrFomStringAI', response);
+
+        const arrayMovies = arrayFromString(response);
+        setMoviesFromOpenaiApi(arrayMovies);
       } catch (error) {
         console.error('Error fetching data openai:', error);
       }
     };
-    if (quizData.length === 7) {
-      const arrayTitleFilms = openAiAPI(quizData);
 
-      setMoviesFromOpenaiApi(arrayTitleFilms);
+    if (quizResult.length === 7) {
+console.log('start AI', quizResult.length);
+      openAiAPI(quizResult);
     }
-  }, [quizData]);
+  }, [quizResult]);
 
-  const { quiz, title, page, buttons } = currentQuizCard;
-
-  // Transition to the next page ================
-  const handleQuizCard = (list, page) => {
-    if (page < 8) {
-      const currentQuiz = list.filter(item => item.page === page + 1);
-
-      setCurrentQuizCard(...currentQuiz);
-    }
-  };
-
-  // Collect data from quiz ======================
-  const handleChoiseBtn = e => {
-    // Page for progres bar =======================
-    if (currentPageForProgresBar < 8) {
-      setCurrentPageForProgresBar(page + 1);
-
-      setQuizData(prev => [...prev, e]);
-    }
-
-    if (page === 7) return; // Need to add logic =======================
-
-    handleQuizCard(quizDataList, page);
-  };
+  const resultQuizData = (data) => {
+    console.log('data quiz',data)
+  setQuizResult(data);
+}
 
   return (
     <Container>
       <QuizWrapper>
         <BorderTopSvg />
-        <TittleProgresWrapper>
-          <TitleQuizStyled>
-            <SpanTitle>{quiz}</SpanTitle>
-            {title}
-          </TitleQuizStyled>
+        {isQuizActive ? (
+          <QuizQuestions quizData={resultQuizData} />
+        ) : (
+          <QuizListMovies arrMovies={moviesForList} />
+        )}
 
-          <ProgresBar page={currentPageForProgresBar} />
-        </TittleProgresWrapper>
-        <BtnQuizWrapper>
-          <ButtonsQuiz click={handleChoiseBtn} buttons={buttons} />
-        </BtnQuizWrapper>
         <BorderBottomSvg />
       </QuizWrapper>
     </Container>
