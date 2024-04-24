@@ -1,19 +1,20 @@
-import { NavLinkStyled, QuizBtn, SvgHeartStyled, SvgUserStyled, WrapperNav } from "./HeaderNav.styled";
+import { NavLinkStyled, QuizBtn, WrapperNav } from "./HeaderNav.styled";
 import Sprite from '../../../assets/images/svgSprite/sprite.svg';
+import { SvgStyled } from './HeaderNav.styled';
 
 export const HeaderNav = () => {
     return (
       <WrapperNav>
         <NavLinkStyled>Movie search</NavLinkStyled>
         <NavLinkStyled>
-          <SvgHeartStyled width="18" height="16">
+          <SvgStyled width="18" height="16">
             <use xlinkHref={`${Sprite}#icon-heart`} />
-          </SvgHeartStyled>
+          </SvgStyled>
         </NavLinkStyled>
         <NavLinkStyled>
-          <SvgUserStyled width="18" height="20">
+          <SvgStyled width="18" height="20">
             <use xlinkHref={`${Sprite}#icon-user`} />
-          </SvgUserStyled>
+          </SvgStyled>
         </NavLinkStyled>
         <QuizBtn>take quiz</QuizBtn>
       </WrapperNav>

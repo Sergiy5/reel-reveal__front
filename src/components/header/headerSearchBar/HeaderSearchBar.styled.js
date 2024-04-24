@@ -8,6 +8,16 @@ export const WrapperSearchBar = styled.div`
   align-items: center;
   width: 405px;
   border-radius: 20px;
+  outline: solid 1px transparent;
+
+  transition: outline-color 400ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    outline-color: ${colors.accentColor};
+  }
+  &:focus {
+    outline-color: ${colors.accentClickedColor};
+  }
 `;
 
 export const HeaderInputStyled = styled.input`
@@ -23,6 +33,7 @@ export const HeaderInputStyled = styled.input`
   border-radius: 20px;
   border-right-style: hidden;
   outline: solid 1px transparent;
+
   transition: outline-color 400ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover {
@@ -33,23 +44,39 @@ export const HeaderInputStyled = styled.input`
   }
 `;
 
-export const BtnSearchBarIcon = styled.button`
+export const BtnSearchBar = styled.button`
   position: absolute;
   width: 42px;
   height: 38px;
   padding-top: 3px;
-  right: 2px;
+  right: 0;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   background-color: ${props =>
-    props.$focus ? colors.inputColor : colors.accentColor};
+    props.$focus ? colors.accentColor : colors.inputColor};
+  outline: none;
 
-  transition: background-color 450ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: outline, background-color;
+  transition-duration: 450ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* transition: background-color 450ms cubic-bezier(0.4, 0, 0.2, 1); */
+  &:focus {
+    outline: 2px solid ${colors.accentColor};
+    background-color: ${colors.accentColor};
+  }
 `;
 
 export const FiSearchStyled = styled(FiSearch)`
-  opacity: ${props => (props.$focus ? '50%' : '100%')};
-  color: ${props => (props.$focus ? '#fff' : 'black')};
-  transition: color 350ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: opacity 350ms cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: ${props => (props.$focus ? '100%' : '50%')};
+  color: ${props => (props.$focus ? 'black' : '#fff')};
+
+  transition-property: color, outline, opacity;
+  transition-duration: 350ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  /* transition: opacity 350ms cubic-bezier(0.4, 0, 0.2, 1); */
+
+  &:focus {
+    color: ${props => (props.$focus ? '#fff' : 'black')};
+  }
 `;

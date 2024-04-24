@@ -3,38 +3,42 @@ import { ButtonsQuiz } from "../buttons/ButtonsQuiz";
 import { ProgresBar } from "../progresBar/ProgresBar";
 import { BtnQuizWrapper, SpanTitle, TitleQuizStyled, TittleProgresWrapper } from "./QuizQuestions.styled";
 import { quizDataList } from '../../../assets/ststicData/quizDataList';
+import { useEffect } from "react";
 
 
 export const QuizQuestions = ({ quizData }) => {
-  const [currentQuizCard, setCurrentQuizCard] = useState(() => quizDataList[0]);
+  const [currentQuizQuestion, setCurrentQuizQuestion] = useState(() => quizDataList[0]);
   const [currentPageForProgresBar, setCurrentPageForProgresBar] = useState(1);
   const [quizResult, setQuizResult] = useState([]);
 
-  const { quiz, title, page, buttons } = currentQuizCard;
-
-  // Transition to the next page ================
-  const handleQuizCard = (list, page) => {
+  
+  // Transition to the next question ================
+  const moveOnToNextQueston = (listData, page) => {
     if (page < 8) {
-      const currentQuiz = list.filter(item => item.page === page + 1);
-
-      setCurrentQuizCard(...currentQuiz);
+      const currentQuiz = listData.filter(item => item.page === page + 1);
+      setCurrentQuizQuestion(...currentQuiz);
     }
   };
-
-  // Collect data from quiz ======================
-  const handleChoiseBtn = e => {
-    // Page for progres bar =======================
+  
+  useEffect(() => {
+    if (quizResult.length < 7) return
+    quizData(quizResult);
+  
+  }, [quizData, quizResult])
+  
+  // Collect ansvers from quiz ======================
+  const collectQuizChoices = e => {
+    
     if (currentPageForProgresBar < 8) {
-      setCurrentPageForProgresBar(page + 1);
-
+      setCurrentPageForProgresBar(page=>page + 1);
+      
       setQuizResult(prev => [...prev, e]);
     }
-
-    if (page === 7) {return quizData(quizResult); }; // Need to add logic =======================
-
-    handleQuizCard(quizDataList, page);
+    if(page === 7) return
+    moveOnToNextQueston(quizDataList, page);
   };
-
+  
+  const { quiz, title, page, buttons } = currentQuizQuestion;
   return (
     <>
       <TittleProgresWrapper>
@@ -46,7 +50,7 @@ export const QuizQuestions = ({ quizData }) => {
         <ProgresBar page={currentPageForProgresBar} />
       </TittleProgresWrapper>
       <BtnQuizWrapper>
-        <ButtonsQuiz click={handleChoiseBtn} buttons={buttons} />
+        <ButtonsQuiz click={collectQuizChoices} buttons={buttons} />
       </BtnQuizWrapper>
     </>
   );

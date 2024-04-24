@@ -10,6 +10,6 @@ export const getOpenAiAPI = async requestArray => {
   const backendResponse = await axios.post(Back_END_URL, {
     promptText,
   });
-console.log('Response from AI', backendResponse.data.content);
+  
   return backendResponse.data.content;
 };

@@ -12,11 +12,12 @@ export const SharedBtn = styled.button`
   height: 80px;
   color: ${props => (props.disabled ? colors.disabledColor : colors.textColor)};
   border-radius: 20px;
+  outline: transparent;
   background-color: ${props =>
     props.disabled ? colors.disabledBgColor : colors.enableBgColor};
   cursor: ${props => (props.disabled ? 'default' : 'pointer')};
 
-  transition-property: color, background-color;
+  transition-property: color, background-color, outline;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -24,6 +25,11 @@ export const SharedBtn = styled.button`
     color: ${props => (props.disabled ? 'default' : colors.accentColor)};
     background-color: ${props =>
       props.disabled ? 'default' : colors.hoverBgColor};
+  }
+  &:focus {
+    outline: 2px solid ${colors.accentColor};
+    color: ${props => (props.disabled ? 'default' : colors.accentColor)};
+
   }
   &:active {
     color: ${props => (props.disabled ? 'default' : colors.accentClickedColor)};

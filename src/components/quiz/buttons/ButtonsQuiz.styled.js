@@ -31,7 +31,7 @@ export const BtnQuiz = styled.button`
     color: ${colors.accentColor};
   }
   &:focus {
-    border: 1px solid ${colors.accentClickedColor};
+    outline: 2px solid ${colors.accentColor};
     color: ${colors.accentClickedColor};
   }
   &:active {

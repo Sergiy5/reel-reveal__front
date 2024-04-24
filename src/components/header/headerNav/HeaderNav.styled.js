@@ -12,21 +12,8 @@ export const WrapperNav = styled.div`
   height: 40px;
 `;
 
-export const SvgUserStyled = styled.svg`
-   fill: #fff;
-
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  &:hover {
-    fill: ${colors.accentColor};
-  }
-`;
-
-export const SvgHeartStyled = styled.svg`
-  width: 18px;
-  height: 16px;
+export const SvgStyled = styled.svg`
   fill: #fff;
-
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover {
@@ -35,13 +22,18 @@ export const SvgHeartStyled = styled.svg`
 `;
 
 export const NavLinkStyled = styled(NavLink)`
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  outline: none;
+  border-radius: 4px;
+  transition-property: outline, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover {
     color: ${colors.accentColor};
   }
   &:focus {
     color: ${colors.accentClickedColor};
+    outline: 2px solid ${colors.accentColor};
   }
 `;
 
@@ -54,10 +46,12 @@ export const QuizBtn = styled(NavLink)`
   border-radius: 20px;
   background-color: ${colors.textColor};
   color: ${colors.textActivColor};
+  outline: none;
   box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
 
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: background-color, box-shadow, outline;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover {
     color: ${colors.textActivColor};
@@ -65,7 +59,8 @@ export const QuizBtn = styled(NavLink)`
     box-shadow: 1px 2px 24px 0 rgba(32, 232, 218, 0.3);
   }
   &:focus {
-    background-color: ${colors.accentClickedColor};
+    background-color: ${colors.accentColor};
     box-shadow: 1px 2px 24px 0 rgba(32, 232, 218, 0.5);
+    outline: 2px solid ${colors.accentColor};
   }
 `;

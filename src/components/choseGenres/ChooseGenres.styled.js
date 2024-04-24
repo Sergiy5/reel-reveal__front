@@ -20,8 +20,10 @@ export const NavLinkIconStyled = styled(NavLink)`
   gap: 8px;
   cursor: pointer;
   scale: none;
+  outline: transparent;
+  border-radius: 3px;
   
-  transition-property: color, scale;
+  transition-property: color, scale, outline;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   
@@ -31,6 +33,7 @@ export const NavLinkIconStyled = styled(NavLink)`
   }
   &:focus {
     color: ${colors.accentColor};
+    outline: 2px solid ${colors.accentColor};
   }
   &:active {
     scale: 1;
