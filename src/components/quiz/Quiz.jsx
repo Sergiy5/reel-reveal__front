@@ -54,6 +54,7 @@ if (quizResult.length < 7) return
         const response = await getOpenAiAPI(quizMovies);
         
         const arrayMovies = arrayFromString(response);
+        
         setMoviesFromOpenaiApi(arrayMovies);
 
       } catch (error) {
