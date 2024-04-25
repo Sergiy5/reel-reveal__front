@@ -51,10 +51,10 @@ export const Quiz = () => {
 if (quizResult.length < 7) return
     const openAiAPI = async quizMovies => {
       try {
-        // const response = await getOpenAiAPI(quizMovies);
+        const response = await getOpenAiAPI(quizMovies);
         
-        // const arrayMovies = arrayFromString(response);
-        // setMoviesFromOpenaiApi(arrayMovies);
+        const arrayMovies = arrayFromString(response);
+        setMoviesFromOpenaiApi(arrayMovies);
 
       } catch (error) {
         console.error('Error fetching data openai:', error);
