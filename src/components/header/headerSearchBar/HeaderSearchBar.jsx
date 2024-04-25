@@ -5,7 +5,7 @@ import {BtnSearchBar, FiSearchStyled, HeaderInputStyled, WrapperSearchBar} from 
 const textPlaceHolder = 'search by movie, actor, genre, etc'
 
 export const HeaderSearchBar = () => {
-    const [isFocus, setIsFocus] = useState(true)
+    const [isFocus, setIsFocus] = useState(false)
     console.log(isFocus);
   
     return (
@@ -13,20 +13,20 @@ export const HeaderSearchBar = () => {
         <HeaderInputStyled
           type="text"
           onBlur={() => {
-            setIsFocus(!isFocus);
+            setIsFocus(false);
           }}
           onFocus={() => {
-            setIsFocus(!isFocus);
+            setIsFocus(true);
           }}
           placeholder={textPlaceHolder}
         />
         <BtnSearchBar
           type="submit"
           onFocus={() => {
-            setIsFocus(!isFocus);
+            setIsFocus(true);
           }}
           onBlur={() => {
-            setIsFocus(!isFocus);
+            setIsFocus(false);
           }}
           $focus={isFocus}
         >
