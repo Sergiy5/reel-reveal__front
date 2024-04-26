@@ -10,12 +10,13 @@ jobs:
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v4
+        
+      - name: Set secret
+        run: echo "REACT_APP_TMDB_API_KEY=Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI5OGU5MzBjMmZhNzRjYWVhNjRmMjAyNmNmNzBlYzQxMyIsInN1YiI6IjY0NmQwNWJhZDE4NTcyMDE4MDJlOGYyOSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.gvC078v2ZEDlsUKlhf6XJhVHnGo7gwYMbWV5S3NVSKY" >> $GITHUB_ENV
 
-      - name: Set API Key
-        env:
-          REACT_APP_TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
-        run: echo "REACT_APP_TMDB_API_KEY=Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI5OGU5MzBjMmZhNzRjYWVhNjRmMjAyNmNmNzBlYzQxMyIsInN1YiI6IjY0NmQwNWJhZDE4NTcyMDE4MDJlOGYyOSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.gvC078v2ZEDlsUKlhf6XJhVHnGo7gwYMbWV5S3NVSKY"
-          
+      - name: Verify secret
+        run: echo $REACT_APP_TMDB_API_KEY
+        
       - name: Install, lint, build 🔧
         run: |
           npm install
