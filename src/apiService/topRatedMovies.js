@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const AUTH_TOKEN = process.env.REACT_APP_TMDB_API_KEY;
-console.log('TMDB_API_KEY-Boo');
+console.log('Replaced rows');
 axios.defaults.baseURL = 'https://api.themoviedb.org/3/movie/';
 axios.defaults.headers.common['Authorization'] = AUTH_TOKEN;
 
