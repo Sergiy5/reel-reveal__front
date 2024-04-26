@@ -6,7 +6,6 @@ const textPlaceHolder = 'search by movie, actor, genre, etc'
 
 export const HeaderSearchBar = () => {
     const [isFocus, setIsFocus] = useState(false)
-    console.log(isFocus);
   
     return (
       <WrapperSearchBar>
