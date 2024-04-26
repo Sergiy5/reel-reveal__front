@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/reel-reveal__front/static/css/main.cd2e038f.css",
-    "main.js": "/reel-reveal__front/static/js/main.3f51040f.js",
+    "main.js": "/reel-reveal__front/static/js/main.4d748a1c.js",
     "static/css/547.27e273cf.chunk.css": "/reel-reveal__front/static/css/547.27e273cf.chunk.css",
     "static/js/547.a8b8ac36.chunk.js": "/reel-reveal__front/static/js/547.a8b8ac36.chunk.js",
     "static/js/301.4b73a3c9.chunk.js": "/reel-reveal__front/static/js/301.4b73a3c9.chunk.js",
@@ -33,13 +33,13 @@
     "index.html": "/reel-reveal__front/index.html",
     "static/media/howItWorksBGEllipse.svg": "/reel-reveal__front/static/media/howItWorksBGEllipse.8026e1a0cd1e5f051b8fd715a6fa4ba7.svg",
     "main.cd2e038f.css.map": "/reel-reveal__front/static/css/main.cd2e038f.css.map",
-    "main.3f51040f.js.map": "/reel-reveal__front/static/js/main.3f51040f.js.map",
+    "main.4d748a1c.js.map": "/reel-reveal__front/static/js/main.4d748a1c.js.map",
     "547.27e273cf.chunk.css.map": "/reel-reveal__front/static/css/547.27e273cf.chunk.css.map",
     "547.a8b8ac36.chunk.js.map": "/reel-reveal__front/static/js/547.a8b8ac36.chunk.js.map",
     "301.4b73a3c9.chunk.js.map": "/reel-reveal__front/static/js/301.4b73a3c9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.cd2e038f.css",
-    "static/js/main.3f51040f.js"
+    "static/js/main.4d748a1c.js"
   ]
 }
