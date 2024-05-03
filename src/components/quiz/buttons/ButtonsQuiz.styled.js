@@ -25,16 +25,20 @@ export const BtnQuiz = styled.button`
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover {
+    ${props =>
+      props.$isActiv
+        ? null
+        : `
     transform: scale(1.01);
-
     border: 1px solid ${colors.accentColor};
     color: ${colors.accentColor};
+    `}
   }
   &:focus {
     outline: 2px solid ${colors.accentColor};
     color: ${colors.accentClickedColor};
   }
   &:active {
-    transform: scale(1);
+    transform: ${props => (props.$isActiv ? 'scale(1)' : null)};
   }
 `;

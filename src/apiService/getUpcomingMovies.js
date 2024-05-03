@@ -9,6 +9,11 @@ axios.defaults.baseURL = 'https://api.themoviedb.org/3/movie/';
 axios.defaults.headers.common['Authorization'] = AUTH_TOKEN;
 
 export const getUpcomingMovies = async page => {
-    const res = await axios.get(`upcoming?language=en-US&page=${page}`);
-    return res.data.results;
+    try {
+        const res = await axios.get(`upcoming?language=en-US&page=${page}`);
+        
+        return res.data.results;
+    } catch (error) {
+        console.log('getUpcomingMovies error', error.message);
+    }
 };

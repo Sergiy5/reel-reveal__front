@@ -17,7 +17,7 @@ export const GetShowMovies = ({ title, getMovies, arrayMovies }) => {
   const [isDisableNextBtn, setIsDisableNextBtn] = useState(false);
   const [page, setPage] = useState(1);
   // const [numberGetRequest, setNumberGetRequest] = useState(1);
-
+  
   const islastPageMovies = (allMovies, page) => {
     const quantityMovies = allMovies.length;
     const isLastPage = quantityMovies / page === 4 ? true : false;
@@ -31,7 +31,7 @@ export const GetShowMovies = ({ title, getMovies, arrayMovies }) => {
         const response = await getMovies(page);
         setAllMovies(response);
       } catch (error) {
-        console.log(error.message);
+        console.log('Get Show Movies', error);
       }
     };
 

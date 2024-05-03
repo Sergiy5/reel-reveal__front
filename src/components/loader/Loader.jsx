@@ -6,8 +6,8 @@ export const Loader = () => {
     <LoaderWrapper >
       <ColorRing
         visible={true}
-        height="80"
-        width="80"
+        height="200"
+        width="200"
         ariaLabel="color-ring-loading"
         wrapperStyle={{}}
         wrapperClass="color-ring-wrapper"

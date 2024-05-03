@@ -10,6 +10,11 @@ axios.defaults.headers.common['Authorization'] = AUTH_TOKEN;
 
 export const getQuizMovies = async arrMovies => {
 
-return arrMovies.map(movie => axios.get(urlSearchMovie(movie)));
+  try {
+    return arrMovies.map(movie => axios.get(urlSearchMovie(movie)));
+    
+  } catch (error) {
+    console.log('getQuizMovies error', error.message);
+  }
 
 };

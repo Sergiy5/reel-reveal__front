@@ -1,4 +1,3 @@
-// import { useEffect, useState } from 'react';
 import { Hero } from 'components/hero/Hero';
 import { HowItWorks } from 'components/howItWork/HowItWorks';
 import { Quiz } from 'components/quiz/Quiz';
@@ -8,7 +7,6 @@ import { getUpcomingMovies } from 'apiService/getUpcomingMovies';
 import { ChoseGenre } from 'components/choseGenres/ChooseGenres';
 import SimpleSlider from 'components/stuckOnMovieChoices/StuckOnMovieChoices';
 import { LinkToQuiz } from 'components/linkToQuiz/LinkToQuiz';
-// import { QuizListMovies } from 'components/quiz/quizListMovies/QuizListMovies';
 
 const HomePage = () => {
 

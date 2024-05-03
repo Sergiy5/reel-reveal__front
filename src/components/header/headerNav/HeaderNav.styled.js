@@ -14,7 +14,7 @@ export const WrapperNav = styled.div`
 
 export const SvgStyled = styled.svg`
   fill: #fff;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 2050ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover {
     fill: ${colors.accentColor};
@@ -22,17 +22,13 @@ export const SvgStyled = styled.svg`
 `;
 
 export const NavLinkStyled = styled(NavLink)`
-  outline: none;
   border-radius: 4px;
-  transition-property: outline, color;
+  outline: transparent;
+  transition-property: outline;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-  &:hover {
-    color: ${colors.accentColor};
-  }
   &:focus {
-    color: ${colors.accentClickedColor};
     outline: 2px solid ${colors.accentColor};
   }
 `;

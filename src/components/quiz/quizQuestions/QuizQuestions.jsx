@@ -10,6 +10,7 @@ export const QuizQuestions = ({ quizData }) => {
   const [currentQuizQuestion, setCurrentQuizQuestion] = useState(() => quizDataList[0]);
   const [currentPageForProgresBar, setCurrentPageForProgresBar] = useState(1);
   const [quizResult, setQuizResult] = useState([]);
+  const [isDisabled, setIsDisabled] = useState(false);
 
   
   // Transition to the next question ================
@@ -34,11 +35,11 @@ export const QuizQuestions = ({ quizData }) => {
       
       setQuizResult(prev => [...prev, e]);
     }
-    if(page === 7) return
+    if(page === 7) return setIsDisabled(true);
     moveOnToNextQueston(quizDataList, page);
   };
   
-  const { quiz, title, page, buttons } = currentQuizQuestion;
+  const { quiz, title, page, options } = currentQuizQuestion;
   return (
     <>
       <TittleProgresWrapper>
@@ -50,7 +51,11 @@ export const QuizQuestions = ({ quizData }) => {
         <ProgresBar page={currentPageForProgresBar} />
       </TittleProgresWrapper>
       <BtnQuizWrapper>
-        <ButtonsQuiz click={collectQuizChoices} buttons={buttons} />
+        <ButtonsQuiz
+          click={collectQuizChoices}
+          isActiv={isDisabled}
+          buttons={options}
+        />
       </BtnQuizWrapper>
     </>
   );
