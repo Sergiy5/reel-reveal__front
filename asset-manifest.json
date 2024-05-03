@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/reel-reveal__front/static/css/main.cd2e038f.css",
-    "main.js": "/reel-reveal__front/static/js/main.529e50b6.js",
-    "static/css/547.27e273cf.chunk.css": "/reel-reveal__front/static/css/547.27e273cf.chunk.css",
-    "static/js/547.1ee1e0f0.chunk.js": "/reel-reveal__front/static/js/547.1ee1e0f0.chunk.js",
+    "main.js": "/reel-reveal__front/static/js/main.f50fce2a.js",
+    "static/css/736.a8ea85fe.chunk.css": "/reel-reveal__front/static/css/736.a8ea85fe.chunk.css",
+    "static/js/736.6b0ea985.chunk.js": "/reel-reveal__front/static/js/736.6b0ea985.chunk.js",
     "static/js/301.4b73a3c9.chunk.js": "/reel-reveal__front/static/js/301.4b73a3c9.chunk.js",
     "static/media/sprite-genres.svg": "/reel-reveal__front/static/media/sprite-genres.93af71d5e8c04cb2e774eaed2e5f1777.svg",
     "static/media/Hind-SemiBold.woff2": "/reel-reveal__front/static/media/Hind-SemiBold.55c257f0bcd79cba9a3f.woff2",
@@ -13,6 +13,7 @@
     "static/media/CeraPro-Bold.woff": "/reel-reveal__front/static/media/CeraPro-Bold.d5b3ad75d9323b167595.woff",
     "static/media/heroImage.webp": "/reel-reveal__front/static/media/heroImage.c621fdf55d1042e5783c.webp",
     "static/media/sprite.svg": "/reel-reveal__front/static/media/sprite.1b8aebb21a32abfa572e96258f3f0ce9.svg",
+    "static/media/No-Image.jpg": "/reel-reveal__front/static/media/No-Image.09ea9f6b1352b3452d9d.jpg",
     "static/media/borderSvg.svg": "/reel-reveal__front/static/media/borderSvg.8c672131efe487841efe8ed76649e31c.svg",
     "static/media/romeo-+-juliet.webp": "/reel-reveal__front/static/media/romeo-+-juliet.9b3d21c408833526c3bd.webp",
     "static/media/the-dark-knight.webp": "/reel-reveal__front/static/media/the-dark-knight.74d22fcd9c9928975d54.webp",
@@ -33,13 +34,13 @@
     "index.html": "/reel-reveal__front/index.html",
     "static/media/howItWorksBGEllipse.svg": "/reel-reveal__front/static/media/howItWorksBGEllipse.8026e1a0cd1e5f051b8fd715a6fa4ba7.svg",
     "main.cd2e038f.css.map": "/reel-reveal__front/static/css/main.cd2e038f.css.map",
-    "main.529e50b6.js.map": "/reel-reveal__front/static/js/main.529e50b6.js.map",
-    "547.27e273cf.chunk.css.map": "/reel-reveal__front/static/css/547.27e273cf.chunk.css.map",
-    "547.1ee1e0f0.chunk.js.map": "/reel-reveal__front/static/js/547.1ee1e0f0.chunk.js.map",
+    "main.f50fce2a.js.map": "/reel-reveal__front/static/js/main.f50fce2a.js.map",
+    "736.a8ea85fe.chunk.css.map": "/reel-reveal__front/static/css/736.a8ea85fe.chunk.css.map",
+    "736.6b0ea985.chunk.js.map": "/reel-reveal__front/static/js/736.6b0ea985.chunk.js.map",
     "301.4b73a3c9.chunk.js.map": "/reel-reveal__front/static/js/301.4b73a3c9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.cd2e038f.css",
-    "static/js/main.529e50b6.js"
+    "static/js/main.f50fce2a.js"
   ]
 }
