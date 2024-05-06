@@ -9,7 +9,6 @@ import SimpleSlider from 'components/stuckOnMovieChoices/StuckOnMovieChoices';
 import { LinkToQuiz } from 'components/linkToQuiz/LinkToQuiz';
 
 const HomePage = () => {
-
   return (
     <>
       <Hero />
@@ -19,10 +18,7 @@ const HomePage = () => {
         title={'Upcoming 20 movies in 2024'}
         getMovies={getUpcomingMovies}
       />
-        <GetShowMovies
-          title={'TOP 20 rated movies'}
-          getMovies={topRatedMOvies}
-        />
+      <GetShowMovies title={'TOP 20 rated movies'} getMovies={topRatedMOvies} />
       <ChoseGenre />
       <SimpleSlider />
       <LinkToQuiz />
