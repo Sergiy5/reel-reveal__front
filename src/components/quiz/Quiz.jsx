@@ -36,18 +36,12 @@ export const Quiz = () => {
   }
   // GET (POST) from openai API =====================
   useEffect(() => {
-    // console.log('quizResult.length', !!quizResult.length < 7);
     
-    // console.log(
-    //   '!allMoviesForOneSession.length',
-    //   !!allMoviesForOneSession.length
-    // );
     if (quizResult.length < 7) return
 
     const openAiAPI = async (quizMovies, existedMovies) => {
       setIsLoading(true);
-      // console.log('existedMovies', existedMovies);
-      // console.log('quizMovies', quizMovies);
+ 
       try {
         const response = await getOpenAiAPI(quizMovies, existedMovies);
         setMoviesFromOpenaiApi(response);
@@ -68,7 +62,6 @@ export const Quiz = () => {
     if (!moviesFromOpenaiApi.length) return;
 
     const getMoviesFromAIResult = async movies => {
-      // console.log('lastArrayFromAI', movies);
       try {
         const promises = await getQuizMovies(movies);
         const response = await Promise.all(promises);
