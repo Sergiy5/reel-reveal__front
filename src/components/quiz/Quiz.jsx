@@ -16,18 +16,15 @@ export const Quiz = () => {
   const [isLoading, setIsLoading] = useState(false);
 
   if (isQuizActive) scrollToY(1330);
-  if (!isQuizActive) scrollToY(1440);
   if (isLoading) scrollToY(1300);
 
-
   const clickLoadMore = (moviesArr) => {
-    if (!moviesArr.length) return
-    console.log('first', ...allMoviesForOneSession);
-    console.log('second', ...moviesArr);
-    const filteredMovies = new Set([...allMoviesForOneSession, ...moviesArr]);
-    console.log('filteredMovies', filteredMovies);
+    if (!moviesArr.length) return;
+    console.log(allMoviesForOneSession, moviesArr);
+    const filteredMovies =  moviesArr.filter(element => allMoviesForOneSession.indexOf(element));
+    console.log( 'foo', filteredMovies);
     setAllMoviesForOneSession(prev => [...prev, ...filteredMovies]);
-}
+  };
 
   const onNewQuiz = () => {
     setIsQuizActive(true);
@@ -44,9 +41,12 @@ export const Quiz = () => {
  
       try {
         const response = await getOpenAiAPI(quizMovies, existedMovies);
-        setMoviesFromOpenaiApi(response);
-
-        return response;
+        if (!response) {
+          setIsLoading(false)
+          alert("Error... Try again")
+          throw new Error()
+        }
+          setMoviesFromOpenaiApi(response);
 
       } catch (error) {
         console.error('Error fetch data from openai:', error);
@@ -75,6 +75,7 @@ export const Quiz = () => {
         setListMovies(arrFilmsWithLoadMoreCard);
         setIsQuizActive(false);
         scrollToY(1440);
+        
       } catch (error) {
         console.log('Error in Quiz!!!', error);
       } finally {

@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const Back_END_URL = 'http://localhost:4000/openai';
+const Back_END_URL = 'http://localhost:5000/api/openai';
 
 export const getOpenAiAPI = async (requestArray, existedMovies) => {
   const promptText = `
@@ -15,13 +15,13 @@ export const getOpenAiAPI = async (requestArray, existedMovies) => {
     `;
 
   try {
-    const openAiResponse = await axios.post(Back_END_URL, {
+    const result = await axios.post(Back_END_URL, {
       promptText,
     });
-    return openAiResponse.data;
+    const res = JSON.parse(result.data.response); 
+    
+    return res;
   } catch (error) {
-    console.log('getOpenAiAPI error', error.message);
+    console.log('getOpenAiAPI error', error);
   }
 };
-  
-  // - The result like this : ["Moon", "Sun", "Good-buy", "Trminator", "Avatar", "Dog", "CAt"].
