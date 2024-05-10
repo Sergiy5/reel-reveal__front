@@ -8,7 +8,6 @@ export const HowItWorksWrapper = styled.div`
   align-items: center;
   flex-direction: column;
   width: 100%;
-  /* height: 346px; */
   gap: 48px;
 `;
 

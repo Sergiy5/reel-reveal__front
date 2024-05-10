@@ -14,7 +14,7 @@ export const WrapperNav = styled.div`
 
 export const SvgStyled = styled.svg`
   fill: #fff;
-  transition: fill 2050ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover {
     fill: ${colors.accentColor};
@@ -24,9 +24,13 @@ export const SvgStyled = styled.svg`
 export const NavLinkStyled = styled(NavLink)`
   border-radius: 4px;
   outline: transparent;
-  transition-property: outline;
+  transition-property: outline, color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    color: ${colors.accentColor};
+  }
 
   &:focus {
     outline: 2px solid ${colors.accentColor};

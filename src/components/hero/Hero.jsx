@@ -5,10 +5,11 @@ import {
   HeroText,
   HeroTextCTAWrapper,
   SvgStyled,
+  WrapperImg,
+  HeroWrapper,
 } from './HeroStyled';
 import heroImg from '../../assets/images/heroImage.webp';
 import Sprite from '../../assets/images/svgSprite/sprite.svg';
-import { Container } from 'styles';
 import { SharedStyledLinkBtn } from 'styles/SharedStyledLinkBtn.styled';
 
 
@@ -17,7 +18,6 @@ export const Hero = () => {
 
   useEffect(() => {
     
-
     /*Looking max number division without a remainder============*/
     // const compairNumbers = (number1, numbe2) => {
     //   for (let i = number1 - 1; i > 0; i--) {
@@ -34,10 +34,7 @@ export const Hero = () => {
   }, []);
 
   return (
-    <Container $row>
-      <SvgStyled width="833" height="890">
-        <use xlinkHref={`${Sprite}#heroEllips`} />
-      </SvgStyled>
+    <HeroWrapper>
       <HeroTextCTAWrapper>
         <h1>Discover Your Perfect Movie with ReelReveal!</h1>
         <HeroText>
@@ -49,7 +46,12 @@ export const Hero = () => {
           start quiz
         </SharedStyledLinkBtn>
       </HeroTextCTAWrapper>
-      <HeroImage src={heroImg} alt="Hero movies" />
-    </Container>
+      <WrapperImg>
+        <SvgStyled >
+          {/* <use xlinkHref={`${Sprite}#heroEllips`} /> */}
+        </SvgStyled>
+        <HeroImage src={heroImg} alt="Hero movies" />
+      </WrapperImg>
+    </HeroWrapper>
   );
 };

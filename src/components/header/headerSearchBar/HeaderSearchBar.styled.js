@@ -2,6 +2,7 @@ import { colors } from 'assets/variables/variablesColors';
 import { FiSearch } from 'react-icons/fi';
 import styled from 'styled-components';
 
+
 export const WrapperSearchBar = styled.div`
   position: relative;
   display: flex;
@@ -11,6 +12,10 @@ export const WrapperSearchBar = styled.div`
   outline: solid 1px transparent;
 
   transition: outline-color 400ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (max-width: 1280px) {
+    width: 365px;
+  }
 
   &:hover {
     outline-color: ${colors.accentColor};

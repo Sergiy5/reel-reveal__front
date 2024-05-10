@@ -1,10 +1,18 @@
 import styled from 'styled-components';
 import { colors } from 'assets/variables/variablesColors';
 
+;
 export const FooterWrapper = styled.div`
+  position: relative;
+  width: 100%;
+  background-color: ${colors.bgColor};
+`;
+
+export const ContentFooterWrapper = styled.div`
   position: absolute;
-  z-index: 1;
-  left: 0;
+  z-index: 2;
+  left: 50%;
+  transform: translate(-50%, 0);
   bottom: 0px;
   display: block;
   text-align: start;
@@ -23,6 +31,8 @@ export const MenuFooterWrapper = styled.div`
 
 export const SvgBgStyled = styled.svg`
   position: absolute;
-  bottom: 10px;
-  left: 100px;
+  z-index: 1;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
 `;

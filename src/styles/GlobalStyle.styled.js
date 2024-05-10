@@ -21,6 +21,8 @@ const GlobalStyle = createGlobalStyle`
     font-family: 'mainBoldFont';
     src: url(${mainBoldFont}) format('woff');
     font-style: normal;
+   font-display: swap, sans-serif;
+
   }
   
   @font-face {
@@ -28,6 +30,8 @@ const GlobalStyle = createGlobalStyle`
     src: url(${mainLightFont}) format('woff');
     font-weight: normal;
     font-style: normal;
+   font-display: swap, sans-serif;
+
   }
    @font-face {
     font-family: 'fontH1';
@@ -42,6 +46,8 @@ const GlobalStyle = createGlobalStyle`
     src: url(${fontH2}) format('woff2');
     font-weight: 600;
     font-style: normal;
+   font-display: swap, sans-serif;
+
   }
 @font-face {
   font-family: 'Hind-Bold';
@@ -51,8 +57,9 @@ const GlobalStyle = createGlobalStyle`
 
 body{
   font-family: "mainFont", Arial, Helvetica, sans-serif;
+  display: block;
   color: ${colors.textColor};
-  width: 1440px;
+  min-height: 100vh;
   margin-left: auto;
   margin-right: auto;
 }

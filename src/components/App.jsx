@@ -1,15 +1,12 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 import Layout from "./layout/Layout";
-import { MainWrapper } from "styles/MainWrapper.styled";
-// import { MovieSearchPage } from "./pages/movieSearchPage";
-// import  HomePage  from "./pages/HomePage";
 
 const HomePage = React.lazy(() => import('./pages/homePage'));
 
 export const App = () => {
   return (
-    <MainWrapper>
+   
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<HomePage />} />
@@ -21,6 +18,6 @@ export const App = () => {
           <Route path="*" element={<NotFound />} /> */}
         </Route>
       </Routes>
-    </MainWrapper>
+    
   );
 };

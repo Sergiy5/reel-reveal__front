@@ -4,7 +4,7 @@ import { Container } from 'styles';
 import { getOpenAiAPI, getQuizMovies } from 'apiService';
 import { QuizQuestions } from './quizQuestions/QuizQuestions';
 import { QuizListMovies } from './quizListMovies/QuizListMovies';
-import { firstElementsFromArray, scrollToY } from 'utils';
+import { firstElementsFromArray, loadMoreCard, scrollToY } from 'utils';
 import { Loader } from 'components/loader/Loader';
 
 export const Quiz = () => {
@@ -15,15 +15,16 @@ export const Quiz = () => {
   const [isQuizActive, setIsQuizActive] = useState(true);
   const [isLoading, setIsLoading] = useState(false);
 
-  if (isQuizActive) scrollToY(1330);
-  if (isLoading) scrollToY(1300);
+  // if (isQuizActive) scrollToY(1330);
+  // if (isLoading) scrollToY(1300);
 
   const clickLoadMore = (moviesArr) => {
+
     if (!moviesArr.length) return;
-    console.log(allMoviesForOneSession, moviesArr);
+
     const filteredMovies =  moviesArr.filter(element => allMoviesForOneSession.indexOf(element));
-    console.log( 'foo', filteredMovies);
     setAllMoviesForOneSession(prev => [...prev, ...filteredMovies]);
+
   };
 
   const onNewQuiz = () => {
@@ -68,9 +69,7 @@ export const Quiz = () => {
 
         const result = firstElementsFromArray(response);
 
-        const loadMoreCard = { id: 'load_more', textBtn: 'LOAD MORE' };
-
-        const arrFilmsWithLoadMoreCard = [...result, loadMoreCard];
+        const arrFilmsWithLoadMoreCard = [...result, loadMoreCard()];
 
         setListMovies(arrFilmsWithLoadMoreCard);
         setIsQuizActive(false);
