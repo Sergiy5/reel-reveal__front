@@ -1,41 +1,51 @@
 import styled from 'styled-components';
-import { ReactComponent as BgEllipsHero } from '../../assets/images/svgSprite/sprite.svg#heroEllips';
 
 export const HeroWrapper = styled.div`
-position: relative;
+  position: relative;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  padding: 120px;
+  flex-direction: column-reverse;
+  padding: 120px 40px;
   max-width: 1440px;
+  height: auto;
   gap: 20px;
 
-  @media screen and (max-width: 1080px) {
-    flex-direction: column-reverse;
+  @media screen and (min-width: 768px) {
+    
+  }
+  @media screen and (min-width: 1024px) {
+    padding: 80px 80px;
+    flex-direction: row;
   }
 `;
-
+  
 export const HeroTextCTAWrapper = styled.div`
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
   flex-direction: column;
-  width: 300px;
-  height: 584px;
+  width: ${props => props.$viewWidth - 80}px;
+
+  height: auto;
+  /* width: 300px;
+  height: 305px; */
   gap: 24px;
 
-  @media screen and (max-width: 1280px) {
-    width: 400px;
-    height: 460px;
+  @media screen and (min-width: 768px) {
+    width: ${props => props.$viewWidth - 200}px;
+
+    height: ${props => (props.$viewWidth - 200) * 0.6}px;
   }
 
-  @media screen and (min-width: 1280px) {
-    width: 511px;
+  @media screen and (min-width: 1024px) {
+    align-items: flex-start;
+    width: ${props => (props.$viewWidth - 200) / 2}px;
+    height: 548px;
   }
+
   @media screen and (min-width: 1440px) {
     width: 590px;
   }
-
 `;
 
 export const HeroText = styled.p`
@@ -44,48 +54,50 @@ export const HeroText = styled.p`
   line-height: 30px;
 `;
 
-export const SvgStyled = styled(BgEllipsHero)`
+export const HeroBgEllips = styled.svg`
   position: absolute;
   z-index: 1;
-  top: o;
-  left: -20%;
-  width: 433px;
-  height: 460px;
+  transform: translate(0%, 0%);
+  width: ${props => props.$viewWidth * 1.2}px;
+  height: ${props => props.$viewWidth * 1.2 + 10}px;
 
-  @media screen and (max-width: 1280px) {
-    width: 833px;
-    height: 890px;
-    left: -52%;
+  @media screen and (min-width: 767px) {
+    width: ${props => props.$viewWidth * 1.2}px;
+    height: ${props => props.$viewWidth * 1.2 + 10}px;
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1024px) {
+    width: ${props => props.$viewWidth / 1.6}px;
+    height: ${props => props.$viewWidth / 1.6}px;
+  }
+
+  @media screen and (min-width: 1440px) {
     width: 833px;
     height: 890px;
   }
-
-  width: 833px;
-  height: 890px;
 `;
+
 
 export const WrapperImg = styled.div`
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
-  width: 300px;
-  height: 584px;
+  width: ${props => props.$viewWidth - 80}px;
+  height: ${props => (props.$viewWidth - 80)}px;
 
-  /* @media screen and (min-width: 767px) {
-    width: 470px;
-  } */
+  @media screen and (min-width: 767px) {
+    width: ${props => props.$viewWidth - 200}px;
 
-  @media screen and (max-width: 1280px) {
-    width: 470px;
-    height: 465px;
+    height: ${props => (props.$viewWidth - 200) * 1}px;
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1024px) {
+    width: ${props => (props.$viewWidth - 200) / 2}px;
+    height: 548px;
+  }
+
+  @media screen and (min-width: 1440px) {
     width: 590px;
   }
 `;
@@ -93,8 +105,7 @@ export const WrapperImg = styled.div`
 export const HeroImage = styled.img`
   position: absolute;
   z-index: 1;
-  top: 0;
-  right: 0px;
+  transform: translate(0%, 0%);
   width: 100%;
   height: auto;
 `;

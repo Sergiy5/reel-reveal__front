@@ -6,6 +6,7 @@ import { Loader } from 'components/loader/Loader';
 import { MainWrapper } from 'styles';
 
 const Layout = () => {
+ 
   return (
     <>
       <Header />

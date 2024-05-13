@@ -11,35 +11,34 @@ export const Container = styled.div`
   top: 0;
   left: 50%;
   transform: translate(-50%, 0);
-  
+  justify-content: space-between;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   align-items: center;
-  width: 320px;
+  width: ${props => props.$viewWidth - 80}px;
+  
+  /* width: 320px; */
   height: auto;
   padding: 8px 16px;
   
   @media screen and (min-width: 767px) {
+    justify-content: space-between;
     padding: 15px 20px;
-    width: 768px;
+    width: ${props => props.$viewWidth - 200}px;
+
+    /* width: 600px; */
   }
-  
-  @media screen and (min-width: 1080px) {
-    padding: 15px 120px;
-    width: 1130px;
+
+  @media screen and (min-width: 1024px) {
+    padding: 20px 0px;
+    width: ${props => props.$viewWidth - 200}px;
   }
-  
-  @media screen and (min-width: 1280px) {
-    padding: 20px 40px;
-    width: 1200px;
-  }
-  
+
   @media screen and (min-width: 1440px) {
     padding: 20px 120px;
     width: 1440px;
   }
-  `;
+`;
 
 export const WrapperHeaderContent = styled.div`
   position: absolute;

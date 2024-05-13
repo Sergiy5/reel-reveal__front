@@ -1,3 +1,4 @@
+
 import { Hero } from 'components/hero/Hero';
 import { HowItWorks } from 'components/howItWork/HowItWorks';
 import { Quiz } from 'components/quiz/Quiz';
@@ -9,6 +10,7 @@ import SimpleSlider from 'components/stuckOnMovieChoices/StuckOnMovieChoices';
 import { LinkToQuiz } from 'components/linkToQuiz/LinkToQuiz';
 
 const HomePage = () => {
+
   return (
     <>
       <Hero />

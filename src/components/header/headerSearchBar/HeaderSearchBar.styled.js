@@ -1,5 +1,4 @@
 import { colors } from 'assets/variables/variablesColors';
-import { FiSearch } from 'react-icons/fi';
 import styled from 'styled-components';
 
 
@@ -12,10 +11,6 @@ export const WrapperSearchBar = styled.div`
   outline: solid 1px transparent;
 
   transition: outline-color 400ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  @media screen and (max-width: 1280px) {
-    width: 365px;
-  }
 
   &:hover {
     outline-color: ${colors.accentColor};
@@ -72,9 +67,11 @@ export const BtnSearchBar = styled.button`
   }
 `;
 
-export const FiSearchStyled = styled(FiSearch)`
+export const SvgSearchStyled = styled.svg`
   opacity: ${props => (props.$focus ? '100%' : '50%')};
   color: ${props => (props.$focus ? 'black' : '#fff')};
+  width: 26px;
+  height: 26px;
 
   transition-property: color, outline, opacity;
   transition-duration: 350ms;
@@ -85,3 +82,5 @@ export const FiSearchStyled = styled(FiSearch)`
     color: ${props => (props.$focus ? '#fff' : 'black')};
   }
 `;
+
+

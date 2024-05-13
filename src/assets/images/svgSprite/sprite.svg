@@ -2,17 +2,15 @@
     xmlns="http://www.w3.org/2000/svg"
     xmlns:xlink="http://www.w3.org/1999/xlink">
     <defs>
-        <symbol id="heroEllips" fill="none" viewBox="0 0 833 890"
+        <symbol id="heroEllips" fill="none"  viewBox="0 0 833 890"
             xmlns="http://www.w3.org/2000/svg">
             <g opacity="0.41" filter="url(#filter0_f_215_106)">
                 <path d="M200.016 337.126C230.824 219.972 380.703 157.846 534.781 198.363C688.858 238.88 734.84 493.108 704.033 610.262C673.225 727.416 544.734 717.336 423.216 622.615C269.139 582.098 169.209 454.28 200.016 337.126Z" fill="#20E8DA"/>
             </g>
             <defs>
-                <!-- <filter id="filter0_f_215_106" x="0.439453" y="-8.026" width="906.625" height="897.92" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                    <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                <filter id="filter0_f_215_106" x="0.439453" y="-8.026" width="1250.625" height="1100.92" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
                     <feGaussianBlur stdDeviation="97" result="effect1_foregroundBlur_215_106"/>
-                </filter> -->
+                </filter>
             </defs>
         </symbol >
         <symbol id="footerBgEllips" fill="none"
@@ -22,8 +20,6 @@
             </g>
             <defs>
                 <filter id="filter0_f_513_3706" x="0.0185547" y="0.813965" width="1488.25" height="718.909" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                    <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
                     <feGaussianBlur stdDeviation="119.5" result="effect1_foregroundBlur_513_3706"/>
                 </filter>
             </defs>
@@ -35,8 +31,6 @@
             </g>
             <defs>
                 <filter id="filter0_f_475_1996" x="-99.4834" y="-227.864" width="1638.14" height="588.803" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                    <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
                     <feGaussianBlur stdDeviation="119.5" result="effect1_foregroundBlur_475_1996"/>
                 </filter>
             </defs>
@@ -82,10 +76,21 @@
         <symbol id="icon-user" viewBox="0 0 18 20">
             <path fill-rule="evenodd" d="M12.268 1.575a5.5 5.5 0 0 0-6.536 0 5.5 5.5 0 0 0 .172 8.972 9.005 9.005 0 0 0-5.9 8.18 1 1 0 0 0 .008.137.75.75 0 0 0 .738.886h16.5a.75.75 0 0 0 .74-.877 1 1 0 0 0 .006-.145 9.005 9.005 0 0 0-5.9-8.181 5.5 5.5 0 0 0 .172-8.972m4.195 16.675a7.5 7.5 0 0 0-14.925 0zM6.172 8.828a4 4 0 1 1 5.656-5.656 4 4 0 0 1-5.656 5.656" clip-rule="evenodd"></path>
         </symbol>
+        <symbol id="burger-icon" viewBox="0 0 30 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.5 2.00146H28.5M1.5 11.0015H28.5M1.5 20.0015H28.5" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</symbol>
 
-        <symbol id="icon-heart" viewBox="0 0 18 16">
-            <path d="M13.018 0C11.358 0 9.906.74 9 1.991 8.094.741 6.642 0 4.982 0a4.9 4.9 0 0 0-3.521 1.515A5.27 5.27 0 0 0 0 5.168c0 5.835 8.34 10.557 8.695 10.752a.62.62 0 0 0 .61 0C9.66 15.725 18 11.003 18 5.168a5.27 5.27 0 0 0-1.46-3.653A4.9 4.9 0 0 0 13.017 0M9 14.57c-1.467-.887-7.714-4.927-7.714-9.402a3.91 3.91 0 0 1 1.084-2.71 3.64 3.64 0 0 1 2.612-1.124c1.563 0 2.875.863 3.423 2.25.049.122.131.227.237.3a.63.63 0 0 0 .716 0 .66.66 0 0 0 .237-.3c.548-1.39 1.86-2.25 3.423-2.25.98.001 1.92.405 2.612 1.124a3.91 3.91 0 0 1 1.084 2.71c0 4.468-6.248 8.514-7.714 9.402"/>
-        </symbol>
+<symbol id="icon-heart" viewBox="0 0 18 16">
+    <path d="M13.018 0C11.358 0 9.906.74 9 1.991 8.094.741 6.642 0 4.982 0a4.9 4.9 0 0 0-3.521 1.515A5.27 5.27 0 0 0 0 5.168c0 5.835 8.34 10.557 8.695 10.752a.62.62 0 0 0 .61 0C9.66 15.725 18 11.003 18 5.168a5.27 5.27 0 0 0-1.46-3.653A4.9 4.9 0 0 0 13.017 0M9 14.57c-1.467-.887-7.714-4.927-7.714-9.402a3.91 3.91 0 0 1 1.084-2.71 3.64 3.64 0 0 1 2.612-1.124c1.563 0 2.875.863 3.423 2.25.049.122.131.227.237.3a.63.63 0 0 0 .716 0 .66.66 0 0 0 .237-.3c.548-1.39 1.86-2.25 3.423-2.25.98.001 1.92.405 2.612 1.124a3.91 3.91 0 0 1 1.084 2.71c0 4.468-6.248 8.514-7.714 9.402"/>
+</symbol>
+
+<symbol id="search-icons" viewBox="0 0 20 20" fill="currentColor">
+  <path d="M19.0213 19L13.8243 13.803M13.8243 13.803C15.2309 12.3964 16.0211 10.4887 16.0211 8.49949C16.0211 6.51029 15.2309 4.60256 13.8243 3.19599C12.4177 1.78941 10.51 0.999207 8.52079 0.999207C6.53159 0.999207 4.62387 1.78941 3.21729 3.19599C1.81071 4.60256 1.02051 6.51029 1.02051 8.49949C1.02051 10.4887 1.81071 12.3964 3.21729 13.803C4.62387 15.2096 6.53159 15.9998 8.52079 15.9998C10.51 15.9998 12.4177 15.2096 13.8243 13.803Z"  stroke="white" stroke-opacity="0.5" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" />
+</symbol>
+
+<symbol id="search-icon" fill="currentColor" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 30 30">
+    <path d="M 13 3 C 7.4886661 3 3 7.4886661 3 13 C 3 18.511334 7.4886661 23 13 23 C 15.396652 23 17.59741 22.148942 19.322266 20.736328 L 25.292969 26.707031 A 1.0001 1.0001 0 1 0 26.707031 25.292969 L 20.736328 19.322266 C 22.148942 17.59741 23 15.396652 23 13 C 23 7.4886661 18.511334 3 13 3 z M 13 5 C 17.430666 5 21 8.5693339 21 13 C 21 17.430666 17.430666 21 13 21 C 8.5693339 21 5 17.430666 5 13 C 5 8.5693339 8.5693339 5 13 5 z"/>
+</symbol>
 
     </defs>
 </svg>

@@ -8,6 +8,7 @@ import fontH2 from '../assets/fonts/hind/Hind-SemiBold.woff2';
 
 import { colors } from '../assets/variables/variablesColors';
 
+
 const GlobalStyle = createGlobalStyle`
 
   @font-face {
@@ -54,6 +55,7 @@ const GlobalStyle = createGlobalStyle`
   src: url('/path/to/font/Hind-Bold.woff2') format('woff2');
   font-display: swap; 
 }
+
 
 body{
   font-family: "mainFont", Arial, Helvetica, sans-serif;
