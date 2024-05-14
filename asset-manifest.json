@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/reel-reveal__front/static/css/main.cd2e038f.css",
-    "main.js": "/reel-reveal__front/static/js/main.ffffc2bf.js",
+    "main.js": "/reel-reveal__front/static/js/main.c742a581.js",
     "static/css/87.3065ec69.chunk.css": "/reel-reveal__front/static/css/87.3065ec69.chunk.css",
     "static/js/87.eb89678e.chunk.js": "/reel-reveal__front/static/js/87.eb89678e.chunk.js",
     "static/js/301.4b73a3c9.chunk.js": "/reel-reveal__front/static/js/301.4b73a3c9.chunk.js",
@@ -34,13 +34,13 @@
     "index.html": "/reel-reveal__front/index.html",
     "static/media/howItWorksBGEllipse.svg": "/reel-reveal__front/static/media/howItWorksBGEllipse.8026e1a0cd1e5f051b8fd715a6fa4ba7.svg",
     "main.cd2e038f.css.map": "/reel-reveal__front/static/css/main.cd2e038f.css.map",
-    "main.ffffc2bf.js.map": "/reel-reveal__front/static/js/main.ffffc2bf.js.map",
+    "main.c742a581.js.map": "/reel-reveal__front/static/js/main.c742a581.js.map",
     "87.3065ec69.chunk.css.map": "/reel-reveal__front/static/css/87.3065ec69.chunk.css.map",
     "87.eb89678e.chunk.js.map": "/reel-reveal__front/static/js/87.eb89678e.chunk.js.map",
     "301.4b73a3c9.chunk.js.map": "/reel-reveal__front/static/js/301.4b73a3c9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.cd2e038f.css",
-    "static/js/main.ffffc2bf.js"
+    "static/js/main.c742a581.js"
   ]
 }
