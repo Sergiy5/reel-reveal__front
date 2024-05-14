@@ -13,4 +13,8 @@ export const MainWrapper = styled.div`
   max-width: 1440px;
   background-color: ${colors.bgColor};
 
+  @media screen and (max-width: 1280px) {
+    width: 100vw;
+  }
+
  `;

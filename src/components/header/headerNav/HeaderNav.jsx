@@ -13,8 +13,8 @@ export const HeaderNav = ({ viewWidth }) => {
   const [isActiveMenu, setIsActiveMenu] = useState(false);
 
   useEffect(() => {
-    if (viewWidth > 1280) setIsActiveMenu(true);
-   if (viewWidth < 1279) setIsActiveMenu(false);
+    if (viewWidth > 1281) setIsActiveMenu(true);
+   if (viewWidth < 1280) setIsActiveMenu(false);
 
 
   }, [viewWidth])
