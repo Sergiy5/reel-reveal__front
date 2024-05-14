@@ -17,10 +17,7 @@ export const HeaderSearchBar = ({ viewWidth }) => {
 
   return (
     <>
-      {isHiden ? (
-        <SvgSearchStyled $focus={isFocus}>
-          <use xlinkHref={`${sprite}#search-icon`} />
-        </SvgSearchStyled>) : (
+      {isHiden ? null : (
         <WrapperSearchBar>
           <HeaderInputStyled
             type="text"

@@ -8,16 +8,38 @@ export const WrapperNav = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 380px;
+  flex-direction: column;
+  width: auto;
   height: 40px;
+
+  /* @media screen and (max-width: 1279px) {
+  } */
+
+  @media screen and (min-width: 1280px) {
+    width: 380px;
+    flex-direction: row;
+  }
+`;
+
+export const MenuBtn = styled.button`
+  width: 40px;
+  height: 40px;
+  border-radius: 3px;
+  background-color: ${colors.bgColor};
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    background-color: ${colors.bgLightColor};
+  }
 `;
 
 export const SvgStyled = styled.svg`
-  fill: #fff;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  color: #fff;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover {
-    fill: ${colors.accentColor};
+    color: ${colors.accentColor};
   }
 `;
 

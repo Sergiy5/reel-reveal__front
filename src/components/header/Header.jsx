@@ -9,7 +9,6 @@ import { HeaderSearchBar } from './headerSearchBar/HeaderSearchBar';
 import { HeaderNav } from './headerNav/HeaderNav';
 import Sprite from '../../assets/images/svgSprite/sprite.svg'
 import { useSize } from 'components/context/MyProvider';
-import sprite from '../../assets/images/svgSprite/sprite.svg'
 
 const Header = () => {
   const viewWidth = useSize();
@@ -22,17 +21,12 @@ const Header = () => {
 
       <WrapperHeaderContent>
         <Container $viewWidth={viewWidth}>
-          <MainLogo viewWidth={viewWidth}/>
+          <MainLogo viewWidth={viewWidth} />
 
-          <HeaderSearchBar viewWidth={viewWidth}/>
+          <HeaderSearchBar viewWidth={viewWidth} />
 
-          {viewWidth > 1280 ? (
-            <HeaderNav />
-          ) : (
-            <svg width="30px" height="22px">
-              <use xlinkHref={`${sprite}#burger-icon`} />
-            </svg>
-          )}
+          <HeaderNav viewWidth={viewWidth} />
+          
         </Container>
       </WrapperHeaderContent>
     </HeaderWrapper>

@@ -5,16 +5,17 @@ export const HeroWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   flex-direction: column-reverse;
-  padding: 120px 40px;
+  padding: 0px 40px;
   max-width: 1440px;
   height: auto;
   gap: 20px;
 
-  @media screen and (min-width: 768px) {
-    
-  }
   @media screen and (min-width: 1024px) {
-    padding: 80px 80px;
+    padding: 0px 80px;
+    flex-direction: row;
+  }
+  @media screen and (min-width: 1280px) {
+    padding: 0px 120px;
     flex-direction: row;
   }
 `;
@@ -27,8 +28,6 @@ export const HeroTextCTAWrapper = styled.div`
   width: ${props => props.$viewWidth - 80}px;
 
   height: auto;
-  /* width: 300px;
-  height: 305px; */
   gap: 24px;
 
   @media screen and (min-width: 768px) {
@@ -40,11 +39,12 @@ export const HeroTextCTAWrapper = styled.div`
   @media screen and (min-width: 1024px) {
     align-items: flex-start;
     width: ${props => (props.$viewWidth - 200) / 2}px;
-    height: 548px;
+    height: ${props => ((props.$viewWidth - 200) / 2) * 1.009}px;
   }
 
   @media screen and (min-width: 1440px) {
     width: 590px;
+    height: 584px;
   }
 `;
 
@@ -84,21 +84,21 @@ export const WrapperImg = styled.div`
   align-items: center;
   justify-content: center;
   width: ${props => props.$viewWidth - 80}px;
-  height: ${props => (props.$viewWidth - 80)}px;
+  height: ${props => props.$viewWidth - 80}px;
 
   @media screen and (min-width: 767px) {
     width: ${props => props.$viewWidth - 200}px;
-
-    height: ${props => (props.$viewWidth - 200) * 1}px;
+    height: ${props => (props.$viewWidth - 200) * 1.009}px;
   }
 
   @media screen and (min-width: 1024px) {
     width: ${props => (props.$viewWidth - 200) / 2}px;
-    height: 548px;
+    height: ${props => ((props.$viewWidth - 200) / 2) * 1.009}px;
   }
 
   @media screen and (min-width: 1440px) {
     width: 590px;
+    height: 584px;
   }
 `;
 
