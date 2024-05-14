@@ -9,16 +9,47 @@ import {
 import sprite from '../../../assets/images/svgSprite/sprite.svg';
 
 
-export const HeaderNav = ({ viewWidth }) => {
+export const HeaderNav = () => {
   const [isActiveMenu, setIsActiveMenu] = useState(false);
+  const viewWidth = window.innerWidth;
+  console.log(viewWidth);
+  
+// const [containerStyle, setContainerStyle] = useState({
+//   transform: `translateX(${sidebarVisible ? '0' : '-225px'})`,
+// });
+
+// useEffect(() => {
+//   const handleResize = () => {
+//     const windowWidth = window.innerWidth;
+//     let newTransformValue = '';
+
+//     if (windowWidth < 768) {
+//       newTransformValue = sidebarVisible ? '0' : '-225px';
+//     } else if (windowWidth >= 768 && windowWidth <= 1439) {
+//       newTransformValue = sidebarVisible ? '0' : '-300px';
+//     } else if (windowWidth >= 1440) {
+//       newTransformValue = sidebarVisible ? '0' : '0';
+//     }
+
+//     setContainerStyle({
+//       transform: `translateX(${newTransformValue})`,
+//     });
+//   };
+
+//   handleResize(); // Call it initially
+//   window.addEventListener('resize', handleResize);
+//   return () => {
+//     window.removeEventListener('resize', handleResize);
+//   };
+// }, [sidebarVisible]);
+
 
   useEffect(() => {
     if (viewWidth > 1281) setIsActiveMenu(true);
    if (viewWidth < 1280) setIsActiveMenu(false);
 
-
   }, [viewWidth])
-  
+
 
     return (
       <WrapperNav>

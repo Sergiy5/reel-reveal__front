@@ -16,27 +16,30 @@ export const Container = styled.div`
   flex-direction: row;
   align-items: center;
   width: ${props => props.$viewWidth - 80}px;
-  
-  /* width: 320px; */
+
   height: auto;
   padding: 8px 16px;
-  
+
   @media screen and (min-width: 767px) {
     justify-content: space-between;
     padding: 15px 20px;
     width: ${props => props.$viewWidth - 200}px;
-
-    /* width: 600px; */
   }
 
-  @media screen and (min-width: 1024px) {
-    padding: 20px 0px;
-    width: ${props => props.$viewWidth - 200}px;
+  @media (min-width: 1024px) {
+    padding: 20px 40px;
+    width: 1040px;
   }
 
-  @media screen and (min-width: 1440px) {
+  @media (min-width: 1280px) {
+    padding: 20px 60px;
+    width: 1280px;
+  }
+
+  @media (min-width: 1440px) {
     padding: 20px 120px;
     width: 1440px;
+    gap: 108px;
   }
 `;
 

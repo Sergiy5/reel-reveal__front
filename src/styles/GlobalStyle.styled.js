@@ -1,5 +1,6 @@
-import 'modern-normalize';
 import { createGlobalStyle } from 'styled-components';
+import 'modern-normalize';
+
 import mainFont from '../assets/fonts/cera pro sv/CeraPro-Regular.woff';
 import mainBoldFont from '../assets/fonts/cera pro sv/CeraPro-Bold.woff';
 import mainLightFont from '../assets/fonts/cera pro sv/CeraPro-Light.woff';

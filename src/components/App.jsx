@@ -25,6 +25,7 @@ export const App = () => {
           <Route path="favorite" element={<Favorite />} />
 
           <Route path="*" element={<NotFound />} /> */}
+          
         </Route>
       </Routes>
     </MyProvider>

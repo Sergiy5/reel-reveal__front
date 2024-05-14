@@ -1,7 +1,7 @@
 import { colors } from 'assets/variables/variablesColors';
 import styled from 'styled-components';
 
-export const MainWrapper = styled.div`
+export const Main = styled.main`
   position: relative;
   display: flex;
   align-items: center;
@@ -12,9 +12,4 @@ export const MainWrapper = styled.div`
   padding: 140px 0 503px 0;
   max-width: 1440px;
   background-color: ${colors.bgColor};
-
-  @media screen and (max-width: 1280px) {
-    width: 100vw;
-  }
-
- `;
+`;

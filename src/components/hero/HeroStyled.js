@@ -106,6 +106,4 @@ export const HeroImage = styled.img`
   position: absolute;
   z-index: 1;
   transform: translate(0%, 0%);
-  width: 100%;
-  height: auto;
 `;
