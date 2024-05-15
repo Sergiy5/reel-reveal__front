@@ -46,7 +46,7 @@ export const Hero = () => {
 
   
   return (
-    <HeroWrapper $viewWidth={viewWidth}>
+    <HeroWrapper $viewWidt={viewWidth}>
       <HeroTextCTAWrapper $viewWidth={viewWidth}>
         <h1>Discover Your Perfect Movie with ReelReveal!</h1>
 

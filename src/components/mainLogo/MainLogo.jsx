@@ -1,8 +1,10 @@
+import { useSize } from 'components/context/MyProvider';
 import Sprite from '../../assets/images/svgSprite/sprite.svg';
 import { NavLinkStyled, SpanStyled } from './MainLogo.styled';
 //
 
-export const MainLogo = ({ viewWidth }) => {
+export const MainLogo = () => {
+  const viewWidth = useSize();
 
 
   return (

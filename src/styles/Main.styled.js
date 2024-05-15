@@ -9,7 +9,7 @@ export const Main = styled.main`
   flex-direction: column;
   margin: 0 auto;
   gap: 120px;
-  padding: 140px 0 503px 0;
+  padding: 20px 0 503px 0;
   max-width: 1440px;
   background-color: ${colors.bgColor};
 `;

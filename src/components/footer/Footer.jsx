@@ -8,15 +8,19 @@ import {
 import { MenuFootr } from './menuFooter/MenuFooter';
 import { ListSocial } from './listSocial/ListSocial';
 import Sprite from '../../assets/images/svgSprite/sprite.svg';
+import { useSize } from 'components/context/MyProvider';
 
 export const Footer = () => {
+  const viewWidth = useSize();
+
+
   return (
     <FooterWrapper>
-      <SvgBgStyled width="1429" height="614">
+      <SvgBgStyled $viewWidth={viewWidth}>
         <use xlinkHref={`${Sprite}#footerBgEllips`} />
       </SvgBgStyled>
       <ContentFooterWrapper>
-        <MainLogo />
+        <MainLogo/>
         <MenuFooterWrapper>
           <MenuFootr />
           <svg width="154" height="160">

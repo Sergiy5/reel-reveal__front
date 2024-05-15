@@ -14,7 +14,7 @@ const HomePage = () => {
   return (
     <>
       <Hero />
-      <HowItWorks />
+      {/* <HowItWorks />
       <Quiz />
       <GetShowMovies
         title={'Upcoming 20 movies in 2024'}
@@ -22,7 +22,7 @@ const HomePage = () => {
       />
       <GetShowMovies title={'TOP 20 rated movies'} getMovies={topRatedMOvies} />
       <ChoseGenre />
-      <SimpleSlider />
+      <SimpleSlider /> */}
       <LinkToQuiz />
     </>
   );

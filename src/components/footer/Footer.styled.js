@@ -35,4 +35,10 @@ export const SvgBgStyled = styled.svg`
   bottom: 0;
   left: 50%;
   transform: translate(-50%, 0);
+
+  @media (min-width: 1440px) {
+    width: 1429px;
+     height: 614px;
+    
+  } 
 `;

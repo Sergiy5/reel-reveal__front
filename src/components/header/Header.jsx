@@ -7,7 +7,7 @@ import {
 } from './Header.styled';
 import { HeaderSearchBar } from './headerSearchBar/HeaderSearchBar';
 import { HeaderNav } from './headerNav/HeaderNav';
-import Sprite from '../../assets/images/svgSprite/sprite.svg'
+import sprite from '../../assets/images/svgSprite/sprite.svg'
 import { useSize } from 'components/context/MyProvider';
 
 const Header = () => {
@@ -15,18 +15,17 @@ const Header = () => {
 
   return (
     <HeaderWrapper>
-      <SvgStyled width="1440" height="361">
-        <use xlinkHref={`${Sprite}#headerEllips `} />
+      <SvgStyled $viewWidth={viewWidth}>
+        <use xlinkHref={`${sprite}#headerEllips `} />
       </SvgStyled>
 
-      <WrapperHeaderContent>
+      <WrapperHeaderContent $viewWidth={viewWidth}>
         <Container $viewWidth={viewWidth}>
           <MainLogo viewWidth={viewWidth} />
 
           <HeaderSearchBar viewWidth={viewWidth} />
 
           <HeaderNav viewWidth={viewWidth} />
-          
         </Container>
       </WrapperHeaderContent>
     </HeaderWrapper>
