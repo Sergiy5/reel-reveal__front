@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/reel-reveal__front/static/css/main.cd2e038f.css",
-    "main.js": "/reel-reveal__front/static/js/main.f3ec8067.js",
-    "static/js/539.a0973dd3.chunk.js": "/reel-reveal__front/static/js/539.a0973dd3.chunk.js",
+    "main.js": "/reel-reveal__front/static/js/main.967e0235.js",
+    "static/js/539.0d6db143.chunk.js": "/reel-reveal__front/static/js/539.0d6db143.chunk.js",
     "static/media/Hind-SemiBold.woff2": "/reel-reveal__front/static/media/Hind-SemiBold.55c257f0bcd79cba9a3f.woff2",
     "static/media/Hind-Bold.woff2": "/reel-reveal__front/static/media/Hind-Bold.8f1745f2a9d28fcf1630.woff2",
     "static/media/CeraPro-Regular.woff": "/reel-reveal__front/static/media/CeraPro-Regular.a81f68b2a1331c71b4e4.woff",
@@ -12,11 +12,11 @@
     "static/media/sprite.svg": "/reel-reveal__front/static/media/sprite.3befed043f306c66f09721b4670fbff7.svg",
     "index.html": "/reel-reveal__front/index.html",
     "main.cd2e038f.css.map": "/reel-reveal__front/static/css/main.cd2e038f.css.map",
-    "main.f3ec8067.js.map": "/reel-reveal__front/static/js/main.f3ec8067.js.map",
-    "539.a0973dd3.chunk.js.map": "/reel-reveal__front/static/js/539.a0973dd3.chunk.js.map"
+    "main.967e0235.js.map": "/reel-reveal__front/static/js/main.967e0235.js.map",
+    "539.0d6db143.chunk.js.map": "/reel-reveal__front/static/js/539.0d6db143.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.cd2e038f.css",
-    "static/js/main.f3ec8067.js"
+    "static/js/main.967e0235.js"
   ]
 }
