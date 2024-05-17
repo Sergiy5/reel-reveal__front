@@ -8,7 +8,6 @@ import { HeaderSearchBar } from './headerSearchBar/HeaderSearchBar';
 import { HeaderNav } from './headerNav/HeaderNav';
 import sprite from '../../assets/images/svgSprite/sprite.svg'
 import { useSize } from 'components/context/MyProvider';
-import { Container } from 'styles';
 
 const Header = () => {
   const viewWidth = useSize();
