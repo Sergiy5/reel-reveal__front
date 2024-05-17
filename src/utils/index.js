@@ -3,5 +3,6 @@ export { sliceMoviesPerPage } from './sliceMoviesPerPage';
 export { arrayFromString } from './arrayFromString';
 export { firstElementsFromArray } from './firstElementsFromArray';
 export { scrollToY } from './scrollToY';
-export { loadMoreCard } from './loadMoreCard' ; 
+export { loadMoreCard } from './loadMoreCard'; 
+export {getAspectRatio} from './getAspectRatio'
 

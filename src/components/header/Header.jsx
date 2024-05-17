@@ -1,33 +1,33 @@
 import { MainLogo } from 'components/mainLogo/MainLogo';
 import {
+  HeaderBgEllips,
   HeaderWrapper,
-  SvgStyled,
   WrapperHeaderContent,
-  Container,
 } from './Header.styled';
 import { HeaderSearchBar } from './headerSearchBar/HeaderSearchBar';
 import { HeaderNav } from './headerNav/HeaderNav';
 import sprite from '../../assets/images/svgSprite/sprite.svg'
 import { useSize } from 'components/context/MyProvider';
+import { Container } from 'styles';
 
 const Header = () => {
   const viewWidth = useSize();
 
   return (
     <HeaderWrapper>
-      <SvgStyled $viewWidth={viewWidth}>
-        <use xlinkHref={`${sprite}#headerEllips `} />
-      </SvgStyled>
 
+        {/* <Container $viewWidth={viewWidth}> */}
       <WrapperHeaderContent $viewWidth={viewWidth}>
-        <Container $viewWidth={viewWidth}>
           <MainLogo viewWidth={viewWidth} />
 
           <HeaderSearchBar viewWidth={viewWidth} />
 
           <HeaderNav viewWidth={viewWidth} />
-        </Container>
       </WrapperHeaderContent>
+      <HeaderBgEllips $viewWidth={viewWidth}>
+        <use xlinkHref={`${sprite}#headerEllips `} />
+      </HeaderBgEllips>
+        {/* </Container> */}
     </HeaderWrapper>
   );
 };

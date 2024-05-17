@@ -11,7 +11,6 @@ import sprite from '../../../assets/images/svgSprite/sprite.svg';
 
 export const HeaderNav = ({ viewWidth }) => {
   const [isActiveMenu, setIsActiveMenu] = useState(false);
-  console.log('NavMenu',viewWidth);
 
   // const [containerStyle, setContainerStyle] = useState({
   //   transform: `translateX(${sidebarVisible ? '0' : '-225px'})`,
@@ -43,8 +42,8 @@ export const HeaderNav = ({ viewWidth }) => {
   // }, [sidebarVisible]);
 
   useEffect(() => {
-    if (Math.ceil(viewWidth) > 1280) setIsActiveMenu(true);
-    if (viewWidth <= 1281) setIsActiveMenu(false);
+    if (viewWidth <= 1280) setIsActiveMenu(false);
+    if (viewWidth >= 1281) setIsActiveMenu(true);
   }, [viewWidth]);
 
   return (

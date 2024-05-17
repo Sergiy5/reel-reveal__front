@@ -2,17 +2,24 @@ import {
   HowItWorksAllCardsWrapper,
   HowItWorksOneCardWrapper,
   TextCardStyled,
-  HowItWorksBGSElips,
   SvgStyled,
   TitleH3styled,
+  HowItWorksBgEllips,
+  HowItWorksWrapper,
 } from './HowItWork.styled';
-import sprite from '../../assets/images/howItWorks/sprite.svg';
-import { Container } from 'styles';
+import sprite from '../../assets/images/svgSprite/sprite.svg';
+import { useSize } from 'components/context/MyProvider';
 
 export const HowItWorks = () => {
+  const viewWidth = useSize();
+
+
   return (
-    <Container>
-      <HowItWorksBGSElips />
+    <HowItWorksWrapper>
+      <HowItWorksBgEllips $viewWidth={viewWidth}>
+        <use xlinkHref={`${sprite}#howItWorksBgEllips`} />
+      </HowItWorksBgEllips>
+
       <h2>How it works</h2>
       <HowItWorksAllCardsWrapper>
         <HowItWorksOneCardWrapper>
@@ -46,6 +53,6 @@ export const HowItWorks = () => {
           </TextCardStyled>
         </HowItWorksOneCardWrapper>
       </HowItWorksAllCardsWrapper>
-    </Container>
+    </HowItWorksWrapper>
   );
 };

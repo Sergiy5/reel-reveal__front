@@ -1,0 +1,2 @@
+- Need to add theme obj with colors and spacing or pading, 
+- Add functions to responsive styles (for reusubility)

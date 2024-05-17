@@ -1,75 +1,66 @@
 import styled from 'styled-components';
 import { colors } from 'assets/variables/variablesColors';
+import { getAspectRatio } from 'utils';
 
 export const HeaderWrapper = styled.div`
-  position: relative;
+  display: flex;
+  margin-bottom: -1px; //remove line between header and main
   width: 100%;
   background-color: ${colors.bgColor};
+
+  @media (min-width: 1440px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 `;
 
-export const SvgStyled = styled.svg`
+export const HeaderBgEllips = styled.svg`
   position: absolute;
   z-index: 1;
   top: 0;
-  left: 0;
-  width: 100%;
-  height: ${props => props.$viewWidth / 3.9889}px;
+  left: -50%;
+  transform: translate(50%, 0);
+  width: 100vw;
+  height: ${props => props.$viewWidth / getAspectRatio(1440, 361)}px; //3.9889
+
+  /* @media (min-width: 769px) {
+  top: 0;
+  } */
 
   @media (min-width: 1440px) {
+    transform: translateY(-50%);
+    top: 13%;
+    left: calc(50vw - 720px);
     width: 1440px;
     height: 361px;
   }
 `;
 
 export const WrapperHeaderContent = styled.div`
-  position: relative;
   z-index: 2;
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
   width: 100%;
   height: 64px;
   background-color: ${colors.bgColor};
 
-  @media (min-width: 768px) {
+  @media (min-width: 769px) {
+    padding: 0px 80px;
     height: 68px;
   }
-  @media (min-width: 1024px) {
+  @media (min-width: 1025px) {
+    padding: 0px 80px;
     height: 84px;
-  }
-`;
-
-export const Container = styled.div`
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translate(-50%, 0);
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  align-items: center;
-  padding: 8px 40px;
-  width: ${props => props.$viewWidth}px;
-  height: auto;
-
-  @media (min-width: 767px) {
-    justify-content: space-between;
-    padding: 10px 80px;
-    width: ${props => props.$viewWidth}px;
-  }
-
-  @media (min-width: 1024px) {
-    padding: 20px 80px;
-    /* width: ${props => props.$viewWidth}px; */
+    width: 100%;
   }
 
   @media (min-width: 1281px) {
-    padding: 20px 120px;
-    width: ${props => props.$viewWidth}px;
+    padding: 0px 120px;
   }
-
   @media (min-width: 1440px) {
-    padding: 20px 120px;
     width: 1440px;
-    /* gap: 108px; */
   }
 `;
-
