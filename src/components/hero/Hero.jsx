@@ -10,11 +10,12 @@ import {
 import sprite from '../../assets/images/svgSprite/sprite.svg'
 import heroImg from '../../assets/images/heroImage.webp';
 import { SharedStyledLinkBtn } from 'styles/SharedStyledLinkBtn.styled';
-import { useSize } from 'components/context/MyProvider';
+import useResize from 'utils/useResize';
 
 
 export const Hero = () => {
-  const viewWidth = useSize();
+const viewWidth = useResize();
+
 
 // const screenWidth = window.innerWidth;
 // const pixelRatio = window.devicePixelRatio || 1;

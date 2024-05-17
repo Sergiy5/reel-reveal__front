@@ -8,10 +8,11 @@ import {
   HowItWorksWrapper,
 } from './HowItWork.styled';
 import sprite from '../../assets/images/svgSprite/sprite.svg';
-import { useSize } from 'components/context/MyProvider';
+import useResize from 'utils/useResize';
 
 export const HowItWorks = () => {
-  const viewWidth = useSize();
+  const viewWidth = useResize();
+
 
 
   return (

@@ -7,11 +7,12 @@ import {
   MenuBtn,
 } from './HeaderNav.styled';
 import sprite from '../../../assets/images/svgSprite/sprite.svg';
+import useResize from "utils/useResize";
 
 
-export const HeaderNav = ({ viewWidth }) => {
+export const HeaderNav = () => {
   const [isActiveMenu, setIsActiveMenu] = useState(false);
-
+  const viewWidth = useResize();
   // const [containerStyle, setContainerStyle] = useState({
   //   transform: `translateX(${sidebarVisible ? '0' : '-225px'})`,
   // });

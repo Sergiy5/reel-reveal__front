@@ -2,17 +2,20 @@ import { useState } from 'react'
 import {BtnSearchBar, HeaderInputStyled, SvgSearchStyled, WrapperSearchBar} from './HeaderSearchBar.styled' 
 import sprite from '../../../assets/images/svgSprite/sprite.svg'
 import { useEffect } from 'react';
+import useResize from 'utils/useResize';
 
 const textPlaceHolder = 'search by movie, actor, genre, etc'
 
-export const HeaderSearchBar = ({ viewWidth }) => {
+export const HeaderSearchBar = () => {
   const [isFocus, setIsFocus] = useState(false);
   const [isHiden, setIsHIden] = useState(false)
 
+const vievWidth = useResize()
+
   useEffect(() => {
-    if (viewWidth < 620) setIsHIden(true);
-    if (viewWidth > 621) setIsHIden(false);
-  }, [viewWidth])
+    if (vievWidth < 620) setIsHIden(true);
+    if (vievWidth > 621) setIsHIden(false);
+  }, [vievWidth]);
   
 
   return (

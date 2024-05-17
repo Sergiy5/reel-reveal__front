@@ -24,12 +24,11 @@ export const HowItWorksBgEllips = styled.svg`
   top: -54%;
   left: 0;
   width: 100%;
-  height: ${props=>props.$viewWidth / getAspectRatio(props.$viewWidth, 850)}px;
-  
+  height: ${() => `calc(100vw / ${getAspectRatio(1440, 850)})`};
+
   @media (max-width: 768px) {
     top: 10%;
     transform: rotate(90deg);
-    
   }
 `;
 

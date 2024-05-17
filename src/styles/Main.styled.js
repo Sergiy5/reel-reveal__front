@@ -12,6 +12,7 @@ export const Main = styled.main`
   max-width: 1440px;
   background-color: ${colors.bgColor};
   gap: 80px;
+  overflow: hidden;
 
   @media (min-width: 769px) {
     padding: 46px 80px 503px 80px;
