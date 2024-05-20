@@ -1,16 +1,18 @@
 import { colors } from 'assets/variables/variablesColors';
 import styled from 'styled-components';
+import { getAspectRatio } from 'utils';
+
 
 export const BtnQuiz = styled.button`
-  display: block;
-  width: 285px;
-  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-weight: 400;
   font-size: 28px;
   line-height: 114%;
-  text-align: center;
+  width: auto;
+  height: calc(((100vw - 140px) / 2) / ${getAspectRatio(285, 200)});
   color: inherit;
-  padding: 55px 50px;
   border-radius: 18px;
   border: 1px solid ${colors.bgColor};
 
@@ -23,6 +25,16 @@ export const BtnQuiz = styled.button`
   transition-property: transform, border, color;
   transition-duration: 350ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media (min-width: 1025px) {
+    width: calc((100% - 60px) / 4);
+    height: calc(((100vw - 300px) / 4) / ${getAspectRatio(285, 200)});
+  }
+
+  @media (min-width: 1440px) {
+    width: 285px;
+    height: 200px;
+  }
 
   &:hover {
     ${props =>

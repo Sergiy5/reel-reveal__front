@@ -1,8 +1,7 @@
-import { BtnQuiz } from './ButtonsQuiz.styled';
+import { BtnQuiz } from './ButtonQuiz.styled';
 
-export const ButtonsQuiz = ({ buttons, click, isActiv }) => {
+export const ButtonQuiz = ({ buttons, click, isActiv }) => {
   return buttons.map(item => {
-
     // To prettie text in button to devide strings
     const [one, two] = item.split(/\s*(?=\()/);
 

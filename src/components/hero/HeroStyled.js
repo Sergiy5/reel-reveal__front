@@ -65,23 +65,20 @@ export const HeroBgEllips = styled.svg`
   right: 50%;
   transform: translate(50%, 0%);
   width: 100vw;
-  height: ${() => `calc(100vw / ${aspectRatioHeightToWidth})`};
+  height: calc(100vw / ${aspectRatioHeightToWidth});
 
   @media (min-width: 1025px) {
     right: -9%;
     transform: translate(9%, 0%);
-    width: ${() => `calc(100vw / ${aspectRatioViewWidthToWidth})`};
-
-    height: ${() => `calc(100vw / ${aspectRatioViewWidthToWidth} / 
-    ${getAspectRatio(aspectRatioViewWidthToWidth, 890)})`};
+    width: calc(100vw / ${aspectRatioViewWidthToWidth});
+    height: calc(100vw / ${aspectRatioViewWidthToWidth} / ${aspectRatioHeightToWidth});
   }
 
   @media (min-width: 1281px) {
     right: 50%;
     transform: translate(50%, 0%);
-    width: ${() => `calc(100vw / ${aspectRatioViewWidthToWidth})`};
-    height: ${() =>
-      `calc(100vw / ${aspectRatioViewWidthToWidth} / ${aspectRatioHeightToWidth})`};
+    width: calc(100vw / ${aspectRatioViewWidthToWidth});
+    height:calc(100vw / ${aspectRatioViewWidthToWidth} / ${aspectRatioHeightToWidth});
   }
 
   @media (min-width: 1440px) {
@@ -89,11 +86,3 @@ export const HeroBgEllips = styled.svg`
     height: 890px;
   }
 `;
-
-
- 
-// export const getHeight = (viewWidth, getwidthFunc, width, height) => {
-
-//   return getwidthFunc(viewWidth, width, height) / getAspectRatio(width, height);
-  
-// }

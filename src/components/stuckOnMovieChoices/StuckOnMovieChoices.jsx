@@ -5,7 +5,6 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { ContainerSlider, ImgStyled, SvgFrame, WrapperImage } from './stuckOnMovieChoices.styled';
 import { imageMovies } from './MovieItems';
-import { Container } from 'styles/Container.styled';
 
 export const getMovieTitleFromPath = (path) => {
     const pathSegments = path.split('/');
@@ -29,8 +28,9 @@ export default function PauseOnHover (){
       arrows: null,
     };
     return (
-      <Container $padding_zero>
-        <h2>Stuck on Movie Choices?</h2>
+      // <Container $padding_zero>
+      <div>
+         <h2>Stuck on Movie Choices?</h2>
         <ContainerSlider key={nanoid()}>
           
          <Slider {...settings}>
@@ -51,7 +51,8 @@ export default function PauseOnHover (){
            })}
          </Slider>
         </ContainerSlider>
-      </Container>
+       </div>
+      // </Container>
     );
   }
 

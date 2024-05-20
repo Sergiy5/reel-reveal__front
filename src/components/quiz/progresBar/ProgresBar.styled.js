@@ -7,6 +7,7 @@ export const BarWrapper = styled.div`
   align-items: center;
   gap: 8px;
   width: 244px;
+  height: 68px;
 `;
 
 export const Circle = styled.div`

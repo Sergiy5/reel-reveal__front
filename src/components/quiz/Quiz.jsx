@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react';
 import { BorderBottomSvg, BorderTopSvg, QuizWrapper } from './Quiz.styled';
-import { Container } from 'styles';
 import { getOpenAiAPI, getQuizMovies } from 'apiService';
 import { QuizQuestions } from './quizQuestions/QuizQuestions';
 import { QuizListMovies } from './quizListMovies/QuizListMovies';
@@ -87,7 +86,6 @@ export const Quiz = () => {
   }, [moviesFromOpenaiApi]);
 
   return (
-    <Container>
       <QuizWrapper>
         <BorderTopSvg />
         {isLoading ? (
@@ -103,6 +101,5 @@ export const Quiz = () => {
         )}
         <BorderBottomSvg />
       </QuizWrapper>
-    </Container>
   );
 };

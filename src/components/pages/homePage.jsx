@@ -1,7 +1,7 @@
 
 import { Hero } from 'components/hero/Hero';
 import { HowItWorks } from 'components/howItWork/HowItWorks';
-// import { Quiz } from 'components/quiz/Quiz';
+import { Quiz } from 'components/quiz/Quiz';
 // import { GetShowMovies } from 'components/GetShowMovies/GetShowMovies';
 // import { topRatedMOvies } from 'apiService/topRatedMovies';
 // import { getUpcomingMovies } from 'apiService/getUpcomingMovies';
@@ -17,8 +17,8 @@ const HomePage = () => {
     <>
       <Hero />
       <HowItWorks />
-      {/*  <Quiz />
-      <GetShowMovies
+      <Quiz />
+      {/* <GetShowMovies
         title={'Upcoming 20 movies in 2024'}
         getMovies={getUpcomingMovies}
       />
