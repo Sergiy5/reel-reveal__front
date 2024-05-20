@@ -1,17 +1,17 @@
-import { useSize } from 'components/context/MyProvider';
 import Sprite from '../../assets/images/svgSprite/sprite.svg';
-import { NavLinkStyled, SpanStyled } from './MainLogo.styled';
+import { MainLogoSVGStyled, NavLinkStyled, SpanStyled } from './MainLogo.styled';
+import useResize from 'utils/useResize';
 //
 
 export const MainLogo = () => {
-  const viewWidth = useSize();
+  const viewWidth = useResize();
 
 
   return (
     <NavLinkStyled to={''}>
-      <svg width="48" height="48">
+      <MainLogoSVGStyled >
         <use xlinkHref={`${Sprite}#icon-main-logo-strip`} />
-      </svg>
+      </MainLogoSVGStyled>
       {viewWidth > 1024 ? (
         <SpanStyled>ReelReveal</SpanStyled>
       ) : null} 

@@ -18,28 +18,6 @@ export const WrapperNav = styled.div`
   }
 `;
 
-export const MenuBtn = styled.button`
-  width: 40px;
-  height: 40px;
-  border-radius: 3px;
-  background-color: ${colors.bgColor};
-
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  &:hover {
-    background-color: ${colors.bgLightColor};
-  }
-`;
-
-export const SvgStyled = styled.svg`
-  color: #fff;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  &:hover {
-    color: ${colors.accentColor};
-  }
-`;
-
 export const NavLinkStyled = styled(NavLink)`
   border-radius: 4px;
   outline: transparent;
@@ -81,5 +59,39 @@ export const QuizBtn = styled(NavLink)`
     background-color: ${colors.accentColor};
     box-shadow: 1px 2px 24px 0 rgba(32, 232, 218, 0.5);
     outline: 2px solid ${colors.accentColor};
+  }
+`;
+
+export const MenuBtn = styled.button`
+  width: 40px;
+  height: 40px;
+  border-radius: 3px;
+  background-color: ${colors.bgColor};
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    background-color: ${colors.bgLightColor};
+  }
+`;
+export const SvgStyled = styled.svg`
+  width: 22px;
+  height: 22px;
+  color: #fff;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    color: ${colors.accentColor};
+  }
+
+  `;
+
+export const BurgerSvgStyled = styled(SvgStyled)`
+  width: 31px;
+  height: 22px;
+
+  @media (min-width: 769px) {
+    width: 38px;
+    height: 42px;
   }
 `;

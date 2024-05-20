@@ -41,7 +41,7 @@ export const WrapperHeaderContent = styled.div`
   justify-content: space-between;
   padding: 0 40px;
   width: 100%;
-  height: 64px;
+  height: 44px;
   background-color: ${colors.bgColor};
 
   @media (min-width: 769px) {

@@ -6,9 +6,11 @@ import {
   TitleH3styled,
   HowItWorksBgEllips,
   HowItWorksWrapper,
+  ContainerBgEllipses,
 } from './HowItWork.styled';
 import sprite from '../../assets/images/svgSprite/sprite.svg';
 import useResize from 'utils/useResize';
+// import useResize from 'utils/useResize';
 
 export const HowItWorks = () => {
   const viewWidth = useResize();
@@ -17,9 +19,14 @@ export const HowItWorks = () => {
 
   return (
     <HowItWorksWrapper>
-      <HowItWorksBgEllips $viewWidth={viewWidth}>
-        <use xlinkHref={`${sprite}#howItWorksBgEllips`} />
-      </HowItWorksBgEllips>
+      <ContainerBgEllipses>
+        <HowItWorksBgEllips>
+          <use xlinkHref={`${sprite}#howItWorksBgEllips`} />
+        </HowItWorksBgEllips>
+       {viewWidth < 1025 ? <HowItWorksBgEllips>
+          <use xlinkHref={`${sprite}#howItWorksBgEllips`} />
+        </HowItWorksBgEllips> : null}
+      </ContainerBgEllipses>
 
       <h2>How it works</h2>
       <HowItWorksAllCardsWrapper>

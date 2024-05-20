@@ -7,7 +7,7 @@ export const HeroWrapper = styled.div`
   justify-content: space-between;
   flex-direction: column-reverse;
   height: auto;
-  gap: 20px;
+  gap: 24px;
 
   @media screen and (min-width: 1025px) {
     flex-direction: row;
@@ -56,8 +56,8 @@ export const HeroImage = styled.img`
   height: auto;
 `;
 
-const aspectRatioHeightToWidth = getAspectRatio(833, 890);
-const aspectRatioViewWidthToWidth = getAspectRatio(1440, 833);
+const aspectRatioHeightToWidth = getAspectRatio(833, 890); // Devide 100vw on mobile height
+const aspectRatioViewWidthToWidth = getAspectRatio(1440, 833); 
 
 export const HeroBgEllips = styled.svg`
   position: absolute;
@@ -92,8 +92,8 @@ export const HeroBgEllips = styled.svg`
 
 
  
-export const getHeight = (viewWidth, getwidthFunc, width, height) => {
+// export const getHeight = (viewWidth, getwidthFunc, width, height) => {
 
-  return getwidthFunc(viewWidth, width, height) / getAspectRatio(width, height);
+//   return getwidthFunc(viewWidth, width, height) / getAspectRatio(width, height);
   
-}
+// }

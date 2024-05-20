@@ -82,19 +82,35 @@ h1, h2, h3 {
 
 h1{
   font-family: fontH1;
+  font-size: 40px;
+  line-height: 120%;
+
+
+@media (min-width: 769px) {
   line-height: 60px;
   font-size: 52px;
+}
 }
 
 h2{
   font-family: fontH2;
-  line-height: 60px;
-  font-size: 48px;
+  font-size: 38px;
+  line-height: 124%;
+  
+  @media (min-width: 769px) {
+    font-size: 48px;
+    line-height: 60px;
+  }
 }
 h3{
   font-family: mainBoldFont;
-  line-height: 32px;
-  font-size: 30px;
+  font-size: 22px;
+  line-height: 150%; // line-height: 33px; 
+
+  @media (min-width: 769px) {
+    line-height: 32px;
+    font-size: 30px;
+  }
 }
 h4{
   font-family: mainFont;

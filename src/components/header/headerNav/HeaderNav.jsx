@@ -5,6 +5,7 @@ import {
   QuizBtn,
   WrapperNav,
   MenuBtn,
+  BurgerSvgStyled,
 } from './HeaderNav.styled';
 import sprite from '../../../assets/images/svgSprite/sprite.svg';
 import useResize from "utils/useResize";
@@ -66,9 +67,9 @@ export const HeaderNav = () => {
         </>
       ) : (
         <MenuBtn>
-          <SvgStyled width="30px" height="40px">
+          <BurgerSvgStyled >
             <use xlinkHref={`${sprite}#burger-icon`} />
-          </SvgStyled>
+          </BurgerSvgStyled>
         </MenuBtn>
       )}
     </WrapperNav>

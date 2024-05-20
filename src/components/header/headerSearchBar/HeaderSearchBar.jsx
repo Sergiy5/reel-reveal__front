@@ -13,8 +13,8 @@ export const HeaderSearchBar = () => {
 const vievWidth = useResize()
 
   useEffect(() => {
-    if (vievWidth < 620) setIsHIden(true);
-    if (vievWidth > 621) setIsHIden(false);
+    if (vievWidth <= 768) setIsHIden(true);
+    if (vievWidth >= 769) setIsHIden(false);
   }, [vievWidth]);
   
 
