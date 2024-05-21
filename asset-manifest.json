@@ -1,8 +1,10 @@
 {
   "files": {
     "main.css": "/reel-reveal__front/static/css/main.cd2e038f.css",
-    "main.js": "/reel-reveal__front/static/js/main.967e0235.js",
-    "static/js/539.0d6db143.chunk.js": "/reel-reveal__front/static/js/539.0d6db143.chunk.js",
+    "main.js": "/reel-reveal__front/static/js/main.37cfc580.js",
+    "static/css/569.b501b162.chunk.css": "/reel-reveal__front/static/css/569.b501b162.chunk.css",
+    "static/js/569.1d22d2ea.chunk.js": "/reel-reveal__front/static/js/569.1d22d2ea.chunk.js",
+    "static/js/726.62dcd349.chunk.js": "/reel-reveal__front/static/js/726.62dcd349.chunk.js",
     "static/media/Hind-SemiBold.woff2": "/reel-reveal__front/static/media/Hind-SemiBold.55c257f0bcd79cba9a3f.woff2",
     "static/media/Hind-Bold.woff2": "/reel-reveal__front/static/media/Hind-Bold.8f1745f2a9d28fcf1630.woff2",
     "static/media/CeraPro-Regular.woff": "/reel-reveal__front/static/media/CeraPro-Regular.a81f68b2a1331c71b4e4.woff",
@@ -10,13 +12,33 @@
     "static/media/CeraPro-Bold.woff": "/reel-reveal__front/static/media/CeraPro-Bold.d5b3ad75d9323b167595.woff",
     "static/media/heroImage.webp": "/reel-reveal__front/static/media/heroImage.c621fdf55d1042e5783c.webp",
     "static/media/sprite.svg": "/reel-reveal__front/static/media/sprite.3befed043f306c66f09721b4670fbff7.svg",
+    "static/media/No-Image.jpg": "/reel-reveal__front/static/media/No-Image.09ea9f6b1352b3452d9d.jpg",
+    "static/media/borderSvg.svg": "/reel-reveal__front/static/media/borderSvg.8c672131efe487841efe8ed76649e31c.svg",
+    "static/media/romeo-+-juliet.webp": "/reel-reveal__front/static/media/romeo-+-juliet.9b3d21c408833526c3bd.webp",
+    "static/media/the-dark-knight.webp": "/reel-reveal__front/static/media/the-dark-knight.74d22fcd9c9928975d54.webp",
+    "static/media/matrix.webp": "/reel-reveal__front/static/media/matrix.614898d637a5b2457bad.webp",
+    "static/media/the-grand-budapest-hotel.webp": "/reel-reveal__front/static/media/the-grand-budapest-hotel.076b4081e150b7416c41.webp",
+    "static/media/kill-bill.webp": "/reel-reveal__front/static/media/kill-bill.b9c940d7532c213e092e.webp",
+    "static/media/the-darjeeling-limited.webp": "/reel-reveal__front/static/media/the-darjeeling-limited.df7f21132d36ef46760e.webp",
+    "static/media/north-by-northwest.webp": "/reel-reveal__front/static/media/north-by-northwest.ce35227768096a0edc1e.webp",
+    "static/media/pulp-fiction.webp": "/reel-reveal__front/static/media/pulp-fiction.bcd5bc4edd419e689a89.webp",
+    "static/media/frame-short.svg": "/reel-reveal__front/static/media/frame-short.409ff2b7c8b767f2d17ae17cb8a4c775.svg",
+    "static/media/fight-club.webp": "/reel-reveal__front/static/media/fight-club.16d8a5b65a8f29a91e4c.webp",
+    "static/media/nightmare-befor-christmas.webp": "/reel-reveal__front/static/media/nightmare-befor-christmas.4d2658a0a325de2d0303.webp",
+    "static/media/skyfall.webp": "/reel-reveal__front/static/media/skyfall.0ccdc08b2e1498b628aa.webp",
+    "static/media/slick.svg": "/reel-reveal__front/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/reel-reveal__front/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/reel-reveal__front/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/reel-reveal__front/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/reel-reveal__front/index.html",
     "main.cd2e038f.css.map": "/reel-reveal__front/static/css/main.cd2e038f.css.map",
-    "main.967e0235.js.map": "/reel-reveal__front/static/js/main.967e0235.js.map",
-    "539.0d6db143.chunk.js.map": "/reel-reveal__front/static/js/539.0d6db143.chunk.js.map"
+    "main.37cfc580.js.map": "/reel-reveal__front/static/js/main.37cfc580.js.map",
+    "569.b501b162.chunk.css.map": "/reel-reveal__front/static/css/569.b501b162.chunk.css.map",
+    "569.1d22d2ea.chunk.js.map": "/reel-reveal__front/static/js/569.1d22d2ea.chunk.js.map",
+    "726.62dcd349.chunk.js.map": "/reel-reveal__front/static/js/726.62dcd349.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.cd2e038f.css",
-    "static/js/main.967e0235.js"
+    "static/js/main.37cfc580.js"
   ]
 }
