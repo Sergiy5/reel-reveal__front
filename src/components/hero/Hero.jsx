@@ -7,7 +7,7 @@ import {
   HeroWrapper,
   HeroBgEllips,
 } from './HeroStyled';
-import sprite from '../../assets/images/svgSprite/sprite.svg'
+import sprite from '../../assets/images/svg-sprite/sprite.svg'
 import heroImg from '../../assets/images/heroImage.webp';
 import { SharedStyledLinkBtn } from 'styles/SharedStyledLinkBtn.styled';
 

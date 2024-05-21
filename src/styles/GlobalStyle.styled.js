@@ -146,6 +146,16 @@ h6 {
   padding: 0;
 }
 
+p{
+  @media (max-width: 480px) {
+font-size: 16px;
+
+// line-height: 18px;
+line-height: 110%;
+    
+  }
+}
+
 img {
   display: block;
   max-width: 100%;

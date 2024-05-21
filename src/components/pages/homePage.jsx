@@ -1,13 +1,13 @@
 
 import { Hero } from 'components/hero/Hero';
-import { HowItWorks } from 'components/howItWork/HowItWorks';
+import { HowItWorks } from 'components/how-It-work/HowItWorks';
 import { Quiz } from 'components/quiz/Quiz';
-// import { GetShowMovies } from 'components/GetShowMovies/GetShowMovies';
-// import { topRatedMOvies } from 'apiService/topRatedMovies';
-// import { getUpcomingMovies } from 'apiService/getUpcomingMovies';
+import { GetShowMovies } from 'components/get-show-movies/GetShowMovies';
+import { topRatedMOvies } from 'api-service/topRatedMovies';
+import { getUpcomingMovies } from 'api-service/getUpcomingMovies';
 // import { ChoseGenre } from 'components/choseGenres/ChooseGenres';
-// import SimpleSlider from 'components/stuckOnMovieChoices/StuckOnMovieChoices';
-import { LinkToQuiz } from 'components/linkToQuiz/LinkToQuiz';
+import SimpleSlider from 'components/stuck-on-movie-choices/StuckOnMovieChoices';
+import { LinkToQuiz } from 'components/link-to-quiz/LinkToQuiz';
 
 const HomePage = () => {
 
@@ -18,13 +18,13 @@ const HomePage = () => {
       <Hero />
       <HowItWorks />
       <Quiz />
-      {/* <GetShowMovies
+      <GetShowMovies
         title={'Upcoming 20 movies in 2024'}
         getMovies={getUpcomingMovies}
       />
       <GetShowMovies title={'TOP 20 rated movies'} getMovies={topRatedMOvies} />
-      <ChoseGenre />
-      <SimpleSlider /> */}
+      {/* <ChoseGenre />*/}
+      <SimpleSlider />
       <LinkToQuiz />
     </>
   );

@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
 import { BorderBottomSvg, BorderTopSvg, QuizWrapper } from './Quiz.styled';
-import { getOpenAiAPI, getQuizMovies } from 'apiService';
-import { QuizQuestions } from './quizQuestions/QuizQuestions';
-import { QuizListMovies } from './quizListMovies/QuizListMovies';
+import { getOpenAiAPI, getQuizMovies } from 'api-service';
+import { QuizQuestions } from './quiz-questions/QuizQuestions';
+import { QuizListMovies } from './quiz-list-movies/QuizListMovies';
 import { firstElementsFromArray, loadMoreCard, scrollToY } from 'utils';
 import { Loader } from 'components/loader/Loader';
 

@@ -1,12 +1,12 @@
-import { MainLogo } from 'components/mainLogo/MainLogo';
+import { MainLogo } from 'components/main-logo/MainLogo';
 import {
   HeaderBgEllips,
   HeaderWrapper,
   WrapperHeaderContent,
 } from './Header.styled';
-import { HeaderSearchBar } from './headerSearchBar/HeaderSearchBar';
-import { HeaderNav } from './headerNav/HeaderNav';
-import sprite from '../../assets/images/svgSprite/sprite.svg'
+import { HeaderSearchBar } from './header-search-bar/HeaderSearchBar';
+import { HeaderNav } from './header-nav/HeaderNav';
+import sprite from '../../assets/images/svg-sprite/sprite.svg';
 import { useSize } from 'components/context/MyProvider';
 
 const Header = () => {
@@ -14,19 +14,18 @@ const Header = () => {
 
   return (
     <HeaderWrapper>
-
-        {/* <Container $viewWidth={viewWidth}> */}
+      {/* <Container $viewWidth={viewWidth}> */}
       <WrapperHeaderContent $viewWidth={viewWidth}>
-          <MainLogo viewWidth={viewWidth} />
+        <MainLogo viewWidth={viewWidth} />
 
-          <HeaderSearchBar viewWidth={viewWidth} />
+        <HeaderSearchBar viewWidth={viewWidth} />
 
-          <HeaderNav viewWidth={viewWidth} />
+        <HeaderNav viewWidth={viewWidth} />
       </WrapperHeaderContent>
       <HeaderBgEllips $viewWidth={viewWidth}>
         <use xlinkHref={`${sprite}#headerEllips `} />
       </HeaderBgEllips>
-        {/* </Container> */}
+      {/* </Container> */}
     </HeaderWrapper>
   );
 };
