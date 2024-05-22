@@ -11,10 +11,6 @@ gap: 48px;
 
 export const QuizListMoviesTitle = styled.h2`
 padding: 0 10px;
-
-@media (min-width: 481px) {
-  
-}
 `;
 
 export const WrapperQuizSlider = styled.div`
@@ -23,11 +19,13 @@ export const WrapperQuizSlider = styled.div`
   width: 975px;
   height: auto;
 
-  @media (min-width: 481px) {
-    width: 920px;
+  @media (min-width: 601px) {
+    width: 1180px;
+  
   }
 
-  @media (min-width: 769px) {
-    width: 1240px;
+   @media (min-width: 769px) {
+    width: 1180px;
+    gap: 8px;
   }
-`;
+`

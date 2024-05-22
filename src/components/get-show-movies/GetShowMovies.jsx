@@ -1,30 +1,28 @@
 import { useEffect, useState } from 'react';
-import { Container } from 'styles';
-import { firstMovieOnPage, sliceMoviesPerPage } from 'utils';
+// import { firstMovieOnPage, sliceMoviesPerPage } from 'utils';
 import {
-  ButtonNext,
-  ButtonPrew,
-  SvgArrowStyled,
+  WrapperGetShowMovies,
 } from 'components/get-show-movies/GetShowMovies.styled';
-import { ListMovies } from 'components/list-movies/ListMovies';
-import Sprite from '../../assets/images/svg-sprite/sprite.svg';
+import { MySlider } from 'components/my-slider/MySlider';
 
 export const GetShowMovies = ({ title, getMovies, arrayMovies }) => {
   const [allMovies, setAllMovies] = useState([]);
-  const [moviesForOnePage, setMoviesForOnePage] = useState([]);
-  const [isDisablePrevBtn, setIsActivePrevBtn] = useState(true);
-  const [isDisableNextBtn, setIsDisableNextBtn] = useState(false);
-  const [page, setPage] = useState(1);
+  // const [moviesForOnePage, setMoviesForOnePage] = useState([]);
+  // const [isDisablePrevBtn, setIsActivePrevBtn] = useState(true);
+  // const [isDisableNextBtn, setIsDisableNextBtn] = useState(false);
+  // const [page, setPage] = useState(1);
+
   // const [numberGetRequest, setNumberGetRequest] = useState(1);
 
-  const islastPageMovies = (allMovies, page) => {
-    const quantityMovies = allMovies.length;
-    const isLastPage = quantityMovies / page === 4 ? true : false;
-    return isLastPage;
-  };
 
+  // const islastPageMovies = (allMovies, page) => {
+  //   const quantityMovies = allMovies.length;
+  //   const isLastPage = quantityMovies / page === 4 ? true : false;
+  //   return isLastPage;
+  // };
+
+  // Get first request movies =============================================
   useEffect(() => {
-    // Get first request movies =============================================
     const getAllMovies = async (page = 1) => {
       try {
         const response = await getMovies(page);
@@ -36,76 +34,37 @@ export const GetShowMovies = ({ title, getMovies, arrayMovies }) => {
 
     getAllMovies();
 
-    // Get next requests movies =============================================
-    // if (numberGetRequest > 1) {
-    //   const getNextAllUpcomingMovies = async numberGet => {
-    //     try {
-    //       const response = await getMovies(numberGet);
-    //       setAllMovies(prev => [...prev, ...response]);
-
-    //       if (response.length === 20) {
-    //         setIsActiveNextBtn(false);
-    //       }
-    //     } catch (error) {
-    //       console.log(error.message);
-    //     }
-    //   };
-    //   getNextAllUpcomingMovies(numberGetRequest);
-    // }
+ 
   }, [getMovies]);
 
-  //Mange page for control active button =====================================
+  //Mange PREW NEXT buttons is active =====================================
   useEffect(() => {
-    const isLastPage = islastPageMovies(allMovies, page);
+    // const isLastPage = islastPageMovies(allMovies, page);
 
-    //Set number get request
-    // if (isLastPage) {
-    //   setNumberGetRequest(get => get + 1);
-    // }
-    const firstMovieForPage = firstMovieOnPage(page);
+    // const firstMovieForPage = firstMovieOnPage(page);
 
     // Menage next, prew buttons to active ===========================
-    if (firstMovieForPage === 0) setIsActivePrevBtn(true);
-    if (firstMovieForPage > 0) setIsActivePrevBtn(false);
+    // if (firstMovieForPage === 0) setIsActivePrevBtn(true);
+    // if (firstMovieForPage > 0) setIsActivePrevBtn(false);
 
-    if (isLastPage) setIsDisableNextBtn(true);
-    if (!isLastPage) setIsDisableNextBtn(false);
+    // if (isLastPage) setIsDisableNextBtn(true);
+    // if (!isLastPage) setIsDisableNextBtn(false);
 
     // Slice movies for one page =======================================
-    const moviesPerPage = sliceMoviesPerPage(allMovies, firstMovieForPage);
+    // const moviesPerPage = sliceMoviesPerPage(allMovies, firstMovieForPage);
 
     // Set movies for one page ========================================
-    setMoviesForOnePage(moviesPerPage);
-  }, [allMovies, page]);
+    // setMoviesForOnePage(moviesPerPage);
+  }, [allMovies]);
 
   return (
-    <Container>
+    <WrapperGetShowMovies>
       <h2>{title}</h2>
 
-      <ButtonPrew
-        type="button"
-        disabled={isDisablePrevBtn}
-        onClick={() => setPage(page - 1)}
-      >
-        <SvgArrowStyled
-          $active={isDisablePrevBtn}
-          style={{ rotate: '-180deg' }}
-        >
-          <use xlinkHref={`${Sprite}#icon-arrow`} />
-        </SvgArrowStyled>
-      </ButtonPrew>
+      <MySlider
+        arrMovies={allMovies}
+      />
 
-      <ListMovies movies={moviesForOnePage} />
-
-      <ButtonNext
-        type="button"
-        disabled={isDisableNextBtn}
-        onClick={() => setPage(page + 1)}
-      >
-        <SvgArrowStyled $active={isDisablePrevBtn}>
-          <use xlinkHref={`${Sprite}#icon-arrow`} />
-        </SvgArrowStyled>
-      </ButtonNext>
-    </Container>
+    </WrapperGetShowMovies>
   );
 };

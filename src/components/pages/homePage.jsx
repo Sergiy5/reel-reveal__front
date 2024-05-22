@@ -3,15 +3,13 @@ import { Hero } from 'components/hero/Hero';
 import { HowItWorks } from 'components/how-It-work/HowItWorks';
 import { Quiz } from 'components/quiz/Quiz';
 import { GetShowMovies } from 'components/get-show-movies/GetShowMovies';
-import { topRatedMOvies } from 'api-service/topRatedMovies';
 import { getUpcomingMovies } from 'api-service/getUpcomingMovies';
-// import { ChoseGenre } from 'components/choseGenres/ChooseGenres';
+import { topRatedMOvies } from 'api-service/topRatedMovies';
+import { ChoseGenre } from 'components/choseGenres/ChooseGenres';
 import SimpleSlider from 'components/stuck-on-movie-choices/StuckOnMovieChoices';
 import { LinkToQuiz } from 'components/link-to-quiz/LinkToQuiz';
 
 const HomePage = () => {
-
-
 
   return (
     <>
@@ -23,7 +21,7 @@ const HomePage = () => {
         getMovies={getUpcomingMovies}
       />
       <GetShowMovies title={'TOP 20 rated movies'} getMovies={topRatedMOvies} />
-      {/* <ChoseGenre />*/}
+      <ChoseGenre />
       <SimpleSlider />
       <LinkToQuiz />
     </>
