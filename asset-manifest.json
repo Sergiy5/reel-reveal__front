@@ -1,10 +1,11 @@
 {
   "files": {
     "main.css": "/reel-reveal__front/static/css/main.cd2e038f.css",
-    "main.js": "/reel-reveal__front/static/js/main.37cfc580.js",
-    "static/css/569.b501b162.chunk.css": "/reel-reveal__front/static/css/569.b501b162.chunk.css",
-    "static/js/569.1d22d2ea.chunk.js": "/reel-reveal__front/static/js/569.1d22d2ea.chunk.js",
-    "static/js/726.62dcd349.chunk.js": "/reel-reveal__front/static/js/726.62dcd349.chunk.js",
+    "main.js": "/reel-reveal__front/static/js/main.d541ee59.js",
+    "static/css/417.1101e3d9.chunk.css": "/reel-reveal__front/static/css/417.1101e3d9.chunk.css",
+    "static/js/417.cd834cca.chunk.js": "/reel-reveal__front/static/js/417.cd834cca.chunk.js",
+    "static/js/301.4b73a3c9.chunk.js": "/reel-reveal__front/static/js/301.4b73a3c9.chunk.js",
+    "static/media/sprite-genres.svg": "/reel-reveal__front/static/media/sprite-genres.93af71d5e8c04cb2e774eaed2e5f1777.svg",
     "static/media/Hind-SemiBold.woff2": "/reel-reveal__front/static/media/Hind-SemiBold.55c257f0bcd79cba9a3f.woff2",
     "static/media/Hind-Bold.woff2": "/reel-reveal__front/static/media/Hind-Bold.8f1745f2a9d28fcf1630.woff2",
     "static/media/CeraPro-Regular.woff": "/reel-reveal__front/static/media/CeraPro-Regular.a81f68b2a1331c71b4e4.woff",
@@ -32,13 +33,13 @@
     "static/media/slick.woff": "/reel-reveal__front/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/reel-reveal__front/index.html",
     "main.cd2e038f.css.map": "/reel-reveal__front/static/css/main.cd2e038f.css.map",
-    "main.37cfc580.js.map": "/reel-reveal__front/static/js/main.37cfc580.js.map",
-    "569.b501b162.chunk.css.map": "/reel-reveal__front/static/css/569.b501b162.chunk.css.map",
-    "569.1d22d2ea.chunk.js.map": "/reel-reveal__front/static/js/569.1d22d2ea.chunk.js.map",
-    "726.62dcd349.chunk.js.map": "/reel-reveal__front/static/js/726.62dcd349.chunk.js.map"
+    "main.d541ee59.js.map": "/reel-reveal__front/static/js/main.d541ee59.js.map",
+    "417.1101e3d9.chunk.css.map": "/reel-reveal__front/static/css/417.1101e3d9.chunk.css.map",
+    "417.cd834cca.chunk.js.map": "/reel-reveal__front/static/js/417.cd834cca.chunk.js.map",
+    "301.4b73a3c9.chunk.js.map": "/reel-reveal__front/static/js/301.4b73a3c9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.cd2e038f.css",
-    "static/js/main.37cfc580.js"
+    "static/js/main.d541ee59.js"
   ]
 }
