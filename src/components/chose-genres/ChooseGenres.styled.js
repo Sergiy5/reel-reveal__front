@@ -2,13 +2,25 @@ import { colors } from 'assets/variables';
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 
+export const WrapperChoseGenre = styled.div`
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 48px;
+`;
+
 export const WrapperIconsGenres = styled.div`
   position: relative;
   display: flex;
   align-items: flex-start;
-  justify-content: space-between;
   flex-wrap: wrap;
+  justify-content: space-around;
+
   gap: 64px;
+
+  @media (min-width: 481px) {
+    justify-content: space-between;
+  }
 `;
 
 export const NavLinkIconStyled = styled(NavLink)`

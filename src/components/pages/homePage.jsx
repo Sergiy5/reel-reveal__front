@@ -5,7 +5,7 @@ import { Quiz } from 'components/quiz/Quiz';
 import { GetShowMovies } from 'components/get-show-movies/GetShowMovies';
 import { getUpcomingMovies } from 'api-service/getUpcomingMovies';
 import { topRatedMOvies } from 'api-service/topRatedMovies';
-import { ChoseGenre } from 'components/choseGenres/ChooseGenres';
+import { ChoseGenre } from 'components/chose-genres/ChooseGenres';
 import SimpleSlider from 'components/stuck-on-movie-choices/StuckOnMovieChoices';
 import { LinkToQuiz } from 'components/link-to-quiz/LinkToQuiz';
 

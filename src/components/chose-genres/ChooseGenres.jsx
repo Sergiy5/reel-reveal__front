@@ -1,13 +1,12 @@
 import React from 'react';
-import { SvgBgEllips, WrapperIconsGenres } from './ChooseGenres.styled';
+import { SvgBgEllips, WrapperChoseGenre, WrapperIconsGenres } from './ChooseGenres.styled';
 import { IconGenre } from './IconGenre';
 import sprite from '../../assets/images/svg-sprite/sprite-genres.svg'
-import { Container } from 'styles';
  
 export const ChoseGenre = () => {
 
   return (
-    <Container>
+    <WrapperChoseGenre>
       <SvgBgEllips>
         <use xlinkHref={`${sprite}#bg-ellips`} />
       </SvgBgEllips>
@@ -28,6 +27,6 @@ export const ChoseGenre = () => {
         <IconGenre name="musical" />
         <IconGenre name="anime" />
       </WrapperIconsGenres>
-    </Container>
+    </WrapperChoseGenre>
   );
 };

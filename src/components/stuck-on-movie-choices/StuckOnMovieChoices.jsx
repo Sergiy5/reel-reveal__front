@@ -3,7 +3,7 @@ import { nanoid } from 'nanoid';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import { ContainerSlider, ImgStyled, SvgFrame, WrapperImage, WrapperSlider } from './stuckOnMovieChoices.styled';
+import { ContainerSlider, ImgStyled, SvgFrame, Title, WrapperImage, WrapperSlider } from './stuckOnMovieChoices.styled';
 import { imageMovies } from './MovieItems';
 
 export const getMovieTitleFromPath = (path) => {
@@ -15,7 +15,7 @@ export const getMovieTitleFromPath = (path) => {
   return nameWithoutExtension;
 }
 
-export default function SimpleSlider() {
+const SimpleSlider = ()=> {
   const settings = {
     infinite: true,
     slidesToShow: 5,
@@ -25,11 +25,34 @@ export default function SimpleSlider() {
     autoplaySpeed: 3000,
     cssEase: 'linear',
     arrows: null,
+    responsive: [
+      {
+        breakpoint: 375,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
   
   return (
     <WrapperSlider>
-      <h2>Stuck on Movie Choices?</h2>
+      <Title>Stuck on Movie Choices?</Title>
       <ContainerSlider key={nanoid()}>
         <Slider {...settings}>
           {imageMovies.map(icon => {
@@ -53,3 +76,4 @@ export default function SimpleSlider() {
   );
 }
 
+export default SimpleSlider

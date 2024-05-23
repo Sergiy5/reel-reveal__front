@@ -8,19 +8,27 @@ export const WrapperMovieCard = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  max-width: 285px;
+  width: 285px;
   height: auto;
   color: transparent;
   background-size: contain;
   border-radius: 18px;
+  padding-right: -50px;
 
   transition-property: border;
   transition-duration: 350ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
+  @media (min-width: 577px) {
+    width: calc((100vw - 45px) / 3);
+  }
+
+  @media (min-width: 855px) {
+    width: calc((100vw - 45px) / 4);
+  }
+
   @media (min-width: 1025px) {
-    width: calc((100vw - 180px) / 4);
-    height: calc(((100vw - 180px) / 4) / ${aspectRatioWidtToHeght});
+    width: calc((100vw - 185px) / 4);
 
     &:hover {
       border: 1px solid ${colors.accentColor};
@@ -32,8 +40,8 @@ export const WrapperMovieCard = styled.div`
   }
 
   @media (min-width: 1281px) {
-    width: calc((100vw - 300px) / 4);
-    height: calc(((100vw - 300px) / 4) / ${aspectRatioWidtToHeght});
+    width: calc((100vw - 285px) / 4);
+    height: auto;
   }
 
   @media (min-width: 1440px) {
@@ -54,7 +62,7 @@ export const LoadMoreBtn = styled.button`
 
   @media (min-width: 1025px) {
     width: calc((100vw - 180px) / 4);
-    height: calc(((100vw - 180px) / 4) / ${aspectRatioWidtToHeght});
+    height: calc(width / ${aspectRatioWidtToHeght});
 
     &:hover {
       border: 1px solid ${colors.accentColor};
@@ -69,7 +77,7 @@ export const LoadMoreBtn = styled.button`
 
   @media (min-width: 1281px) {
     width: calc((100vw - 300px) / 4);
-    height: calc(((100vw - 300px) / 4) / ${aspectRatioWidtToHeght});
+    height: calc(width / ${aspectRatioWidtToHeght});
   }
 
   @media (min-width: 1440px) {

@@ -142,8 +142,13 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 0;
+padding: 0 16px;
+margin: 0;
+@media (min-width: 769px) {
   padding: 0;
+  
+}
+
 }
 
 p{

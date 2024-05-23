@@ -68,17 +68,20 @@ export const HeroBgEllips = styled.svg`
   height: calc(100vw / ${aspectRatioHeightToWidth});
 
   @media (min-width: 1025px) {
-    right: -9%;
-    transform: translate(9%, 0%);
+    transform: translate(46%, -1%);
     width: calc(100vw / ${aspectRatioViewWidthToWidth});
-    height: calc(100vw / ${aspectRatioViewWidthToWidth} / ${aspectRatioHeightToWidth});
+    height: calc(
+      100vw / ${aspectRatioViewWidthToWidth} / ${aspectRatioHeightToWidth}
+    );
   }
 
   @media (min-width: 1281px) {
-    right: 50%;
-    transform: translate(50%, 0%);
+    /* right: 48%; */
+    transform: translate(49%, 0%);
     width: calc(100vw / ${aspectRatioViewWidthToWidth});
-    height:calc(100vw / ${aspectRatioViewWidthToWidth} / ${aspectRatioHeightToWidth});
+    height: calc(
+      100vw / ${aspectRatioViewWidthToWidth} / ${aspectRatioHeightToWidth}
+    );
   }
 
   @media (min-width: 1440px) {

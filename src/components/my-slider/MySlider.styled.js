@@ -1,31 +1,23 @@
-import { colors } from "assets/variables";
 import styled from "styled-components";
+import { colors } from "assets/variables";
 
 export const WrapperSlider = styled.div`
+  max-width: 1200px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  width: 975px;
+  width: 900px;
   height: auto;
 
-  @media (min-width: 601px) {
-    width: 1180px;
+  @media (min-width: 577px) {
+    width: 100vw;
   }
-
-  @media (min-width: 769px) {
-    width: 1180px;
-  }
-
+ 
   @media (min-width: 1025px) {
-    width: calc(100vw - 120px);
+    width: calc(100vw - 125px);
   }
 
   @media (min-width: 1281px) {
     width: calc(100vw - 230px);
-  }
-
-  @media (min-width: 1440px) {
-    width: 1200px;
   }
 `;
 

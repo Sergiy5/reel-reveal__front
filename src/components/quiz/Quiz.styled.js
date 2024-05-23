@@ -13,11 +13,13 @@ position: relative;
 
 export const SharedBorderSvg = styled(Border)`
   position: absolute;
-  left: -10%;
-`;
+  width: 100vw;
+  `;
+
 export const BorderTopSvg = styled(SharedBorderSvg)`
   top: 0;
 `;
+
 export const BorderBottomSvg = styled(SharedBorderSvg)`
   bottom: 0;
   transform: rotate(180deg);
