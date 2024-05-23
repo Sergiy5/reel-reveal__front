@@ -3,7 +3,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { nanoid } from 'nanoid';
 import useResize from 'utils/useResize';
-import { ButtonNext, ButtonPrew, StyledSlide, SvgArrowStyled, WrapperSlider } from './MySlider.styled';
+import { ButtonNext, ButtonPrew, SvgArrowStyled, WrapperSlider } from './MySlider.styled';
 import { MovieCard } from 'components/movie-card/MovieCard';
 import sprite from '../../assets/images/svg-sprite/sprite.svg'
 
