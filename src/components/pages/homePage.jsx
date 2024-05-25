@@ -1,4 +1,3 @@
-
 import { Hero } from 'components/hero/Hero';
 import { HowItWorks } from 'components/how-It-work/HowItWorks';
 import { Quiz } from 'components/quiz/Quiz';
@@ -8,9 +7,10 @@ import { topRatedMOvies } from 'api-service/topRatedMovies';
 import { ChoseGenre } from 'components/chose-genres/ChooseGenres';
 import SimpleSlider from 'components/stuck-on-movie-choices/StuckOnMovieChoices';
 import { LinkToQuiz } from 'components/link-to-quiz/LinkToQuiz';
+import useResize from 'utils/useResize';
 
 const HomePage = () => {
-
+  const viewWidth = useResize();
   return (
     <>
       <Hero />
@@ -23,7 +23,7 @@ const HomePage = () => {
       <GetShowMovies title={'TOP 20 rated movies'} getMovies={topRatedMOvies} />
       <ChoseGenre />
       <SimpleSlider />
-      <LinkToQuiz />
+      {viewWidth > 768 ? <LinkToQuiz /> : null}
     </>
   );
 };

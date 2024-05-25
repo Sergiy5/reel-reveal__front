@@ -7,23 +7,24 @@ import {
 } from './Footer.styled';
 import { MenuFootr } from './menu-footer/MenuFooter';
 import { ListSocial } from './list-social/ListSocial';
-import Sprite from '../../assets/images/svg-sprite/sprite.svg';
+import sprite from '../../assets/images/svg-sprite/sprite.svg';
 import useResize from 'utils/useResize';
+import { LinkToQuiz } from 'components/link-to-quiz/LinkToQuiz';
 
 export const Footer = () => {
   const viewWidth = useResize();
 
   return (
     <FooterWrapper>
-      <SvgBgStyled $viewWidth={viewWidth}>
-        <use xlinkHref={`${Sprite}#footerBgEllips`} />
-      </SvgBgStyled>
+      {/* <SvgBgStyled >
+        <use xlinkHref={`${sprite}#footerBgEllips`} />
+      </SvgBgStyled> */}
       <ContentFooterWrapper>
-        <MainLogo />
+        {viewWidth > 768 ? <MainLogo /> : <LinkToQuiz/>}
         <MenuFooterWrapper>
-          <MenuFootr />
+          {viewWidth > 768 ? <MenuFootr /> : null}
           <svg width="154" height="160">
-            <use xlinkHref={`${Sprite}#icon-camera`} />
+            <use xlinkHref={`${sprite}#icon-camera`} />
           </svg>
           <ListSocial />
         </MenuFooterWrapper>

@@ -14,7 +14,6 @@ const Header = () => {
 
   return (
     <HeaderWrapper>
-      {/* <Container $viewWidth={viewWidth}> */}
       <WrapperHeaderContent $viewWidth={viewWidth}>
         <MainLogo viewWidth={viewWidth} />
 
@@ -25,7 +24,6 @@ const Header = () => {
       <HeaderBgEllips $viewWidth={viewWidth}>
         <use xlinkHref={`${sprite}#headerEllips `} />
       </HeaderBgEllips>
-      {/* </Container> */}
     </HeaderWrapper>
   );
 };

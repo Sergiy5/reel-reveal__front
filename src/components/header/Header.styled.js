@@ -4,7 +4,6 @@ import { getAspectRatio } from 'utils';
 
 export const HeaderWrapper = styled.div`
   display: flex;
-  /* margin-bottom: -1px; //remove line between header and main */
   width: 100%;
   background-color: ${colors.bgColor};
 
@@ -22,13 +21,12 @@ export const HeaderBgEllips = styled.svg`
   left: -50%;
   transform: translate(50%, 0);
   width: 100vw;
-  height: ${() => `calc(100vw / ${getAspectRatio(1440, 361)})`};
-
+  height: calc(100vw / ${getAspectRatio(1440, 361)});
 
   @media (min-width: 1440px) {
-    transform: translateY(-50%);
-    top: 8%;
-    left: calc(50vw - 720px);
+    top: 0;
+    /* left: -50%; */
+    transform: translate(calc((100vw - (1440px) / 2)), 0);
     width: 1440px;
     height: 361px;
   }
