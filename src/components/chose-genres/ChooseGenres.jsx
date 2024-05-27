@@ -8,7 +8,7 @@ export const ChoseGenre = () => {
   return (
     <WrapperChoseGenre>
       <SvgBgEllips>
-        <use xlinkHref={`${sprite}#bg-ellips`} />
+        <use xlinkHref={`${sprite}#genresEllips`} />
       </SvgBgEllips>
       <h2>Choose a movie by genre</h2>
       <WrapperIconsGenres>

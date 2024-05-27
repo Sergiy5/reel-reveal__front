@@ -1,7 +1,7 @@
 import { ItemStyled, ListMenuStyled } from './MenuFooter.styled';
 import { NavLinkStyled } from '../list-social/ListSocial.styled';
 
-export const MenuFootr = () => {
+export const MenuFooter = () => {
   return (
     <ListMenuStyled>
       <ItemStyled>

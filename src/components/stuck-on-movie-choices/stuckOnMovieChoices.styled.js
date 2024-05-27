@@ -6,7 +6,7 @@ export const WrapperSlider = styled.div`
   align-items: center;
   flex-direction: column;
   gap: 48px;
-  max-width: 1440px;
+  max-width: 3168px;
 `;
 
 export const Title = styled.h2`
@@ -14,13 +14,10 @@ margin: 0 auto;
 
 @media (max-width: 440px) {
   width: calc(100vw - 10px);
-  
 }
-
 `;
 
 export const ContainerSlider = styled.div`
-
   width: 576px;
   height: auto;
 
@@ -33,7 +30,7 @@ export const ContainerSlider = styled.div`
 }
 
   @media (min-width: 1025px) {
-    width: 1440px;
+    width: 100%;
   }
 
   @media (min-width: 1440px) {

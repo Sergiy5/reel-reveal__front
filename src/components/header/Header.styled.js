@@ -22,10 +22,11 @@ export const HeaderBgEllips = styled.svg`
   transform: translate(50%, 0);
   width: 100vw;
   height: calc(100vw / ${getAspectRatio(1440, 361)});
+  filter: blur(97px);
+  mix-blend-mode: normal;
 
   @media (min-width: 1440px) {
     top: 0;
-    /* left: -50%; */
     transform: translate(calc((100vw - (1440px) / 2)), 0);
     width: 1440px;
     height: 361px;
@@ -56,6 +57,7 @@ export const WrapperHeaderContent = styled.div`
     padding: 0px 120px;
   }
   @media (min-width: 1440px) {
-    width: 1440px;
+    padding: 0px 320px;
+    width: 1840px;
   }
 `;

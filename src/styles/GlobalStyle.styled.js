@@ -65,6 +65,8 @@ body{
   min-height: 100vh;
   margin-left: auto;
   margin-right: auto;
+  background-color: ${colors.bgColor};
+
 }
 
  code {

@@ -5,7 +5,7 @@ import {
   MenuFooterWrapper,
   FooterWrapper,
 } from './Footer.styled';
-import { MenuFootr } from './menu-footer/MenuFooter';
+import { MenuFooter } from './menu-footer/MenuFooter';
 import { ListSocial } from './list-social/ListSocial';
 import sprite from '../../assets/images/svg-sprite/sprite.svg';
 import useResize from 'utils/useResize';
@@ -16,19 +16,23 @@ export const Footer = () => {
 
   return (
     <FooterWrapper>
-      {/* <SvgBgStyled >
-        <use xlinkHref={`${sprite}#footerBgEllips`} />
-      </SvgBgStyled> */}
       <ContentFooterWrapper>
-        {viewWidth > 768 ? <MainLogo /> : <LinkToQuiz/>}
+        {viewWidth > 768 ? (
+          <MainLogo isShowHalfLogo={viewWidth > 769} />
+        ) : (
+          <LinkToQuiz />
+        )}
         <MenuFooterWrapper>
-          {viewWidth > 768 ? <MenuFootr /> : null}
+          {viewWidth > 768 ? <MenuFooter /> : null}
           <svg width="154" height="160">
             <use xlinkHref={`${sprite}#icon-camera`} />
           </svg>
           <ListSocial />
         </MenuFooterWrapper>
       </ContentFooterWrapper>
+      {viewWidth > 769 ? <SvgBgStyled >
+        <use xlinkHref={`${sprite}#footerBgEllips`} />
+      </SvgBgStyled> : null}
     </FooterWrapper>
   );
 };

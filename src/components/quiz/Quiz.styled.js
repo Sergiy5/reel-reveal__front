@@ -14,6 +14,10 @@ position: relative;
 export const SharedBorderSvg = styled(Border)`
   position: absolute;
   width: 100vw;
+  
+  @media (min-width: 1440px) {
+    width: 1440px;
+  }
   `;
 
 export const BorderTopSvg = styled(SharedBorderSvg)`

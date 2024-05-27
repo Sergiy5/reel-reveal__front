@@ -14,14 +14,14 @@ const Header = () => {
 
   return (
     <HeaderWrapper>
-      <WrapperHeaderContent $viewWidth={viewWidth}>
-        <MainLogo viewWidth={viewWidth} />
+      <WrapperHeaderContent>
+        <MainLogo isShowHalfLogo={viewWidth > 1025} />
 
         <HeaderSearchBar viewWidth={viewWidth} />
 
         <HeaderNav viewWidth={viewWidth} />
       </WrapperHeaderContent>
-      <HeaderBgEllips $viewWidth={viewWidth}>
+      <HeaderBgEllips >
         <use xlinkHref={`${sprite}#headerEllips `} />
       </HeaderBgEllips>
     </HeaderWrapper>

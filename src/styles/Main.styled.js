@@ -11,16 +11,13 @@ export const Main = styled.main`
   padding: 24px 16px;
   max-width: 1440px;
   background-color: ${colors.bgColor};
-  overflow: hidden;
   gap: 64px;
+  overflow: hidden;
 
   @media (min-width: 769px) {
     padding: 46px 60px;
     gap: 80px;
   }
-  /* @media (min-width: 1025px) {
-    padding: 56px 60px 503px 60px;
-  } */
 
   @media (min-width: 1281px) {
     gap: 120px;
@@ -28,6 +25,7 @@ export const Main = styled.main`
   }
 
   @media (min-width: 1440px) {
+  overflow: visible;
     width: 1440px;
   }
 `;

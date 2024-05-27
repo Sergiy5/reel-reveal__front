@@ -5,6 +5,7 @@ import { getAspectRatio } from "utils";
 const aspectRatioWidtToHeght = getAspectRatio(285, 428);
 
 export const WrapperMovieCard = styled.div`
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -88,7 +89,37 @@ export const LoadMoreBtn = styled.button`
 
 export const MovieImg = styled.img`
   width: 100%;
-
   height: auto;
   border-radius: 18px;
+`;
+
+export const HoverCard = styled.div`
+position: absolute;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+`;
+
+export const RatingYearWrapper = styled.div`
+width: 50%;
+`;
+
+export const ListButtons = styled.ul`
+width: 50%;
+`;
+
+export const HoverCardBtn = styled.button`
+display: flex;
+background-color: transparent;
+border-radius: 100%;
+border: 2px solid ${colors.textColor}
+`
+export const HoverCardSvg = styled.svg`
+width: 16px;
+height: 16px;
+`;
+
+export const TitleMovie = styled.span`
+flex: 1;
 `;

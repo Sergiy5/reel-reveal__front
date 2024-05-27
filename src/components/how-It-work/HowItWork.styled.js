@@ -38,7 +38,9 @@ const aspectRatioHeightToWidth = getAspectRatio(1440, 850);
 
 export const HowItWorksBgEllips = styled.svg`
   width: 100vw;
-  height: ${() => `calc(100vw / ${aspectRatioHeightToWidth})`};
+  height: calc(100vw / ${aspectRatioHeightToWidth});
+  filter: blur(97px);
+  mix-blend-mode: normal;
 
   @media (min-width: 600px) {
     margin-bottom: -50px;
