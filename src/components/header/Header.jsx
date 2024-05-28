@@ -1,5 +1,6 @@
 import { MainLogo } from 'components/main-logo/MainLogo';
 import {
+  ContainerContent,
   HeaderBgEllips,
   HeaderWrapper,
   WrapperHeaderContent,
@@ -15,11 +16,15 @@ const Header = () => {
   return (
     <HeaderWrapper>
       <WrapperHeaderContent>
-        <MainLogo isShowHalfLogo={viewWidth > 1025} />
+        <ContainerContent>
+
+        <MainLogo isShowHalfLogo={viewWidth > 1280} />
 
         <HeaderSearchBar viewWidth={viewWidth} />
 
         <HeaderNav viewWidth={viewWidth} />
+
+        </ContainerContent>
       </WrapperHeaderContent>
       <HeaderBgEllips >
         <use xlinkHref={`${sprite}#headerEllips `} />

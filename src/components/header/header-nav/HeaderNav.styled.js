@@ -12,8 +12,8 @@ export const WrapperNav = styled.div`
   width: auto;
   height: 40px;
 
-  @media screen and (min-width: 1281px) {
-    min-width: 380px;
+  @media screen and (min-width: 1025px) {
+    width: 380px;
     flex-direction: row;
   }
 `;

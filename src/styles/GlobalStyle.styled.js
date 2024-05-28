@@ -132,6 +132,10 @@ ol {
   margin: 0;
 }
 
+span{
+  font-family: "mainFont";
+}
+
 a {
   text-decoration: none;
   color: currentColor;

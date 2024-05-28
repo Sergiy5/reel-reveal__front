@@ -1,5 +1,5 @@
-import { colors } from "assets/variables";
 import styled from "styled-components";
+import { colors } from "assets/variables";
 import { getAspectRatio } from "utils";
 
 const aspectRatioWidtToHeght = getAspectRatio(285, 428);
@@ -15,6 +15,7 @@ export const WrapperMovieCard = styled.div`
   background-size: contain;
   border-radius: 18px;
   padding-right: -50px;
+  overflow: hidden;
 
   transition-property: border;
   transition-duration: 350ms;
@@ -93,33 +94,3 @@ export const MovieImg = styled.img`
   border-radius: 18px;
 `;
 
-export const HoverCard = styled.div`
-position: absolute;
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  height: 100%;
-`;
-
-export const RatingYearWrapper = styled.div`
-width: 50%;
-`;
-
-export const ListButtons = styled.ul`
-width: 50%;
-`;
-
-export const HoverCardBtn = styled.button`
-display: flex;
-background-color: transparent;
-border-radius: 100%;
-border: 2px solid ${colors.textColor}
-`
-export const HoverCardSvg = styled.svg`
-width: 16px;
-height: 16px;
-`;
-
-export const TitleMovie = styled.span`
-flex: 1;
-`;

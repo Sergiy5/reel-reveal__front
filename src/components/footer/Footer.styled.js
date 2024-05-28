@@ -30,10 +30,10 @@ export const ContentFooterWrapper = styled.div`
 
   @media (min-width: 769px) {
     align-items: start;
-    padding: 80px 80px;
+    padding: 80px 60px;
   }
   @media (min-width: 1025px) {
-    padding: 80px 80px;
+    /* padding: 80px 60px; */
     width: 100%;
   }
 

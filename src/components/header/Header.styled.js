@@ -36,19 +36,18 @@ export const HeaderBgEllips = styled.svg`
 export const WrapperHeaderContent = styled.div`
   z-index: 2;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   padding: 0 40px;
   width: 100%;
   height: 44px;
   background-color: ${colors.bgColor};
 
   @media (min-width: 769px) {
-    padding: 0px 80px;
+    padding: 0px 60px;
     height: 68px;
   }
   @media (min-width: 1025px) {
-    padding: 0px 80px;
+    padding: 0px 60px;
     height: 84px;
     width: 100%;
   }
@@ -56,8 +55,11 @@ export const WrapperHeaderContent = styled.div`
   @media (min-width: 1281px) {
     padding: 0px 120px;
   }
-  @media (min-width: 1440px) {
-    padding: 0px 320px;
-    width: 1840px;
-  }
+`;
+
+export const ContainerContent = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1200px;
 `;
