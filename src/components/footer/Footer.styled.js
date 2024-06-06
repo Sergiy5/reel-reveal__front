@@ -54,7 +54,7 @@ export const MenuFooterWrapper = styled.div`
 
 export const SvgBgStyled = styled.svg`
   position: absolute;
-  z-index: 1;
+  /* z-index: 0; */
   width: 100vw;
   height: calc(100vw / ${getAspectRatio(1429, 614)});
   filter: blur(97px);

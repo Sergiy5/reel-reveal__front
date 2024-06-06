@@ -15,13 +15,13 @@ export const Main = styled.main`
   overflow: hidden;
 
   @media (min-width: 769px) {
-    padding: 46px 60px;
+    padding: 80px 60px;
     gap: 80px;
   }
 
   @media (min-width: 1281px) {
     gap: 120px;
-    padding: 56px 120px;
+    padding: 120px 120px;
   }
 
   @media (min-width: 1440px) {

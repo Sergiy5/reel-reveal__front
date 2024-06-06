@@ -6,6 +6,7 @@ export const WrapperGetShowMovies = styled.div`
   align-items: center;
   gap: 48px;
   width: 100vw;
+  z-index: 1;
 
   @media (min-width: 1440px) {
     width: 1440px;

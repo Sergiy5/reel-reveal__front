@@ -4,8 +4,9 @@ import styled from 'styled-components';
 
 export const ListSocialStyled = styled.ul`
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   flex-direction: column;
+  justify-content: space-between;
   height: 159px;
   gap: 16px;
 `;

@@ -66,8 +66,10 @@ export const SpanStyled = styled.span`
 
 export const SvgBgEllips = styled.svg`
   position: absolute;
-  top: -58%;
-  right: -10%;
+  z-index: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 100vw;
   height: calc(100vw / ${getAspectRatio(1440, 720)});
 

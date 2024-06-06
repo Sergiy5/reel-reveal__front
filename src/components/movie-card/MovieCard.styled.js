@@ -15,11 +15,6 @@ export const WrapperMovieCard = styled.div`
   background-size: contain;
   border-radius: 18px;
   padding-right: -50px;
-  overflow: hidden;
-
-  transition-property: border;
-  transition-duration: 350ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
   @media (min-width: 577px) {
     width: calc((100vw - 45px) / 3);
@@ -31,14 +26,6 @@ export const WrapperMovieCard = styled.div`
 
   @media (min-width: 1025px) {
     width: calc((100vw - 185px) / 4);
-
-    &:hover {
-      border: 1px solid ${colors.accentColor};
-    }
-
-    &:focus {
-      outline: 1px solid ${colors.accentColor};
-    }
   }
 
   @media (min-width: 1281px) {

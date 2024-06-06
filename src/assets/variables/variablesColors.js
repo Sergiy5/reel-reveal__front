@@ -1,7 +1,7 @@
 export const colors = {
   bgLightColor: '#20263D',
   bgColor: '#12132C', //black blue
-  accentColor: '#20E8DA',
+  accentColor: '#20E8DA', //rgba(32, 232, 218, 1.0)
   accentClickedColor: '#20C9BC',
   textColor: '#FFFFFF',
   textActivColor: '#12132C',
