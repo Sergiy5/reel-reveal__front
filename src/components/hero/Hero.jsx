@@ -7,17 +7,14 @@ import {
   HeroWrapper,
   HeroBgEllips,
 } from './HeroStyled';
-import sprite from '../../assets/images/svg-sprite/sprite.svg'
+import sprite from '../../assets/images/svg-sprite/sprite.svg';
 import heroImg from '../../assets/images/heroImage.webp';
-import { SharedStyledLinkBtn } from 'styles/SharedStyledLinkBtn.styled';
-
+import { SharedBtn } from 'components/shared-btn/SharedBtn';
 
 export const Hero = () => {
-  
   return (
     <HeroWrapper>
       <HeroTextCTAWrapper>
-
         <h1>Discover Your Perfect Movie with ReelReveal!</h1>
 
         <HeroText>
@@ -26,9 +23,9 @@ export const Hero = () => {
           finding the perfect movie match.
         </HeroText>
 
-        <SharedStyledLinkBtn as={NavLink} to="#" $width="285px">
+        <SharedBtn as={NavLink} to="#" width="285px">
           start quiz
-        </SharedStyledLinkBtn>
+        </SharedBtn>
       </HeroTextCTAWrapper>
 
       <WrapperImg>
@@ -40,7 +37,6 @@ export const Hero = () => {
     </HeroWrapper>
   );
 };
-
 
 // const screenWidth = window.innerWidth;
 // const pixelRatio = window.devicePixelRatio || 1;

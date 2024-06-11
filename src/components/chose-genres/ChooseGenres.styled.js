@@ -1,5 +1,3 @@
-import { colors } from 'assets/variables';
-import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 import { getAspectRatio } from 'utils';
 
@@ -24,32 +22,13 @@ export const WrapperIconsGenres = styled.div`
     justify-content: space-between;
   }
 `;
-
-export const NavLinkIconStyled = styled(NavLink)`
+export const SvgGanreWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 95px;
   height: 85px;
   gap: 8px;
-  outline: transparent;
-  border-radius: 3px;
-  cursor: pointer;
-  
-  transition-property: color, outline;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  
-  &:hover {
-    color: ${colors.accentColor};
-  }
-  &:focus {
-    color: ${colors.accentColor};
-    outline: 2px solid ${colors.accentColor};
-  }
-  &:active {
-    color: ${colors.accentClicked};
-  }
 `;
 
 export const SvgGenreStyled = styled.svg`

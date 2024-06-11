@@ -1,11 +1,12 @@
-import { ListSocialStyled, Item, SvgStyled, NavLinkStyled } from './ListSocial.styled';
+import { ListSocialStyled, Item, SvgStyled} from './ListSocial.styled';
 import Sprite from '../../../assets/images/svg-sprite/sprite.svg';
+import { SharedNavLink } from 'components/shared-nav_link/SharedNavLink';
 
 export const ListSocial = () => {
   return (
     <ListSocialStyled>
       <Item>
-        <NavLinkStyled
+        <SharedNavLink
           href="https://www.facebook.com/?locale=uk_UA"
           target="_blank"
           rel="noopener noreferrer"
@@ -13,10 +14,10 @@ export const ListSocial = () => {
           <SvgStyled>
             <use xlinkHref={`${Sprite}#icon-facebook`} />
           </SvgStyled>
-        </NavLinkStyled>
+        </SharedNavLink>
       </Item>
       <Item>
-        <NavLinkStyled
+        <SharedNavLink
           href="https://www.instagram.com"
           target="_blank"
           rel="noopener noreferrer"
@@ -24,10 +25,10 @@ export const ListSocial = () => {
           <SvgStyled>
             <use xlinkHref={`${Sprite}#icon-instagram`} />
           </SvgStyled>
-        </NavLinkStyled>
+        </SharedNavLink>
       </Item>
       <Item>
-        <NavLinkStyled
+        <SharedNavLink
           href="https://www.gmail.com"
           target="_blank"
           rel="noopener noreferrer"
@@ -35,7 +36,7 @@ export const ListSocial = () => {
           <SvgStyled>
             <use xlinkHref={`${Sprite}#icon-mail`} />
           </SvgStyled>
-        </NavLinkStyled>
+        </SharedNavLink>
       </Item>
     </ListSocialStyled>
   );

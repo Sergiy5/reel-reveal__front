@@ -1,20 +1,20 @@
 import { ItemStyled, ListMenuStyled } from './MenuFooter.styled';
-import { NavLinkStyled } from '../list-social/ListSocial.styled';
+import { SharedNavLink } from 'components/shared-nav_link/SharedNavLink';
 
 export const MenuFooter = () => {
   return (
     <ListMenuStyled>
       <ItemStyled>
-        <NavLinkStyled>How it works</NavLinkStyled>
+        <SharedNavLink linlTo={''}>How it works</SharedNavLink>
       </ItemStyled>
       <ItemStyled>
-        <NavLinkStyled>Take a quiz</NavLinkStyled>
+        <SharedNavLink linlTo={''}>Take a quiz</SharedNavLink>
       </ItemStyled>
       <ItemStyled>
-        <NavLinkStyled>Movie search</NavLinkStyled>
+        <SharedNavLink linlTo={''}>Movie search</SharedNavLink>
       </ItemStyled>
       <ItemStyled>
-        <NavLinkStyled>Login</NavLinkStyled>
+        <SharedNavLink linlTo={''}>Login</SharedNavLink>
       </ItemStyled>
     </ListMenuStyled>
   );

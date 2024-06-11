@@ -1,17 +1,20 @@
 import sprite from '../../assets/images/svg-sprite/sprite-genres.svg';
-import { NavLinkIconStyled, SpanStyled, SvgGenreStyled } from './ChooseGenres.styled';
+import { SharedNavLink } from 'components/shared-nav_link/SharedNavLink';
+import { SpanStyled, SvgGanreWrapper, SvgGenreStyled } from './ChooseGenres.styled';
 
-export const IconGenre = ({ name, ...props }) => {
+export const IconGenre = ({ name }) => {
 
     const capitalizeFirstLetter = str =>
       `${str.charAt(0).toUpperCase()}${str.slice(1)}`;
 
   return (
-    <NavLinkIconStyled to={'#'}>
-      <SvgGenreStyled {...props}>
+    <SharedNavLink to={'#'}>
+      <SvgGanreWrapper>
+      <SvgGenreStyled>
         <use xlinkHref={`${sprite}#${name}`} />
       </SvgGenreStyled>
       <SpanStyled>{capitalizeFirstLetter(name)}</SpanStyled>
-    </NavLinkIconStyled>
+      </SvgGanreWrapper>
+    </SharedNavLink>
   );
 };

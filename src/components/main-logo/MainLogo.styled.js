@@ -22,6 +22,9 @@ export const NavLinkStyled = styled(NavLink)`
   &:focus {
     outline: 2px solid ${colors.accentColor};
   }
+  &:active{
+    outline: none;
+  }
 `;
 export const SpanStyled = styled.span`
   font-family: fontH2;

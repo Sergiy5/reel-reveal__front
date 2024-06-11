@@ -67,7 +67,7 @@ export const HeroBgEllips = styled.svg`
   width: 100vw;
   height: calc(100vw / ${aspectRatioHeightToWidth});
   filter: blur(97px);
-  mix-blend-mode: normal;
+  /* mix-blend-mode: normal; */
 
   @media (min-width: 1025px) {
     transform: translate(46%, -1%);
@@ -78,7 +78,6 @@ export const HeroBgEllips = styled.svg`
   }
 
   @media (min-width: 1281px) {
-    /* right: 48%; */
     transform: translate(49%, 0%);
     width: calc(100vw / ${aspectRatioViewWidthToWidth});
     height: calc(

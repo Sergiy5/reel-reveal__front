@@ -3,6 +3,7 @@ import { Route, Routes } from 'react-router-dom';
 import Layout from './layout/Layout';
 import MyProvider from './context/MyProvider';
 import useResize from 'utils/useResize';
+import MoviePage from './pages/moviePage';
 
 const HomePage = React.lazy(() => import('./pages/homePage'));
 
@@ -19,13 +20,13 @@ export const App = () => {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<HomePage />} />
+          <Route path="/movie" element={<MoviePage />} />
           {/* <Route path="/search" element={<MovieSearchPage />} /> */}
           {/* 
           <Route path="catalog" element={<CatalogPage />} />
           <Route path="favorite" element={<Favorite />} />
 
           <Route path="*" element={<NotFound />} /> */}
-          
         </Route>
       </Routes>
     </MyProvider>

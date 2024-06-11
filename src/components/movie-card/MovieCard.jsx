@@ -3,6 +3,7 @@ import notFoundImg from '../../assets/images/No-Image.jpg';
 import {LoadMoreBtn, MovieImg, WrapperMovieCard } from './MovieCard.styled';
 import { useState } from 'react';
 import { CardOverlay } from './card-overlay/CardOverlay';
+import { Link } from 'react-router-dom';
 
 export const MovieCard = ({ movie }) => {
   const [isShowHover, setIsShowHover] = useState(false)
@@ -14,23 +15,25 @@ export const MovieCard = ({ movie }) => {
     : `${notFoundImg}`;
 
   return (
-    <WrapperMovieCard
-      key={nanoid()}
-      onMouseEnter={() => {
-        setIsShowHover(true);
-      }}
-      onMouseLeave={() => {
-        setIsShowHover(false);
-      }}
-    >
-      {id === 'load_more' ? (
-        <LoadMoreBtn id={id}>{textBtn}</LoadMoreBtn>
-      ) : (
-        <>
+    <Link to={'/movie'} >
+      <WrapperMovieCard
+        key={nanoid()}
+        onMouseEnter={() => {
+          setIsShowHover(true);
+        }}
+        onMouseLeave={() => {
+          setIsShowHover(false);
+        }}
+      >
+        {id === 'load_more' ? (
+          <LoadMoreBtn id={id}>{textBtn}</LoadMoreBtn>
+        ) : (
+          <>
             {isShowHover ? <CardOverlay movie={movie} /> : null}
-          <MovieImg key={nanoid()} id={id} src={poster} alt={title} />
-        </>
-      )}
-    </WrapperMovieCard>
+            <MovieImg key={nanoid()} id={id} src={poster} alt={title} />
+          </>
+        )}
+      </WrapperMovieCard>
+    </Link>
   );
 };

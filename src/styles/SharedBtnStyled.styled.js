@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { colors } from 'assets/variables';
 
-export const SharedStyledLinkBtn = styled.button`
+export const SharedBtnStyled = styled.button`
   display: flex;
   align-items: center;
   justify-content: center;

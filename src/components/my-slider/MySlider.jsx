@@ -85,7 +85,7 @@ export const MySlider = ({
   return (
     <WrapperSlider key={nanoid()}  onClick={handleClick}>
       <Slider {...settings}>
-        {arrMovies.map(movie => {
+        {arrMovies?.map(movie => {
           return (
               <MovieCard key={nanoid()} movie={movie} />
           );
