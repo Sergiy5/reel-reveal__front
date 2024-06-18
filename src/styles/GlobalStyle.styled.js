@@ -49,14 +49,7 @@ const GlobalStyle = createGlobalStyle`
     font-weight: 600;
     font-style: normal;
    font-display: swap, sans-serif;
-
   }
-@font-face {
-  font-family: 'Hind-Bold';
-  src: url('/path/to/font/Hind-Bold.woff2') format('woff2');
-  font-display: swap; 
-}
-
 
 body{
   font-family: "mainFont", Arial, Helvetica, sans-serif;
@@ -66,7 +59,6 @@ body{
   margin-left: auto;
   margin-right: auto;
   background-color: ${colors.bgColor};
-
 }
 
  code {
