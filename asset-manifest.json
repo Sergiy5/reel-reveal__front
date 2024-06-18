@@ -1,10 +1,9 @@
 {
   "files": {
-    "main.css": "/reel-reveal__front/static/css/main.cd2e038f.css",
-    "main.js": "/reel-reveal__front/static/js/main.4d4ca660.js",
-    "static/css/930.59a11630.chunk.css": "/reel-reveal__front/static/css/930.59a11630.chunk.css",
-    "static/js/930.d013204e.chunk.js": "/reel-reveal__front/static/js/930.d013204e.chunk.js",
-    "static/js/301.4b73a3c9.chunk.js": "/reel-reveal__front/static/js/301.4b73a3c9.chunk.js",
+    "main.css": "/reel-reveal__front/static/css/main.c8045e0b.css",
+    "main.js": "/reel-reveal__front/static/js/main.d05be311.js",
+    "static/js/537.df7e3c95.chunk.js": "/reel-reveal__front/static/js/537.df7e3c95.chunk.js",
+    "static/js/294.de14737b.chunk.js": "/reel-reveal__front/static/js/294.de14737b.chunk.js",
     "static/media/sprite-genres.svg": "/reel-reveal__front/static/media/sprite-genres.f0126bc09a34e8c5416bae8ca503c6f2.svg",
     "static/media/Hind-SemiBold.woff2": "/reel-reveal__front/static/media/Hind-SemiBold.55c257f0bcd79cba9a3f.woff2",
     "static/media/Hind-Bold.woff2": "/reel-reveal__front/static/media/Hind-Bold.8f1745f2a9d28fcf1630.woff2",
@@ -32,14 +31,13 @@
     "static/media/slick.ttf": "/reel-reveal__front/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/reel-reveal__front/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/reel-reveal__front/index.html",
-    "main.cd2e038f.css.map": "/reel-reveal__front/static/css/main.cd2e038f.css.map",
-    "main.4d4ca660.js.map": "/reel-reveal__front/static/js/main.4d4ca660.js.map",
-    "930.59a11630.chunk.css.map": "/reel-reveal__front/static/css/930.59a11630.chunk.css.map",
-    "930.d013204e.chunk.js.map": "/reel-reveal__front/static/js/930.d013204e.chunk.js.map",
-    "301.4b73a3c9.chunk.js.map": "/reel-reveal__front/static/js/301.4b73a3c9.chunk.js.map"
+    "main.c8045e0b.css.map": "/reel-reveal__front/static/css/main.c8045e0b.css.map",
+    "main.d05be311.js.map": "/reel-reveal__front/static/js/main.d05be311.js.map",
+    "537.df7e3c95.chunk.js.map": "/reel-reveal__front/static/js/537.df7e3c95.chunk.js.map",
+    "294.de14737b.chunk.js.map": "/reel-reveal__front/static/js/294.de14737b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cd2e038f.css",
-    "static/js/main.4d4ca660.js"
+    "static/css/main.c8045e0b.css",
+    "static/js/main.d05be311.js"
   ]
 }
