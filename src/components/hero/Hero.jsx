@@ -12,6 +12,7 @@ import heroImg from '../../assets/images/heroImage.webp';
 import { SharedBtn } from 'components/shared-btn/SharedBtn';
 
 export const Hero = () => {
+  
   return (
     <HeroWrapper>
       <HeroTextCTAWrapper>

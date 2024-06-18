@@ -1,5 +1,4 @@
 import { colors } from 'assets/variables/variablesColors';
-import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 
 export const ListSocialStyled = styled.ul`
