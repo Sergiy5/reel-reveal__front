@@ -10,8 +10,8 @@ import sprite from '../../assets/images/svg-sprite/sprite.svg'
 
 function SampleNextArrow(props,) {
   const { currentSlide, onClick } = props;
-
   const isActive = currentSlide !== 16 ? false : true;
+  
   return (
     <ButtonNext onClick={onClick} disabled={isActive}>
       <SvgArrowStyled $active={isActive}>
@@ -23,8 +23,8 @@ function SampleNextArrow(props,) {
 
 function SamplePrevArrow(props) {
   const {  currentSlide, onClick } = props;
-  
   const isActive = currentSlide !== 0 ? false : true
+
   return (
     <ButtonPrew onClick={onClick} disabled={isActive}>
       <SvgArrowStyled $active={isActive} $currentSlide={currentSlide}>

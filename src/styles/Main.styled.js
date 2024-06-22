@@ -25,7 +25,7 @@ export const Main = styled.main`
   }
 
   @media (min-width: 1440px) {
-  overflow: visible;
+    overflow: visible;
     width: 1440px;
   }
 `;

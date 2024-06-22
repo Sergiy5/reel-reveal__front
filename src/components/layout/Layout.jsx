@@ -4,7 +4,7 @@ import { Footer } from 'components/footer/Footer';
 import { Suspense } from 'react';
 import { Loader } from 'components/loader/Loader';
 import { Main } from 'styles';
-// import { Main } from 'styles';
+
 
 const Layout = () => {
  
