@@ -30,12 +30,10 @@ export const WrapperMovieCard = styled.div`
 
   @media (min-width: 1281px) {
     width: calc((100vw - 285px) / 4);
-    height: auto;
   }
 
   @media (min-width: 1440px) {
     width: 285px;
-    height: 428px;
   }
 `;
 

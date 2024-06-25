@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import { colors } from 'assets/variables/variablesColors';
-import { getAspectRatio } from 'utils';
 
 export const HeaderWrapper = styled.div`
   display: flex;
@@ -8,7 +7,6 @@ export const HeaderWrapper = styled.div`
   background-color: ${colors.bgColor};
 
   @media (min-width: 1440px) {
-    /* display: flex; */
     justify-content: center;
     align-items: center;
   }
@@ -28,7 +26,6 @@ export const WrapperHeaderContent = styled.div`
     height: 68px;
   }
   @media (min-width: 1025px) {
-    /* padding: 0px 60px; */
     height: 84px;
     width: 100%;
   }
@@ -50,8 +47,8 @@ export const HeaderBgEllips = styled.svg`
   top: 0;
   left: -50%;
   transform: translate(50%, 0);
-  width: 100vw;
-  height: calc(100vw / ${getAspectRatio(1440, 361)});
+  width: 100%;
+  aspect-ratio: 1440/361;
   filter: blur(97px);
   mix-blend-mode: normal;
   z-index: 1;

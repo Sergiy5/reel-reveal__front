@@ -8,7 +8,7 @@ import { MovieCard } from 'components/movie-card/MovieCard';
 import sprite from '../../assets/images/svg-sprite/sprite.svg'
 
 
-function SampleNextArrow(props,) {
+function SampleNextArrow(props) {
   const { currentSlide, onClick } = props;
   const isActive = currentSlide !== 16 ? false : true;
   
@@ -36,9 +36,6 @@ function SamplePrevArrow(props) {
 
 export const MySlider = ({
   arrMovies,
-  // handleClick,
-  isDisablePrewBtn,
-  isDisableNextBtn,
 }) => {
 
   const viewWidth = useResize();

@@ -56,7 +56,6 @@ export const HeroImage = styled.img`
   height: auto;
 `;
 
-const aspectRatioHeightToWidth = getAspectRatio(833, 890); // Devide 100vw on mobile height
 const aspectRatioViewWidthToWidth = getAspectRatio(1440, 833); 
 
 export const HeroBgEllips = styled.svg`
@@ -65,24 +64,17 @@ export const HeroBgEllips = styled.svg`
   right: 50%;
   transform: translate(50%, 0%);
   width: 100vw;
-  height: calc(100vw / ${aspectRatioHeightToWidth});
+  aspect-ratio: 833/890;
   filter: blur(97px);
-  /* mix-blend-mode: normal; */
 
   @media (min-width: 1025px) {
     transform: translate(46%, -1%);
     width: calc(100vw / ${aspectRatioViewWidthToWidth});
-    height: calc(
-      100vw / ${aspectRatioViewWidthToWidth} / ${aspectRatioHeightToWidth}
-    );
   }
 
   @media (min-width: 1281px) {
     transform: translate(49%, 0%);
     width: calc(100vw / ${aspectRatioViewWidthToWidth});
-    height: calc(
-      100vw / ${aspectRatioViewWidthToWidth} / ${aspectRatioHeightToWidth}
-    );
   }
 
   @media (min-width: 1440px) {
