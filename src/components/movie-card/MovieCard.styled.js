@@ -10,7 +10,7 @@ export const WrapperMovieCard = styled.div`
   align-items: center;
   justify-content: center;
   width: 285px;
-  height: auto;
+  aspect-ratio: 285/428;
   color: transparent;
   background-size: contain;
   border-radius: 18px;

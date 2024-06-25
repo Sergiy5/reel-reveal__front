@@ -36,7 +36,7 @@ function SamplePrevArrow(props) {
 
 export const MySlider = ({
   arrMovies,
-  handleClick,
+  // handleClick,
   isDisablePrewBtn,
   isDisableNextBtn,
 }) => {
@@ -83,7 +83,7 @@ export const MySlider = ({
     };
 
   return (
-    <WrapperSlider key={nanoid()}  onClick={handleClick}>
+    <WrapperSlider key={nanoid()}  >
       <Slider {...settings}>
         {arrMovies?.map(movie => {
           return (
