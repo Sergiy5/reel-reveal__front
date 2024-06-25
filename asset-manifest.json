@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/reel-reveal__front/static/css/main.c8045e0b.css",
-    "main.js": "/reel-reveal__front/static/js/main.0539f71b.js",
-    "static/js/537.66cc7633.chunk.js": "/reel-reveal__front/static/js/537.66cc7633.chunk.js",
+    "main.js": "/reel-reveal__front/static/js/main.0d0f4bff.js",
+    "static/js/537.75a478da.chunk.js": "/reel-reveal__front/static/js/537.75a478da.chunk.js",
     "static/js/294.de14737b.chunk.js": "/reel-reveal__front/static/js/294.de14737b.chunk.js",
     "static/media/sprite-genres.svg": "/reel-reveal__front/static/media/sprite-genres.f0126bc09a34e8c5416bae8ca503c6f2.svg",
     "static/media/Hind-SemiBold.woff2": "/reel-reveal__front/static/media/Hind-SemiBold.55c257f0bcd79cba9a3f.woff2",
@@ -32,12 +32,12 @@
     "static/media/slick.woff": "/reel-reveal__front/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/reel-reveal__front/index.html",
     "main.c8045e0b.css.map": "/reel-reveal__front/static/css/main.c8045e0b.css.map",
-    "main.0539f71b.js.map": "/reel-reveal__front/static/js/main.0539f71b.js.map",
-    "537.66cc7633.chunk.js.map": "/reel-reveal__front/static/js/537.66cc7633.chunk.js.map",
+    "main.0d0f4bff.js.map": "/reel-reveal__front/static/js/main.0d0f4bff.js.map",
+    "537.75a478da.chunk.js.map": "/reel-reveal__front/static/js/537.75a478da.chunk.js.map",
     "294.de14737b.chunk.js.map": "/reel-reveal__front/static/js/294.de14737b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c8045e0b.css",
-    "static/js/main.0539f71b.js"
+    "static/js/main.0d0f4bff.js"
   ]
 }
