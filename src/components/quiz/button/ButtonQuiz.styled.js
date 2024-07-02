@@ -11,6 +11,7 @@ export const BtnQuiz = styled.button`
   font-size: 28px;
   line-height: 114%;
   width: auto;
+  /* aspect-ratio: 285/200; */
   height: calc(((100vw - 140px) / 2) / ${getAspectRatio(285, 200)});
   color: inherit;
   border-radius: 18px;
@@ -38,7 +39,7 @@ export const BtnQuiz = styled.button`
 
   &:hover {
     ${props =>
-      props.$isActiv
+      props.$isActive
         ? null
         : `
     transform: scale(1.01);
@@ -51,6 +52,6 @@ export const BtnQuiz = styled.button`
     color: ${colors.accentClickedColor};
   }
   &:active {
-    transform: ${props => (props.$isActiv ? 'scale(1)' : null)};
+    transform: ${props => (props.$isActive ? 'scale(1)' : null)};
   }
 `;

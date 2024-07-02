@@ -122,10 +122,10 @@ export const DropDowBtn = styled.div`
   }
 `;
 
-export const SpanTextStyled = styled.span`
-height: 17px;
-width: 50px;
-`;
+// export const SpanTextStyled = styled.span`
+// height: 17px;
+// width: 50px;
+// `;
 
 export const HoverCardSvg = styled.svg`
   color: inherit;
