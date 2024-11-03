@@ -49,7 +49,8 @@ export const LoadMoreBtn = styled.button`
 
   @media (min-width: 1025px) {
     width: calc((100vw - 180px) / 4);
-    height: calc(width / ${aspectRatioWidtToHeght});
+    aspect-ratio: 285/428;
+    /* height: calc(width / ${aspectRatioWidtToHeght}); */
 
     &:hover {
       border: 1px solid ${colors.accentColor};
@@ -64,7 +65,8 @@ export const LoadMoreBtn = styled.button`
 
   @media (min-width: 1281px) {
     width: calc((100vw - 300px) / 4);
-    height: calc(width / ${aspectRatioWidtToHeght});
+    aspect-ratio: 285/428;
+    /* height: calc(width / ${aspectRatioWidtToHeght}); */
   }
 
   @media (min-width: 1440px) {
